@@ -1,0 +1,8 @@
+datasource:
+  workspace: semester
+  autoCreate: true
+
+model:
+  nodeType: mgnl:semester
+  properties:
+    - name: name

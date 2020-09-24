@@ -1,0 +1,8 @@
+datasource:
+  workspace: internships
+  autoCreate: true
+
+model:
+  nodeType: mgnl:internship
+  properties:
+    - name: name

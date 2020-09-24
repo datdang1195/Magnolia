@@ -1,0 +1,59 @@
+.confirm__wrapper {
+    padding: 0 20px;
+}
+
+.confirm__title {
+    margin-bottom: 35px;
+}
+
+.confirm__body {
+    color: #4a4a4a;
+    font-size: 16px;
+    letter-spacing: 1.33px;
+    font-weight: 400;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.confirm__button {
+    padding: 15px 0;
+    width: 380px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 30px;
+    border: 3px solid #3a5cac;
+    background-color: #3a5cac;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2.22px;
+    cursor: pointer;
+    user-select: none
+}
+
+.confirm__button:focus {
+    outline: none;
+    border-color: #3a5cac;
+}
+
+.confirm__button:active,
+.confirm__button:visited {
+    background-color: #3a5cac
+}
+
+@media (min-width: 1024px) {
+    .confirm__title {
+        margin-bottom: 65px;
+    }
+    .confirm__body {
+        letter-spacing: 1.78px;
+        margin-bottom: 40px;
+    }
+
+    .confirm__button {
+        letter-spacing: 1.78px;
+        height: 60px;
+    }
+}

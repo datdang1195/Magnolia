@@ -1,0 +1,212 @@
+!content-type:enrolledProgram
+name: Enrolled-Program
+icon: icon-sitemaps-app
+
+#
+subApps:
+  browser:
+    workbench:
+      editable: false
+      contentViews: !override
+        - name: list
+          class: info.magnolia.ui.workbench.list.ListPresenterDefinition
+          columns:
+            - name: path
+              expandRatio: 2
+              enabled: false
+            - name: user
+              label: User
+              expandRatio: 3
+              refItemPropertyName: user
+              referencedItemWorkspace: users
+              referencedItemPropertyName: jcrName
+              formatterClass: vn.ekino.certificate.workbench.ReferencedJcrItemColumnFormatter
+              class: vn.ekino.certificate.workbench.ReferencedJcrItemColumnDefinition
+              sortable: true
+            - name: program
+              label: Program
+              expandRatio: 3
+              refItemPropertyName: program
+              referencedItemWorkspace: programs
+              referencedItemPropertyName: name
+              formatterClass: vn.ekino.certificate.workbench.ReferencedJcrItemColumnFormatter
+              class: vn.ekino.certificate.workbench.ReferencedJcrItemColumnDefinition
+              sortable: true
+            - name: enrollStatus
+              expandRatio: 2
+              label: Enroll Status
+              propertyName: enrollStatus
+              class: info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition
+              sortable: true
+    actions:
+      activate:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+      deactivate:
+        command: deactivate
+        icon: icon-unpublish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.DeactivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+            - name: IsPublishedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsPublishedRule
+      activateDeleted:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsDeletedRule
+      savePublish:
+        class: 'vn.ekino.certificate.action.SaveFormActionDefinition'
+        availability:
+          root: 'true'
+          nodeTypes:
+            content: 'mgnl:enrolledProgram'
+
+  detail:
+    actions:
+      savePublish:
+        class: vn.ekino.certificate.action.SaveAndSendMailActionDefinition
+        label: Save & Send mail
+      commit:
+        class: vn.ekino.certificate.action.SaveFormActionDefinition
+      cancel:
+        class: info.magnolia.ui.form.action.CancelFormActionDefinition
+
+    editor:
+      actions: !override
+        - name: savePublish
+        - name: commit
+        - name: cancel
+      actionArea:
+        actionRenderers:
+          commit:
+            rendererClass: vn.ekino.certificate.render.UniqueActionRender
+          cancel:
+            rendererClass: vn.ekino.certificate.render.CertificateActionRender
+          savePublish:
+            rendererClass: vn.ekino.certificate.render.CertificateActionRender
+      form:
+        tabs:
+          default:
+            name: enrolledProgramTab
+            fields:
+              - name: name
+                fieldType: hidden
+                type: String
+                required: false
+              - name: user
+                fieldType: select
+                label: User
+                repository: users
+                path: /admin
+                labelProperty: jcrName
+                valueProperty: 'jcr:uuid'
+              - name: program
+                fieldType: combobox
+                targetFieldName: enrollStatus
+                targetFieldType: switchable
+                implementationMethod: checkProgramFinish
+                label: Program
+                repository: programs
+                path: /
+                labelProperty: name
+                valueProperty: 'jcr:uuid'
+              - name: enrollType
+                fieldType: select
+                label: Enroll Type
+                required: true
+                options:
+                  - name: semester1
+                    value: Semester 1
+                    label: Semester 1
+                  - name: semester2
+                    value: Semester 2
+                    label: Semester 2
+                  - name: fullProgram
+                    value: Full Program
+                    label: Full Program
+              - name: enrollStatus
+                fieldType: CustomSwitchable
+                checkProgramFinish: true
+                label: Enrol Status
+                selectionType: select
+                transformerClass: info.magnolia.ui.form.field.transformer.composite.DelegatingCompositeFieldTransformer
+                type: String
+                options:
+                  - name: approved
+                    value: approved
+                    label: Approved
+                  - name: refused
+                    value: refused
+                    label: Refused
+                  - name: enrolled
+                    value: enrolled
+                    label: Enrolled
+                  - name: suspend
+                    value: suspend
+                    label: Suspend
+                fields:
+                  - name: refused
+                    fieldType: composite
+                    label: ''
+                    layout: vertical
+                    fields:
+                      - name: reason
+                        fieldType: text
+                        label: Reason
+                  - name: approved
+                    fieldType: hidden
+                  - name: enrolled
+                    fieldType: hidden
+                  - name: suspend
+                    fieldType: hidden
+              - name: isTrainer
+                fieldType: checkbox
+                label: Roles
+                buttonLabel: Trainer
+              - name: isParticipant
+                fieldType: checkbox
+                label: ""
+                defaultValue: true
+                buttonLabel: Participant
+              - name: participantStatus
+                fieldType: select
+                label: Participant Status
+                options:
+                  - name: On-going
+                    value: On-going
+                    label: On-going
+                    selected: true
+                  - name: Finished
+                    value: Finished
+                    label: Finished
+                  - name: Cancelled
+                    value: Cancelled
+                    label: Cancelled
+                  - name: Pending
+                    value: Pending
+                    label: Pending
+              - name: cancelDate
+                fieldType: date
+                time: false
+                type: Date
+                label: Cancel Date

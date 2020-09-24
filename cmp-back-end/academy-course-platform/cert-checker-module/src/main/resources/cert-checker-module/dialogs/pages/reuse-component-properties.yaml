@@ -1,0 +1,29 @@
+form:
+  tabs:
+    - name: tabMain
+      fields:
+        - name: type
+          fieldType: select
+          label: Component Type
+          options:
+            - name: header
+              value: header
+              selected: true
+              label: Header
+            - name: footer
+              value: footer
+              label: Footer
+        - name: referenceLink
+          fieldType: link
+          required: true
+          targetWorkspace: website
+          appName: pages
+          label: Reference
+          defaultValue: '/manage-header-footer'
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+    implementationClass: vn.ekino.certificate.action.SaveReuseComponentDialogAction
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

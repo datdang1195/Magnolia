@@ -1,0 +1,6 @@
+'academy-filter': 
+  'class': 'vn.ekino.certificate.config.permission.AcademyPermissionFilter'
+  'enabled': 'true'
+  jcr:primaryType: 'mgnl:content'
+
+

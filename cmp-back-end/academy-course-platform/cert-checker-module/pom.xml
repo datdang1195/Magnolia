@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>academy-course-platform</artifactId>
+    <groupId>vn.ekino</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <groupId>vn.ekino.certificate</groupId>
+  <artifactId>cert-checker-module</artifactId>
+  <version>1.0</version>
+  <packaging>jar</packaging>
+  <name>cert-checker-module</name>
+  <!--
+  <description>Please uncomment and fill in ...</description>
+  -->
+  <properties>
+    <magnoliaBundleVersion>6.1.1</magnoliaBundleVersion>
+    <javaVersion>11</javaVersion>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>info.magnolia.bundle</groupId>
+        <artifactId>magnolia-bundle-parent</artifactId>
+        <version>${magnoliaBundleVersion}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>info.magnolia</groupId>
+      <artifactId>magnolia-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.ui</groupId>
+      <artifactId>magnolia-ui-framework-compatibility</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.rest</groupId>
+      <artifactId>magnolia-rest-content-delivery</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.dam</groupId>
+      <artifactId>magnolia-dam-app</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.dam</groupId>
+      <artifactId>magnolia-dam-templating</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia</groupId>
+      <artifactId>magnolia-jaas</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.rest</groupId>
+      <artifactId>magnolia-rest-integration</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.rest</groupId>
+      <artifactId>magnolia-rest-tools</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.rest</groupId>
+      <artifactId>magnolia-rest-content-delivery</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.rest</groupId>
+      <artifactId>magnolia-rest-services</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia</groupId>
+      <artifactId>magnolia-module-mail</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.security</groupId>
+      <artifactId>magnolia-security-app</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.cache</groupId>
+      <artifactId>magnolia-cache-core</artifactId>
+      <version>5.9.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.zxing</groupId>
+      <artifactId>core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.google.zxing</groupId>
+      <artifactId>javase</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.itextpdf</groupId>
+      <artifactId>itextpdf</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.jooq</groupId>
+      <artifactId>jool</artifactId>
+      <version>0.9.14</version>
+    </dependency>
+
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.jaxrs</groupId>
+      <artifactId>jackson-jaxrs-json-provider</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.datatype</groupId>
+      <artifactId>jackson-datatype-jsr310</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>4.0.1</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-ooxml</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.sendgrid</groupId>
+      <artifactId>sendgrid-java</artifactId>
+      <version>4.4.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.redisson</groupId>
+      <artifactId>redisson</artifactId>
+      <version>3.13.0</version>
+    </dependency>
+
+
+    <!-- TEST -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.7.0</version>
+        <configuration>
+          <source>${javaVersion}</source>
+          <target>${javaVersion}</target>
+        </configuration>
+      </plugin>
+    </plugins>
+
+    <!-- default resources configuration which will filter the module descriptor Color parameter outside of expected range: Red Green Blue-->
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <includes>
+          <include>**/*</include>
+        </includes>
+      </resource>
+      <resource>
+        <filtering>true</filtering>
+        <directory>src/main/resources</directory>
+        <includes>
+          <include>META-INF/magnolia/*</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>
+
+  <repositories>
+    <repository>
+      <id>magnolia.public</id>
+      <url>https://nexus.magnolia-cms.com/content/groups/public</url>
+      <snapshots>
+      </snapshots>
+    </repository>
+    <!-- IF YOU NEED MODULES FROM THE ENTERPRISE VERSION, UNCOMMENT THE FOLLOWING REPOSITORY -->
+    <!--
+    <repository>
+      <id>magnolia.enterprise.releases</id>
+      <url>https://nexus.magnolia-cms.com/content/repositories/magnolia.enterprise.releases</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    -->
+    <repository>
+      <id>vaadin-addons</id>
+      <url>https://maven.vaadin.com/vaadin-addons</url>
+    </repository>
+  </repositories>
+
+</project>

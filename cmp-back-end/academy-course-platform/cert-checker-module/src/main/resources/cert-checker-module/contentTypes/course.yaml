@@ -1,0 +1,20 @@
+datasource:
+  workspace: courses
+  autoCreate: true
+
+model:
+  nodeType: mgnl:course
+  properties:
+  - name: name
+    required: true
+  - name: courseId
+    required: true
+  - name: description
+    required: true
+  - name: outline
+    required: true
+  - name: prerequisites
+  - name: category
+    required: true
+  - name: group
+

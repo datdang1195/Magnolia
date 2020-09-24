@@ -1,0 +1,205 @@
+.session-filter .wrapper-filter {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.session-filter .wrapper-item {
+    position: relative;
+    cursor: pointer;
+    padding-left: 40px;
+    margin-top: 15px;
+}
+
+.session-filter .wrapper-item input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.session-filter .wrapper-item input[type=radio]+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32px;
+    width: 32px;
+    border: 1px solid #979797;
+    border-radius: 50%;
+}
+
+.session-filter .wrapper-item input[type=radio]:disabled+.checkmark {
+    background-color: #e6e6e6;
+    cursor: not-allowed;
+}
+
+.session-filter .wrapper-item input[type=checkbox]+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    border: 1px solid #979797;
+}
+
+.session-filter .wrapper-item .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.session-filter input:checked~.checkmark:after {
+    display: block;
+}
+
+.session-filter input[type=radio]+.checkmark:after {
+    top: 7px;
+    left: 7px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #3a5cac;
+}
+
+.session-filter input[type=checkbox]+.checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid #6ac259;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.session-filter .content__title {
+    color: #4a4a4a;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.78px;
+    text-transform: uppercase;
+}
+
+.session-filter .content__time {
+    color: #4a4a4a;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.78px;
+    text-transform: uppercase;
+}
+
+.session-filter.session-filter--phase {
+    margin: 10px 15px;
+    overflow: auto;
+}
+
+.session-filter.session-filter--phase .wrapper-filter {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    position: relative;
+}
+
+.session-filter .wrapper-item.wrapper-item--phase {
+    padding-left: 0;
+    border-bottom: 1px solid #b1b1b1;
+    margin-bottom: 5px;
+    padding-bottom: 15px;
+}
+
+.session-filter.session-filter--phase .content__title {
+    font-weight: 400;
+}
+
+.session-filter.session-filter--phase .wrapper-item.active .content__title,
+.session-filter.session-filter--phase .wrapper-item:hover .content__title {
+    font-weight: 700;
+}
+
+.session-filter.session-filter--phase .wrapper-item.disabled {
+    cursor: not-allowed;
+}
+
+.session-filter.session-filter--phase .wrapper-item.disabled .content__title {
+    opacity: .8;
+}
+
+.session-filter.session-filter--phase .wrapper-item.disabled:hover .content__title {
+    font-weight: 400;
+}
+
+.phase-bar {
+    opacity: 0;
+    position: absolute;
+    width: 200px;
+    height: 8px;
+    background-color: #3a5cac;
+    bottom: 2px;
+    cursor: pointer;
+    pointer-events: none;
+    transition: left .2s ease-out;
+}
+
+.wrapper-item--phase {
+    flex: 1 1 25%;
+}
+
+.wrapper-item--phase.active ~ .phase-bar {
+    opacity: 1;
+}
+
+.wrapper-item--phase:nth-child(1).active ~ .phase-bar {
+    left: 0;
+}
+
+.wrapper-item--phase:nth-child(2).active ~ .phase-bar {
+    left: 25%;
+}
+
+.wrapper-item--phase:nth-child(3).active ~ .phase-bar {
+    left: 50%;
+}
+
+.wrapper-item--phase:nth-child(4).active ~ .phase-bar {
+    left: 75%;
+}
+
+@media (max-width: 768px) {
+    .session-filter .wrapper-filter {
+        justify-content: space-between;
+    }
+
+    .session-filter .content__title {
+        font-size: 14px;
+        letter-spacing: 1.56px;
+    }
+
+    .session-filter .content__time {
+        font-size: 14px;
+        letter-spacing: 1.56px;
+    }
+
+    .session-filter .wrapper-item {
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+
+    .phase-bar {
+        width: 140px;
+    }
+
+    .wrapper-item--phase {
+        flex: 0 0 170px;
+    }
+
+    .wrapper-item--phase:nth-child(2).active ~ .phase-bar {
+        left: 170px;
+    }
+    
+    .wrapper-item--phase:nth-child(3).active ~ .phase-bar {
+        left: 340px;
+    }
+    
+    .wrapper-item--phase:nth-child(4).active ~ .phase-bar {
+        left: 510px;
+    }
+}

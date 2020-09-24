@@ -1,0 +1,15 @@
+datasource:
+  workspace: programs
+  autoCreate: true
+
+model:
+  nodeType: mgnl:program
+  properties:
+    - name: name
+    - name: group
+    - name: phase
+    - name: startDate
+    - name: endDate
+    - name: status
+    - name: certificateTemplateImage
+    - name: descriptionList

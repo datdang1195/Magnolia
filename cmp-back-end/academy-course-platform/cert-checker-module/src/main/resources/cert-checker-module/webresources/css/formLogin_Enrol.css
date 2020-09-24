@@ -1,0 +1,278 @@
+.app-wrapper__enrol,
+.app-wrapper__login {
+    padding: 0 20px;
+}
+.container-form {
+    width: 417px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+.container-form .enrol-form .horizontal-vertical {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container-form .enrol-form .horizontal-vertical .form-group--width {
+    width: 49%;
+}
+.icon-check{
+    background-image: url('../images/icon-check-mobile.png');
+    width: 61px;
+    height: 61px;
+    display: block;
+    margin: auto;
+    margin-bottom: 12px;
+}
+
+.container-form .form-group {
+    padding-bottom: 18px;
+    position: relative;
+}
+.container-form .form-group .eye {
+    position: absolute;
+    top: 37px;
+    right: 11px;
+    width: 26px;
+    height: 16px;
+    background-image: url('../images/eye_desk.png');
+}
+.container-form .form-group .credentials-error,
+.container-form .credentials-email-error {
+    color: red;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.33px;
+    line-height: 22px;
+    padding-top: 20px;
+    text-align: center;
+    opacity: 0.6;
+}
+.container-form .form-group label.error {
+    color: red;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.33px;
+    line-height: 22px;
+    text-transform: none;
+    padding-bottom: 0;
+}
+.container-form .form-group .eye.active {
+    background-image: url('../images/eye-active-desk.png');
+}
+.container-form .form-group label {
+    color: rgba(74,74,74,0.6);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.56px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+.container-form .form-group .asterisk {
+    font-size: 12px;
+    margin-left: 1px;
+}
+.container-form .form-group .form-control__input {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #979797;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.56px;
+    padding-left: 12px;
+    border-radius: 0;
+    margin-bottom: 1px;
+}
+.container-form .form-group .form-control__select {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #979797;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.56px;
+    border-radius: 0;
+    position: relative;
+}
+.container-form .form-group .form-control__select .select-value {
+    padding-left: 12px;
+    line-height: 46px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.container-form .form-group .form-control__select .select-value.unselected {
+    opacity: 0.5;
+    background-color: #d8d8d8;
+}
+.container-form .form-group .form-control__select::after {
+    content: '';
+    position: absolute;
+    right: 11px;
+    top: 20px;
+    z-index: 1;
+    background-image: url('../images/dropdown.png');
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 17px;
+}
+.container-form .form-group .form-control__select .select {
+    width: 100%;
+    height: 47px;
+    border: 1px solid #979797;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.56px;
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+}
+.container-form .form-group .form-control__select select:disabled {
+    cursor: not-allowed;
+}
+
+.container-form .btn {
+    text-align: center;
+    margin: 15px 0 5px;
+}
+
+.container-form .enrol__link {
+    color: #3a5cac;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.78px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.app-wrapper__login .wrapper-action {
+    padding-left: 20px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-form .forgot-password .forgot__title {
+    opacity: 0.6;
+    color: #4a4a4a;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1.56px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-style: italic;
+}
+.app-wrapper__login .wrapper-action .remember>.remember__label {
+    position: static;
+    display: inline;
+    padding: 0;
+    user-select: none;
+    color: rgba(74, 74, 74, 0.6);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1.56px;
+    text-transform: uppercase;
+}
+.wrapper-action .remember__label>.form-control__checkbox {
+    margin: 0;
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    margin-top: 1px;
+    margin-left: -1.25rem
+}
+
+.container-form .btn.btn--margin {
+    padding-top: 53px;
+}
+
+.container-form .btn .btn__login,
+.container-form .btn .btn__enrol {
+    width: 388px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #3a5cac;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2.22px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.form-group.wrapper-action > .remember__label {
+    position: static;
+    display: inline-block;
+    padding: 0;
+    user-select: none;
+    height: 14px;
+}
+
+.wrapper-action .remember__label > .form-control__checkbox {
+    margin: 0;
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    margin-top: 0.1rem;
+    margin-left: -1.25rem
+}
+.container-form .btn button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.wrapper-enrol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+.wrapper-enrol .enrol-label {
+    opacity: 0.6;
+    color: #4a4a4a;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.88px;
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .container-form {
+        width: 100%;
+        padding-top: 0;
+    }
+    .container-form .enrol-form .horizontal-vertical {
+        flex-direction: column;
+    }
+    .container-form .enrol-form .horizontal-vertical .form-group--width {
+        width: 100%;
+    }
+    .container-form .form-group label {
+        font-size: 12px;
+        letter-spacing: 1.33px;
+    }
+    .container-form .btn.btn--margin {
+        padding-top: 24px;
+    }
+    .container-form .btn .btn__login,
+    .container-form .btn .btn__enrol {
+        width: 280px;
+        height: 48px;
+        font-size: 16px;
+        letter-spacing: 1.78px;
+        max-width: 100%;
+    }
+
+    .form-group.wrapper-action > .remember__label {
+        display: inline;
+        height: 100%;
+    }
+
+}

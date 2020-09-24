@@ -1,0 +1,75 @@
+'roles': 
+  jcr:mixinTypes: ['mgnl:hasVersion']
+  jcr:primaryType: 'mgnl:folder'
+  jcr:uuid: '0dc78a5d-19fa-4d02-9945-a7803c316f18'
+  mgnl:activationStatus: true
+  mgnl:created: 2019-11-11T08:04:21.785Z
+  mgnl:createdBy: 'superuser'
+  mgnl:lastActivated: 2020-09-22T03:09:55.832Z
+  mgnl:lastActivatedBy: 'superuser'
+  mgnl:lastModified: 2020-09-22T03:10:10.361Z
+  mgnl:lastModifiedBy: 'anonymous'
+  'QC': 
+    'displayName': 'QC'
+    'level': 'level-1'
+    'name': 'QC'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: '6f06285c-fd15-466b-b253-8946271e49e7'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-11-11T08:05:42.194Z
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2020-09-22T03:09:56.265Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2020-09-22T03:10:11.124Z
+    mgnl:lastModifiedBy: 'anonymous'
+  'PM': 
+    'displayName': 'PM'
+    'level': 'level-1'
+    'name': 'PM'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: '1593a59c-cab8-4a8c-8b91-3011a77b7803'
+    mgnl:activationStatus: true
+    mgnl:created: 2020-01-02T16:23:04.016Z
+    mgnl:createdBy: 'superuser1'
+    mgnl:lastActivated: 2020-09-22T03:09:56.203Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2020-09-22T03:10:10.935Z
+    mgnl:lastModifiedBy: 'anonymous'
+  'Tech-lead': 
+    'displayName': 'Tech lead'
+    'level': 'level-1'
+    'name': 'Tech lead'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: 'fa840771-14e3-41cb-91d5-07e6ada98759'
+    mgnl:activationStatus: true
+    mgnl:created: 2020-09-09T09:14:58.713Z
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2020-09-22T03:09:56.093Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2020-09-22T03:10:10.742Z
+    mgnl:lastModifiedBy: 'anonymous'
+  'Back-End': 
+    'displayName': 'Back-End'
+    'level': 'level-1'
+    'name': 'Back-End'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: '6948f48c-3d29-48d1-a2b9-090b84a4090d'
+    mgnl:created: 2020-09-22T03:01:14.503Z
+    mgnl:createdBy: 'thu-thuan.vo-thi@ekino.com'
+    mgnl:lastModified: 2020-09-22T03:01:14.503Z
+    mgnl:lastModifiedBy: 'thu-thuan.vo-thi@ekino.com'
+  'Front-End': 
+    'displayName': 'Front-End'
+    'level': 'level-1'
+    'name': 'Front-End'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: 'c63a3cb8-dd5d-4700-b11c-69dc158f0490'
+    mgnl:activationStatus: true
+    mgnl:created: 2020-09-22T03:09:27.924Z
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2020-09-22T03:09:55.919Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2020-09-22T03:10:10.534Z
+    mgnl:lastModifiedBy: 'anonymous'
+
+

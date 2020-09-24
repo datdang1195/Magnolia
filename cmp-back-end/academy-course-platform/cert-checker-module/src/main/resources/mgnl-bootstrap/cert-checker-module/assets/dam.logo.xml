@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sv:node xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" sv:name="logo">
+  <sv:property sv:name="jcr:primaryType" sv:type="Name">
+    <sv:value>mgnl:folder</sv:value>
+  </sv:property>
+  <sv:property sv:name="jcr:uuid" sv:type="String">
+    <sv:value>52dabcca-82e5-462b-895c-02976603bfd8</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:created" sv:type="Date">
+    <sv:value>2019-10-04T12:04:04.225+07:00</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:createdBy" sv:type="String">
+    <sv:value>superuser</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+    <sv:value>2019-10-04T14:39:59.164+07:00</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+    <sv:value>superuser</sv:value>
+  </sv:property>
+  <sv:node sv:name="logo-ekino-academy-desk.png">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:asset</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>4b19c7bb-ce9d-4b62-9cdc-1ccc733912e1</sv:value>
+    </sv:property>
+    <sv:property sv:name="metadataStandard" sv:type="String">
+      <sv:value>Simple Dublin Core Metadata Element Set (DCMES)</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2019-10-04T12:04:22.008+07:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2019-10-04T12:04:22.008+07:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>logo-ekino-academy-desk</sv:value>
+    </sv:property>
+    <sv:node sv:name="jcr:content">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:resource</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>9da4fde0-5c96-45b8-8954-c640538500f7</sv:value>
+      </sv:property>
+      <sv:property sv:name="extension" sv:type="String">
+        <sv:value>png</sv:value>
+      </sv:property>
+      <sv:property sv:name="fileName" sv:type="String">
+        <sv:value>logo-ekino-academy-desk.png</sv:value>
+      </sv:property>
+      <sv:property sv:name="height" sv:type="Long">
+        <sv:value>72</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:data" sv:type="Binary">
+        <sv:value>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</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:lastModified" sv:type="Date">
+        <sv:value>2019-10-04T12:04:19.794+07:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:lastModifiedBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:mimeType" sv:type="String">
+        <sv:value>image/png</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2019-10-04T12:04:22.011+07:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2019-10-04T12:04:22.011+07:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="size" sv:type="Long">
+        <sv:value>7963</sv:value>
+      </sv:property>
+      <sv:property sv:name="width" sv:type="Long">
+        <sv:value>86</sv:value>
+      </sv:property>
+    </sv:node>
+  </sv:node>
+  <sv:node sv:name="logoAcademyFooter.png">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:asset</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>9eaedea6-5af5-4279-9c92-c7452f9d9d99</sv:value>
+    </sv:property>
+    <sv:property sv:name="metadataStandard" sv:type="String">
+      <sv:value>Simple Dublin Core Metadata Element Set (DCMES)</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2019-10-04T14:39:59.165+07:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2019-10-04T14:39:59.165+07:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>logoAcademyFooter</sv:value>
+    </sv:property>
+    <sv:node sv:name="jcr:content">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:resource</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>b81afbfd-4429-4947-a117-7096fce5db61</sv:value>
+      </sv:property>
+      <sv:property sv:name="extension" sv:type="String">
+        <sv:value>png</sv:value>
+      </sv:property>
+      <sv:property sv:name="fileName" sv:type="String">
+        <sv:value>logoAcademyFooter.png</sv:value>
+      </sv:property>
+      <sv:property sv:name="height" sv:type="Long">
+        <sv:value>50</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:data" sv:type="Binary">
+        <sv:value>iVBORw0KGgoAAAANSUhEUgAAADwAAAAyCAMAAAA3KEgwAAAAAXNSR0IB2cksfwAAAvpQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Oov7nAAAAP50Uk5TAAciSWqJm6q9yszNybyahmdFHgUMSIW03uK5iI6LjJCSjY+hwunfsn9BCRdltsuRip7G+v3/+ebB2OywXBFS6rfxp3ZbX+3D7qlHBs+V/PSDTR8OyJTbnw/zgPjvUfWE5QFWJev2XgoS1j7S4AID5yutV9W60zyobaKuECgVL/7RwMcq41OTmTegfFqdnM5jbDjcFFl3h09hMiRxYnRddUwNIET7eARGGoJ5UE5zr2RLJxwIWLNgq2tV9+SYNbU5elTylzE2gW/EcB3ZFqUsJqN9O+hm2rFDuBiWpqw/1L/Qu0IzIS2kQHJovgsuxd004RtKbjAjOhMpPRl7fvDZUfPtAAAHlElEQVR4nI2WCVhTVxbHL7RlKUvRKCgEQhIDgqxJ7gMEQaIEkkgoYspq5RUQZAk1gAgFnyATAVFBFFHBqtW0RdEiIMimgrRFilAVRcpoaW3dpkxpO5V2pt839yWBBIozPd+X+753z/nlnvO/y7sAzGM6uq+8+pqevoHh60bGJvqmb5gtWEiZL+5PtmixucWSpZamVlRrG5qtLY1uw6Azl7Hs7Jc7OP5vcoWTM8vF1Y3uzmZxuFBtXMzDU49uY+q10ttn1ctIR197v9XWrqv9IeSw2Dy3NU5rA6DG+N40WmCQQCiaF7ZcRwteJ4Yhy94MXa8uMQzOMs4GV8lb4fOxEZFR0TCGuVE7szkwsrc3xeKzuXfIJi4+PGFz4mzHn2HICEmaQUhz2EK2ySkmqWng/8JMvzjkkKa/qw7ZmkK2MucM9txS5oEzs7YhRxpLog5JzSbb7Tn8XPI/fd/Ly4/YgW/TwBxCrRfZ7DTwJT0Fhcrkd4GivwEkQpRcvBu9F5esebU4rzQtfAZ23hNetnefu7v7/hL0FqvvBFB4uQuoEAKfA5Vy0cFDADBciSoUvzD3cPWRo8dw1xk4qgYtlFoMQvPj6C3B9H2Abzpx0uYU6wOge/q1wzSsAoAyW+IMCZgpPjz6ke8papI2DKlQDXPlHwMQerruLDMyCeA5RWXEJhSYbUuUk7CeiEy7nH7uZbAN0ktPTA1xQ+lHWMbUk1N03hZeUAqn+KThoqwheMX8MCEndaaYR2Y34sD6ZGITcECz1mwLL6Huj1qE8kO6rbibpubLS0MQ3NZer4QlHQBUdIJLaZWlwD4zKbQ1Jh+ALlu4GcVf6bjKK5mltnkjZZXQ91qlSOeCcmQ0Jw3dMlmEy25wmIg6xOkBypFJmBKQL7y+qhdfMAOLMX+jT/M/+zwIEythNDJ+vruPIa4Aae6s9p2kslsl0OkvrDAi2BY5btj1R1qhxUHZnvlFYh4AAxJi+1zYsaXZcwuLqw1zg5EaN0WnlgUglUt3gOpEAxkAHXKibhpKG5QtHzJIsUv3sNtpIugJ7vCcgTk9XwLQp0+pAbf6wP63zzktj14IgJWcazMNr0Wr2Y8V4PHmbTusHw1MuM7A/CGU3xHunTs12CegcUOkfHgApV9bFnm3V21mSKaKD+6Z+QYIq31K0IaIMlZbt9fIQbR7TNhMzEKKJtYS87ofFgZ8uoY1O578jTIYjL1fjR3Tfx3Cv0/n9ODh1w6gsjGuPbpFeeRI7+0Rje8CyVnjM7BFT7BE//N+jyB+7JaCgU9lcVI12+jHjB8E33yV1voteRpJaa9IWwOIfPAoxnTWlHi4dAl2z5X/IocaGQG+I4TlisvmCL8m/v79u1lpQIdP10JVD/+58GPI6AdAdJtZ34WRpeCl4iXdF/A4UEhVk+lXb66vEYi14EXT8BNIGwOD4Et/O+ypqueK6TNKaBmQjGJKNiO0cvCzdBcr7jTcuIY/FqcKFdzm1QH74ufG8n+oOihSEKBrshUcDDQmWawJHQhjKT8sZapg6dl+1NtGRXsHiNq9J5IBe+ifoUChUMKPCuk7rv4YDCb9e0h4ZBcQZY8FuJyWECSsOw757IcFWZz4Y1LQCV1jHEGucdT1Uc981dA/dfsH+vs+dzKkkzrZ4MAHPfZ5+8STcOM7NHYI5MYOCH7GQRXHNrdc0coPTIi/Mi3DYFl/7POzD9acJ5cJXQEm9ddB7JfGIFXNt6KNed6pX+P3gKI9sNDHr2IyPkN+UXsOvquvF/9rpQTBxlZhAPwK2Y6dasEiXpBz8kj0M94E6awp6PPxDW0Sl9351YzJFeVK0OeVMGcAMJnQp2s5e54XrdXZV5QjvwH3Nj1+GqrlmMoiUtOX4Nva9dDQMSfQ3y0+ur+g4OHIh/d++zbvdx1VVDVBXRmn6F7qAdkLtcdurMnhfV+Mj9WtNskcH99QhHEJzWojuDEZmXp1TS0Wo6Ng8ZAgvEkxd+WJGvZSH7LQXkSpZ3WFwAFv6GxlwW12L/yRzb0dTR4n0V5j/2YkzQVJMxWrBrJ6kWLQcHD5yrjf25wuTd112OhthfMoglrTcr7qNLg/D5wN4fkE5BQed2Jc8xvL/aXSYn/VbyW9l1Nqp/InLTc4/gc5C+0gNjkvPPTiVgiMXh+ab3gzj15FM2dYL6hPkHValVtX3zT6I7EbsWG9w/PAaZXZ8EGFG7p0jBCp0cTpWcctt20iuptcu9i1nwgs7+QsMn9P2fCzbBjCmY5ui834wdKi2aI5PCe7+ZnRBH9G+z8I7EmQ5ZlizQWE/JIFZpOzEmkYXicTDlUdN2z3T2jD4gGuW7pleOQwbfTEU2sLO1Jy7Alq7DTXyaOoM1Av0FrWoDqr3l2d7tpRhGIS3jAiiLckwX689UrHe8l9PK9jyDGgSZsyAeGB0PuaCxb+jXM8j8orIogJJnUsXtCpiV3USx51Wh8mqZey0Ad61buma8Gnqg7EtjBod1lZpY+m4+6fqyoIUpa/WQN/oVKKMywoTdYoIb1e6mlZm6fpuHhBXhCj+nBJNLAQEun2Zx6/9EqrZdKGPZJ1CdBYU+Li2iM6fwGcsRUbzZV33/8Cz0bnNrNwEvkAAAAASUVORK5CYII=</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:lastModified" sv:type="Date">
+        <sv:value>2019-10-04T14:39:57.071+07:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:lastModifiedBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:mimeType" sv:type="String">
+        <sv:value>image/png</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2019-10-04T14:39:59.169+07:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2019-10-04T14:39:59.169+07:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="size" sv:type="Long">
+        <sv:value>3050</sv:value>
+      </sv:property>
+      <sv:property sv:name="width" sv:type="Long">
+        <sv:value>60</sv:value>
+      </sv:property>
+    </sv:node>
+  </sv:node>
+</sv:node>
+

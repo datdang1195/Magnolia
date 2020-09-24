@@ -1,0 +1,31 @@
+form:
+  tabs:
+    - name: tabMain
+      fields:
+        - name: title
+          label: Title
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+        - name: scheduleIconUrl
+          fieldType: link
+          required: true
+          targetWorkspace: website
+          appName: pages
+          label: Schedule Icon Link
+        - name: OJTTrainingUrl
+          fieldType: link
+          required: true
+          targetWorkspace: website
+          appName: pages
+          label: OJT Training Link
+        - name: courseDetailUrl
+          fieldType: link
+          required: true
+          targetWorkspace: website
+          appName: pages
+          label: Course Detail Link
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

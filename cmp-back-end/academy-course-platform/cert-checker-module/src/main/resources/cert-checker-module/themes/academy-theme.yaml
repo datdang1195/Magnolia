@@ -1,0 +1,14 @@
+imaging:
+  class: info.magnolia.templating.imaging.VariationAwareImagingSupport
+  variations:
+    small-square:
+      class: info.magnolia.templating.imaging.variation.SimpleResizeVariation
+      height: 150
+      width: 150
+      crop: true
+    thumbnail:
+      class: info.magnolia.templating.imaging.variation.SimpleResizeVariation
+      height: 200
+    medium:
+      class: info.magnolia.templating.imaging.variation.SimpleResizeVariation
+      height: 500

@@ -1,0 +1,11 @@
+datasource:
+  workspace: enrolledProgram
+  autoCreate: true
+
+model:
+  nodeType: mgnl:enrolledProgram
+  properties:
+    - name: user
+      required: true
+    - name: program
+      required: true

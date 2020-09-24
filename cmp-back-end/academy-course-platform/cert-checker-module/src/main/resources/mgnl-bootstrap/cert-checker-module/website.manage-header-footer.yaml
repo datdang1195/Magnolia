@@ -1,0 +1,77 @@
+'manage-header-footer': 
+  jcr:primaryType: 'mgnl:page'
+  jcr:uuid: '81954d8d-567e-467e-87ca-9ddc5a0967aa'
+  mgnl:created: 2019-10-08T16:35:41.849+07:00
+  mgnl:createdBy: 'superuser'
+  mgnl:lastModified: 2019-10-08T16:58:49.068+07:00
+  mgnl:lastModifiedBy: 'superuser'
+  mgnl:template: 'cert-checker-module:pages/reuse-content-page'
+  'header': 
+    jcr:primaryType: 'mgnl:area'
+    jcr:uuid: 'b215c9b4-e7ec-44db-8f54-afad275a1e79'
+    mgnl:created: 2019-10-08T16:35:45.388+07:00
+    mgnl:createdBy: 'superuser'
+    mgnl:lastModified: 2019-10-08T16:58:49.068+07:00
+    mgnl:lastModifiedBy: 'superuser'
+    '0': 
+      'enrolPage': '/enrol'
+      'loginPage': '/login'
+      'logo': 'jcr:4b19c7bb-ce9d-4b62-9cdc-1ccc733912e1'
+      jcr:primaryType: 'mgnl:component'
+      jcr:uuid: 'e2eca270-a890-4303-804d-ecc936f2f1c2'
+      mgnl:created: 2019-10-08T16:56:48.228+07:00
+      mgnl:createdBy: 'superuser'
+      mgnl:lastModified: 2019-10-08T16:58:49.068+07:00
+      mgnl:lastModifiedBy: 'superuser'
+      mgnl:template: 'cert-checker-module:components/header/header-component'
+      'navigation': 
+        jcr:uuid: '01383e5f-4c62-41a2-82d1-d9c1aac6d520'
+        mgnl:created: 2019-10-08T16:56:48.230+07:00
+        mgnl:createdBy: 'superuser'
+        mgnl:lastModified: 2019-10-08T16:58:49.068+07:00
+        mgnl:lastModifiedBy: 'superuser'
+        '00': 
+          'link': '/about'
+          'login': false
+          'title': 'about'
+          jcr:uuid: 'e1c5ca37-04aa-4213-a11a-95f346c86cd5'
+          mgnl:created: 2019-10-08T16:56:48.233+07:00
+          mgnl:createdBy: 'superuser'
+          mgnl:lastModified: 2019-10-08T16:58:49.064+07:00
+          mgnl:lastModifiedBy: 'superuser'
+        '01': 
+          'link': '/my-course'
+          'login': true
+          'title': 'my course'
+          jcr:uuid: '5b7a6cff-5152-45af-83c2-9e5bf00ba512'
+          mgnl:created: 2019-10-08T16:56:48.236+07:00
+          mgnl:createdBy: 'superuser'
+          mgnl:lastModified: 2019-10-08T16:58:49.068+07:00
+          mgnl:lastModifiedBy: 'superuser'
+        '02': 
+          'link': '/general'
+          'login': false
+          'title': 'general'
+          jcr:uuid: '87abb3f2-395b-49dd-85d5-d07e8c7bf5c2'
+          mgnl:created: 2019-10-08T16:56:48.239+07:00
+          mgnl:createdBy: 'superuser'
+          mgnl:lastModified: 2019-10-08T16:58:49.068+07:00
+          mgnl:lastModifiedBy: 'superuser'
+  'footer': 
+    jcr:primaryType: 'mgnl:area'
+    jcr:uuid: '7ab4f076-8e3a-4d97-b327-45ae75a38e59'
+    mgnl:created: 2019-10-08T16:35:45.479+07:00
+    mgnl:createdBy: 'superuser'
+    mgnl:lastModified: 2019-10-08T16:55:49.656+07:00
+    mgnl:lastModifiedBy: 'superuser'
+    '0': 
+      'logo': 'jcr:9eaedea6-5af5-4279-9c92-c7452f9d9d99'
+      jcr:primaryType: 'mgnl:component'
+      jcr:uuid: 'df1f3c8b-6235-4ba7-aa5c-48f5ddb87a0a'
+      mgnl:created: 2019-10-08T16:55:49.664+07:00
+      mgnl:createdBy: 'superuser'
+      mgnl:lastModified: 2019-10-08T16:55:49.664+07:00
+      mgnl:lastModifiedBy: 'superuser'
+      mgnl:template: 'cert-checker-module:components/footer/footer-component'
+
+

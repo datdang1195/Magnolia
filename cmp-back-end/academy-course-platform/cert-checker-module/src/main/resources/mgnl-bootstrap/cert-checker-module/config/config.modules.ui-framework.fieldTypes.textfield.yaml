@@ -1,0 +1,3 @@
+'textfield':
+  'definitionClass': 'vn.ekino.certificate.field.CustomTextFieldDefinition'
+  'factoryClass': 'vn.ekino.certificate.field.CustomTextFieldFactory'

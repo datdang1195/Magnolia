@@ -1,0 +1,85 @@
+templateScript: /cert-checker-module/templates/pages/academy-template-page/academy-template-page.ftl
+renderType: freemarker
+visible: true
+theme:
+  name: academy-theme
+dialog: cert-checker-module:pages/academy-template-page-properties
+areas:
+  header:
+    renderType: freemarker
+    type: single
+    inheritance:
+      enabled: true
+      components: all
+    availableComponents:
+      header-component:
+        id: cert-checker-module:components/header/header-component
+      reuse-component:
+        id: cert-checker-module:components/reuse/reuse-component
+  main:
+    renderType: freemarker
+    availableComponents:
+      dummy-component:
+        id: cert-checker-module:components/dummy-component
+      program-list-component:
+        id: cert-checker-module:components/program-list/program-list-component
+      enrol-component:
+        id: cert-checker-module:components/enrol/enrol-component
+      login-component:
+        id: cert-checker-module:components/login/login-component
+      course-list-component:
+        id: cert-checker-module:components/course-list/course-list-component
+      course-detail-component:
+        id: cert-checker-module:components/course-detail/course-detail-component
+      program-detail-component:
+        id: cert-checker-module:components/program-detail/program-detail-component
+      news-detail-component:
+        id: cert-checker-module:components/news-detail/news-detail-component
+      about:
+        id: cert-checker-module:components/about/about-component
+      calendar:
+        id: cert-checker-module:components/calendar/calendar-component
+      result:
+        id: cert-checker-module:components/result/result-component
+      news-component:
+        id: cert-checker-module:components/news/news-component
+      reset-password:
+        id: cert-checker-module:components/reset-password/reset-password-component
+      forgot-password:
+          id: cert-checker-module:components/forgot-password/forgot-password-component
+      on-job-training-component:
+        id: cert-checker-module:components/on-job-training/on-job-training-component
+      my-progress-component:
+        id: cert-checker-module:components/my-progress/my-progress-component
+      breadcrumb-component:
+        id: cert-checker-module:components/breadcrumb/breadcrumb-component
+      participant-status-component:
+        id: cert-checker-module:components/participant-status/participant-status-component
+      not-found-component:
+        id: cert-checker-module:components/not-found/not-found-component
+      access-denied-component:
+        id: cert-checker-module:components/access-denied/access-denied-component
+      unauthorized-access-component:
+        id: cert-checker-module:components/unauthorized-access/unauthorized-access-component
+      program-status-component:
+        id: cert-checker-module:components/program-status/program-status-component
+      change-password:
+        id: cert-checker-module:components/change-password/change-password-component
+      user-profile:
+        id: cert-checker-module:components/user-profile/user-profile-component
+      course-status:
+        id: cert-checker-module:components/course-status/course-status-component
+  footer:
+    renderType: freemarker
+    type: single
+    inheritance:
+      enabled: true
+      components: all
+    availableComponents:
+      footer-component:
+        id: cert-checker-module:components/footer/footer-component
+      reuse-component:
+        id: cert-checker-module:components/reuse/reuse-component
+
+
+

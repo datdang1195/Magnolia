@@ -1,0 +1,6 @@
+templateScript: /cert-checker-module/templates/components/access-denied/access-denied-component.ftl
+renderType: freemarker
+visible: true
+title: Access Denied Component
+class: info.magnolia.module.site.templates.PageTemplateDefinition
+dialog: cert-checker-module:pages/access-denied-component-properties

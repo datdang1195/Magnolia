@@ -1,0 +1,8 @@
+datasource:
+  workspace: interns
+  autoCreate: true
+
+model:
+  nodeType: mgnl:intern
+  properties:
+    - name: name

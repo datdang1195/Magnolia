@@ -1,0 +1,56 @@
+'assessment-type': 
+  jcr:primaryType: 'mgnl:folder'
+  jcr:uuid: '1705696f-74f8-41e1-a4b3-7b45d2163ac6'
+  mgnl:created: 2019-10-28T15:00:37.690+07:00
+  mgnl:createdBy: 'superuser'
+  mgnl:lastModified: 2019-10-28T15:02:32.897+07:00
+  mgnl:lastModifiedBy: 'superuser'
+  'on-the-job-training': 
+    'displayName': 'On-the-job training'
+    'level': 'level-1'
+    'name': 'on-the-job training'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: 'e5bdc91d-a51f-4aef-8430-8588e449b39a'
+    mgnl:created: 2019-10-28T15:02:10.433+07:00
+    mgnl:createdBy: 'superuser'
+    mgnl:lastModified: 2019-10-28T15:02:10.433+07:00
+    mgnl:lastModifiedBy: 'superuser'
+  'attitude': 
+    'displayName': 'Attitude'
+    'level': 'level-1'
+    'name': 'attitude'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: '89fd576e-af7e-4b52-9a0a-7798f727b7f1'
+    mgnl:created: 2019-10-28T15:02:32.898+07:00
+    mgnl:createdBy: 'superuser'
+    mgnl:lastModified: 2019-10-28T15:03:50.411+07:00
+    mgnl:lastModifiedBy: 'superuser'
+    'relatedUUID': 
+      jcr:uuid: 'bdfa2ffe-696b-485f-b4d9-122298507746'
+      mgnl:created: 2019-10-28T15:03:50.411+07:00
+      mgnl:createdBy: 'superuser'
+      mgnl:lastModified: 2019-10-28T15:03:50.411+07:00
+      mgnl:lastModifiedBy: 'superuser'
+      '22a5c69b-3012-42e6-a': 
+        'relatedUUID': '22a5c69b-3012-42e6-a628-b18b497fa427'
+        jcr:uuid: 'eb26c814-5281-4017-a738-f248dfb014d7'
+        mgnl:created: 2019-10-28T15:03:50.412+07:00
+        mgnl:createdBy: 'superuser'
+        mgnl:lastModified: 2019-10-28T15:03:50.412+07:00
+        mgnl:lastModifiedBy: 'superuser'
+      'fffce992-8b9f-499c-a': 
+        'relatedUUID': 'fffce992-8b9f-499c-abe6-6cc7b6f1afc8'
+        jcr:uuid: '4159ae34-5f00-4ff3-a839-a2ea719c4585'
+        mgnl:created: 2019-10-28T15:03:50.413+07:00
+        mgnl:createdBy: 'superuser'
+        mgnl:lastModified: 2019-10-28T15:03:50.413+07:00
+        mgnl:lastModifiedBy: 'superuser'
+      '92b11110-2c39-4af0-8': 
+        'relatedUUID': '92b11110-2c39-4af0-8fde-4bd787f98a3c'
+        jcr:uuid: 'b82922d5-99b9-4018-99e0-5a9cb82ca354'
+        mgnl:created: 2019-10-28T15:03:50.413+07:00
+        mgnl:createdBy: 'superuser'
+        mgnl:lastModified: 2019-10-28T15:03:50.413+07:00
+        mgnl:lastModifiedBy: 'superuser'
+
+

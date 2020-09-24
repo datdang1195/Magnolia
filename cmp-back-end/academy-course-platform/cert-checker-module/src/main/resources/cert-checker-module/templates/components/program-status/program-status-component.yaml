@@ -1,0 +1,6 @@
+templateScript: /cert-checker-module/templates/components/program-status/program-status-component.ftl
+renderType: freemarker
+class: info.magnolia.module.site.templates.PageTemplateDefinition
+title: Program Status Component
+modelClass: vn.ekino.certificate.model.ProgramStatusModel
+dialog: cert-checker-module:pages/program-status-component-properties

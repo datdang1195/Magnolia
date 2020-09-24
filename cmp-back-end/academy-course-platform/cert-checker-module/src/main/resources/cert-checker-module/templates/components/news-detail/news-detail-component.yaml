@@ -1,0 +1,6 @@
+templateScript: /cert-checker-module/templates/components/news-detail/news-detail-component.ftl
+renderType: freemarker
+visible: true
+title: News Detail Component
+class: info.magnolia.module.site.templates.PageTemplateDefinition
+modelClass: vn.ekino.certificate.model.NewsDetailModel

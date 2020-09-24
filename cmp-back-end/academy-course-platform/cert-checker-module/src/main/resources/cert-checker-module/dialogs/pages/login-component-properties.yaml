@@ -1,0 +1,31 @@
+form:
+  tabs:
+    - name: tabMain
+      fields:
+        - name: title
+          label: Title
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+        - name: successPage
+          fieldType: link
+          required: true
+          targetWorkspace: website
+          appName: pages
+          label: Redirect success page
+        - name: enrolLink
+          fieldType: link
+          required: true
+          targetWorkspace: website
+          appName: pages
+          label: Enrol link
+        - name: forgotLink
+          fieldType: link
+          required: true
+          targetWorkspace: website
+          appName: pages
+          label: Forgot link
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

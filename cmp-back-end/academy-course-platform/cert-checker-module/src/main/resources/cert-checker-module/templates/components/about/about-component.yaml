@@ -1,0 +1,6 @@
+templateScript: /cert-checker-module/templates/components/about/about-component.ftl
+renderType: freemarker
+visible: true
+title: About component
+class: info.magnolia.module.site.templates.PageTemplateDefinition
+dialog: cert-checker-module:components/about/about-component-properties

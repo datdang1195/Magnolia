@@ -1,0 +1,18 @@
+'import': 
+  'actions': 
+    'commit': 
+      'class': 'vn.ekino.certificate.action.ImportActionDefinition'
+      'command': 'import'
+    'cancel': 
+      'class': 'info.magnolia.ui.dialog.action.CancelDialogActionDefinition'
+  'form': 
+    'tabs': 
+      'import': 
+        'fields': 
+          'name': 
+            'allowedMimeTypePattern': 'text/xml|application/x-yaml|application/octet-stream|application/vnd.openxmlformats-officedocument.spreadsheetml.sheet|application/vnd.ms-excel'
+            'binaryNodeName': 'import'
+            'class': 'info.magnolia.ui.form.field.definition.BasicUploadFieldDefinition'
+            'required': 'true'
+
+

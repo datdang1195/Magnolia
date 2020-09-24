@@ -1,0 +1,148 @@
+!content-type:generatedCertificate
+name: Generated-Certificate
+icon: icon-personas-app
+#permissions:
+#  roles:
+#    customer_manager: customer-manager
+#
+subApps:
+  browser:
+    class: 'info.magnolia.ui.contentapp.browser.BrowserSubAppDescriptor'
+    subAppClass: 'info.magnolia.ui.contentapp.browser.BrowserSubApp'
+    workbench:
+      editable: false
+      contentViews: !override
+        - name: list
+          class: info.magnolia.ui.workbench.list.ListPresenterDefinition
+          columns:
+            - name: path
+              enabled: false
+            - name: certificatePage
+              width: 500
+              propertyName: fullPagePath
+              class: info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition
+              sortable: true
+    actions:
+      activate:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+      deactivate:
+        command: deactivate
+        icon: icon-unpublish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.DeactivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+            - name: IsPublishedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsPublishedRule
+      activateDeleted:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsDeletedRule
+      editItem: !override
+        subAppId: detail
+        icon: icon-edit
+        appName: Generated-Certificate
+        class: vn.ekino.certificate.action.ViewItemActionDefinition
+        availability:
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+          nodeTypes:
+            content: 'mgnl:generatedCertificate'
+      savePublish:
+        class: 'vn.ekino.certificate.action.CertificateSaveFormActionDefinition'
+        availability:
+          root: 'true'
+          nodeTypes:
+            content: 'mgnl:generatedCertificate'
+
+  detail:
+    actions:
+      savePublish:
+        class: vn.ekino.certificate.action.PublishCertificateActionDefinition
+        label: Save & Publish
+      commit:
+        class: vn.ekino.certificate.action.CertificateSaveFormActionDefinition
+      cancel:
+        class: info.magnolia.ui.form.action.CancelFormActionDefinition
+    editor:
+      actions: !override
+        - name: savePublish
+        - name: commit
+        - name: cancel
+      actionArea:
+        actionRenderers:
+          commit:
+            rendererClass: vn.ekino.certificate.render.CertificateActionRender
+          cancel:
+            rendererClass: vn.ekino.certificate.render.CertificateActionRender
+          savePublish:
+            rendererClass: vn.ekino.certificate.render.CertificateActionRender
+      form:
+        tabs:
+          default:
+            fields:
+              - name: name
+                fieldType: hidden
+                required: false
+              - name: code
+                fieldType: text
+                required: true
+                label: Code
+                maxLength: 10
+                validators:
+                  - name: codeValidator
+                    class: vn.ekino.certificate.validator.code.CodeValidatorDefinition
+                    errorMessage: Certificate code or Enrol Program already exist.
+              - name: issueDate
+                fieldType: date
+                dateFormat: dd/MM/yyyy
+                type: Date
+                required: true
+                label: Issue Date
+                defaultValue: now
+              - name: enrolProgram
+                fieldType: select
+                label: Enrol Program
+                required: true
+                repository: enrolledProgram
+                path: /
+                labelProperty: name
+                valueProperty: 'jcr:uuid'
+                filteringMode: contains
+                pageLength: 20
+                textInputAllowed: true
+              - name: generatedFiles
+                fieldType: multiValue
+                label: Generated files
+                readOnly: true
+                field:
+                  name: linkField
+                  class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+                  targetWorkspace: dam
+                  appName: assets
+                  identifierToPathConverter:
+                    class: info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+                  contentPreviewDefinition:
+                    contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent

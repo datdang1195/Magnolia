@@ -1,0 +1,50 @@
+'course-groups':
+  jcr:primaryType: 'mgnl:folder'
+  jcr:uuid: '02e58417-f78f-40f2-aa89-4984d204e853'
+  mgnl:activationStatus: true
+  mgnl:created: 2019-09-19T11:29:06.279+07:00
+  mgnl:createdBy: 'superuser'
+  mgnl:lastActivated: 2019-10-02T10:04:41.633+07:00
+  mgnl:lastActivatedBy: 'superuser'
+  mgnl:lastModified: 2019-10-02T10:04:35.736+07:00
+  mgnl:lastModifiedBy: 'superuser'
+  'Common':
+    'displayName': 'Common'
+    'level': 'level-1'
+    'name': 'Common'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: 'b02d939d-09ea-46b5-b5dc-41862b366801'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-10-02T10:04:08.234+07:00
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2019-10-02T10:04:41.775+07:00
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2019-10-02T10:04:08.234+07:00
+    mgnl:lastModifiedBy: 'superuser'
+  'Digital-Architect':
+    'displayName': 'Digital Architect'
+    'level': 'level-1'
+    'name': 'Digital Architect'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: 'e0a218cb-df23-4067-aece-38674e28f6c7'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-10-02T10:04:17.969+07:00
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2019-10-02T10:04:41.728+07:00
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2019-10-02T10:04:17.969+07:00
+    mgnl:lastModifiedBy: 'superuser'
+  'Project-Manager':
+    'displayName': 'Project Manager'
+    'level': 'level-1'
+    'name': 'Project Manager'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: 'b83346c1-2d74-4448-9bac-1f9a695902e8'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-10-02T10:04:35.737+07:00
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2019-10-02T10:04:41.682+07:00
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2019-10-02T10:04:35.737+07:00
+    mgnl:lastModifiedBy: 'superuser'
+

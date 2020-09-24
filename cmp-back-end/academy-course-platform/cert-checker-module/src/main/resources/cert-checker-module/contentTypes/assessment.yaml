@@ -1,0 +1,12 @@
+datasource:
+  workspace: assessments
+  autoCreate: true
+
+model:
+  nodeType: mgnl:assessment
+  properties:
+    - name: code
+    - name: name
+    - name: program
+    - name: assessmentType
+    - name: assessmentGroup

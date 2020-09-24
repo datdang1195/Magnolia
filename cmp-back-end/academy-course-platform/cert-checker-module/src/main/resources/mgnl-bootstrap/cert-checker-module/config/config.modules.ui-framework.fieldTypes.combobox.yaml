@@ -1,0 +1,3 @@
+'combobox':
+  'definitionClass': 'vn.ekino.certificate.field.ComboBoxFieldDefinition'
+  'factoryClass': 'vn.ekino.certificate.field.ComboBoxFieldFactory'

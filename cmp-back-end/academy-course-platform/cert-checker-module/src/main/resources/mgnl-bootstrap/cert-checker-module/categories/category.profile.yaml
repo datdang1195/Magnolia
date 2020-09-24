@@ -1,0 +1,51 @@
+'profile': 
+  jcr:primaryType: 'mgnl:folder'
+  jcr:uuid: '768cb83d-a3aa-413b-90e3-68fbef4bb4e6'
+  mgnl:activationStatus: true
+  mgnl:created: 2019-11-29T03:26:36.530Z
+  mgnl:createdBy: 'superuser'
+  mgnl:lastActivated: 2019-11-29T03:58:49.242Z
+  mgnl:lastActivatedBy: 'superuser'
+  mgnl:lastModified: 2019-11-29T03:28:17.858Z
+  mgnl:lastModifiedBy: 'superuser'
+  'Junior': 
+    'displayName': 'Junior'
+    'level': 'level-1'
+    'name': 'Junior'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: '75f5ffb8-1471-4a29-a630-76c7882b2f0d'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-11-29T03:27:05.419Z
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2019-11-29T03:58:49.633Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2019-11-29T03:28:17.858Z
+    mgnl:lastModifiedBy: 'superuser'
+  'Experience': 
+    'displayName': 'Experience'
+    'level': 'level-1'
+    'name': 'Experience'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: '81030c69-fb51-41ab-8289-e77e67bff99f'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-11-29T03:27:18.468Z
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2019-11-29T03:58:49.506Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2019-11-29T03:28:17.858Z
+    mgnl:lastModifiedBy: 'superuser'
+  'Senior': 
+    'displayName': 'Senior'
+    'level': 'level-1'
+    'name': 'Senior'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: '466c08a9-4018-4b4e-8cd9-b951b0eff85d'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-11-29T03:27:33.107Z
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2019-11-29T03:58:49.370Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2019-11-29T03:28:17.858Z
+    mgnl:lastModifiedBy: 'superuser'
+
+

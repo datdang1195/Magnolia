@@ -1,0 +1,11 @@
+datasource:
+  workspace: attendance
+  autoCreate: true
+
+model:
+  nodeType: mgnl:attendance
+  properties:
+    - name: name
+    - name: date
+    - name: course
+    - name: users

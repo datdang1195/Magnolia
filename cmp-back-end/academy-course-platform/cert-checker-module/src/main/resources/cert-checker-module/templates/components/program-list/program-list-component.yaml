@@ -1,0 +1,7 @@
+templateScript: /cert-checker-module/templates/components/program-list/program-list-component.ftl
+renderType: freemarker
+visible: true
+title: Program list component
+dialog: cert-checker-module:pages/academy-template-page-properties
+class: info.magnolia.module.site.templates.PageTemplateDefinition
+modelClass: vn.ekino.certificate.model.ProgramListModel

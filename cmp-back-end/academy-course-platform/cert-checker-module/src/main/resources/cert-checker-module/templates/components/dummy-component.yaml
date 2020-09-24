@@ -1,0 +1,2 @@
+templateScript: /cert-checker-module/templates/components/dummy-component.ftl
+renderType: freemarker

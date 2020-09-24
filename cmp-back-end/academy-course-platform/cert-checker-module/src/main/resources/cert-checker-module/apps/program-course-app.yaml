@@ -1,0 +1,198 @@
+!content-type:programCourse
+name: Program-Course
+icon: icon-sitemaps-app
+theme: course
+#
+subApps:
+  browser:
+    workbench:
+      editable: false
+      contentViews: !override
+        - name: list
+          class: info.magnolia.ui.workbench.list.ListPresenterDefinition
+          columns:
+            - name: program
+              label: Program
+              expandRatio: 3
+              refItemPropertyName: program
+              referencedItemWorkspace: programs
+              referencedItemPropertyName: name
+              formatterClass: vn.ekino.certificate.workbench.ReferencedJcrItemColumnFormatter
+              class: vn.ekino.certificate.workbench.ReferencedJcrItemColumnDefinition
+              sortable: true
+    actions:
+      activate:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+      deactivate:
+        command: deactivate
+        icon: icon-unpublish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.DeactivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+            - name: IsPublishedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsPublishedRule
+      activateDeleted:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsDeletedRule
+
+  detail:
+    actions:
+      commit:
+        class: vn.ekino.certificate.action.programCourse.ProgramCourseSaveFormActionDefinition
+        implementationClass: vn.ekino.certificate.action.programCourse.ProgramCourseSaveFormAction
+      cancel:
+        class: info.magnolia.ui.form.action.CancelFormActionDefinition
+
+    editor:
+      form:
+        tabs:
+          default:
+            name: courseTab
+            fields:
+              - name: name
+                fieldType: hidden
+                type: String
+              - name: program
+                fieldType: select
+                label: Program
+                repository: programs
+                path: /
+                labelProperty: name
+                valueProperty: 'jcr:uuid'
+              - name: courses
+                label: Courses
+                fieldType: multiValue
+                buttonSelectAddLabel: Add New Course
+                transformerClass: info.magnolia.ui.form.field.transformer.multi.DelegatingMultiValueFieldTransformer
+                field:
+                  name: course
+                  fieldType: composite
+                  layout: horizontal
+                  label: Course
+                  styleName: course
+                  transformerClass: info.magnolia.ui.form.field.transformer.composite.DelegatingCompositeFieldTransformer
+                  fields:
+                    - name: courseName
+                      fieldType: select
+                      label: Course Name
+                      repository: courses
+                      path: /
+                      labelProperty: name
+                      valueProperty: 'jcr:uuid'
+                      filteringMode: contains
+                      pageLength: 20
+                      textInputAllowed: true
+                    - name: isCompulsory
+                      fieldType: checkbox
+                      label: Is compulsory
+                      buttonLabel: ""
+                    - name: status
+                      fieldType: select
+                      repository: category
+                      path: /course-status
+                      labelProperty: name
+                      valueProperty: 'jcr:uuid'
+                      label: Status
+                    - name: numberOfQuizzes
+                      fieldType: text
+                      label: Number of Quizzes
+                      required: true
+                      defaultValue: 1
+                      type: String
+                      validators:
+                        - name: quizNameValidator
+                          class: vn.ekino.certificate.validator.quizName.QuizNameValidatorDefinition
+                          errorMessage: Number of quizzes must be an integer number which greater than 0
+                    - name: semester
+                      fieldType: select
+                      label: Semester
+                      required: true
+                      options:
+                        - name: semester-1
+                          value: Semester 1
+                          label: Semester 1
+                          selected: true
+                        - name: semester-2
+                          value: Semester 2
+                          label: Semester 2
+                    - name: sessions
+                      fieldType: multiValue
+                      label: Sessions
+                      buttonSelectAddLabel: Add New Session
+                      transformerClass: info.magnolia.ui.form.field.transformer.multi.DelegatingMultiValueFieldTransformer
+                      field:
+                        name: session
+                        fieldType: composite
+                        label: Session
+                        layout: horizontal
+                        transformerClass: info.magnolia.ui.form.field.transformer.composite.DelegatingCompositeFieldTransformer
+                        styleName: session
+                        fields:
+                          - name: title
+                            fieldType: text
+                            label: Title
+                            required: true
+                          - name: trainer
+                            fieldType: select
+                            label: Trainer
+                            repository: users
+                            path: /admin
+                            labelProperty: name
+                            valueProperty: 'jcr:uuid'
+                            filteringMode: contains
+                            pageLength: 20
+                            textInputAllowed: true
+                          - name: supervisor
+                            fieldType: select
+                            label: Supervisor
+                            repository: users
+                            path: /admin
+                            labelProperty: name
+                            valueProperty: 'jcr:uuid'
+                            filteringMode: contains
+                            pageLength: 20
+                            textInputAllowed: true
+                          - name: duration
+                            fieldType: text
+                            label: Duration
+                            defaultValue: 1
+                            required: true
+                            validators:
+                              - name: durationValidator
+                                class: vn.ekino.certificate.validator.duration.DurationValidatorDefinition
+                                errorMessage: Please input numerical values with max value is 24 hours
+                          - name: date
+                            fieldType: date
+                            label: Date
+                          - name: type
+                            fieldType: select
+                            label: Type
+                            options:
+                              - name: in-class
+                                value: in-class
+                                label: In Class
+                              - name: self-study
+                                value: self-study
+                                label: Self Study

@@ -1,0 +1,6 @@
+templateScript: /cert-checker-module/templates/components/header/header-component.ftl
+renderType: freemarker
+class: info.magnolia.module.site.templates.PageTemplateDefinition
+modelClass: vn.ekino.certificate.model.HeaderModel
+dialog: cert-checker-module:pages/header-component-properties
+title: Header Component

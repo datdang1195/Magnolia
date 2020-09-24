@@ -1,0 +1,1048 @@
+@keyframes fade-in {
+    from {
+        transform: translateY(20px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.app-wrapper__course .course .course__row-select {
+    margin-bottom: 20px;
+}
+
+.course .page__title {
+    margin-top: 0;
+}
+
+.course .section-form {
+    margin-bottom: 20px;
+}
+
+.course .dropdown-semester,
+.course .section-form__program,
+.course .course__row-info {
+    display: none;
+    animation: fade-in 0.3s linear;
+}
+
+.app-wrapper__course .form-radio .radio-item .radio__title {
+    font-size: 14px;
+    letter-spacing: 1.56px;
+    color: #4a4a4a;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.app-wrapper__course .form-radio .radio-item .radio__time {
+    font-size: 14px;
+    letter-spacing: 1.56px;
+    color: #4a4a4a;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.app-wrapper__course .form-radio .wrapper-item {
+    margin-bottom: 15px;
+    position: relative;
+    cursor: pointer;
+    padding-left: 40px;
+}
+
+.app-wrapper__course .form-radio .wrapper-item:last-child {
+    margin-bottom: 0;
+}
+
+.app-wrapper__course .section-form .form-radio {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-wrapper__course .section-form .wrapper-item input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.app-wrapper__course .section-form .wrapper-item .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32px;
+    width: 32px;
+    border: 1px solid #979797;
+    border-radius: 50%;
+}
+
+.app-wrapper__course .section-form .wrapper-item .checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.app-wrapper__course .section-form input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.app-wrapper__course .section-form .checkmark:after {
+    top: 7px;
+    left: 7px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #3a5cac;
+}
+
+.app-wrapper__course .course .course__row-select .section-filter {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.app-wrapper__course .course .course__row-select .section-filter .dropdown-semester {
+    width: 25%;
+}
+
+.app-wrapper__course .course .course__row-select .section-filter .course__input__wrapper {
+    width: 65%;
+}
+
+
+.container--aligned-layout .contentPage .project {
+    padding-top: 30px;
+}
+
+.container--aligned-layout .contentPage .project .project__item {
+    border-bottom: 1px solid #979797;
+    padding-bottom: 13px;
+    padding-top: 13px;
+}
+
+.container--aligned-layout .contentPage .project .f-cat.active {
+    display: block;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__title {
+    color: #4a4a4a;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.78px;
+    padding-bottom: 5px;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    order: 1;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item.status-open .progress__open .progress-status {
+    background-color: #3a5cac;
+}
+
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item.status-class .wrapper-progress .progress.progress__open {
+    background-color: #3a5cac;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item.status-class .progress__class .progress-status {
+    background-color: #3a5cac;
+}
+
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item.status-quiz .wrapper-progress .progress.progress__open {
+    background-color: #3a5cac;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item.status-quiz .wrapper-progress .progress.progress__class {
+    background-color: #3a5cac;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item.status-quiz .progress__quiz .progress-status {
+    background-color: #3a5cac;
+}
+
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item.status-homework .wrapper-progress .progress.progress__open {
+    background-color: #3a5cac;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item.status-homework .wrapper-progress .progress.progress__class {
+    background-color: #3a5cac;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item.status-homework .wrapper-progress .progress.progress__quiz {
+    background-color: #3a5cac;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item.status-homework .progress__homework .progress-status {
+    background-color: #3a5cac;
+}
+
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item.status-finished .wrapper-progress .progress.progress__open {
+    background-color: #3a5cac;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item.status-finished .wrapper-progress .progress.progress__class {
+    background-color: #3a5cac;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item.status-finished .wrapper-progress .progress.progress__quiz {
+    background-color: #3a5cac;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item.status-finished .wrapper-progress .progress.progress__homework {
+    background-color: #3a5cac;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item.status-finished .wrapper-progress .progress.progress__finished {
+    background-color: #3a5cac;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item .wrapper-progress {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item .wrapper-progress .progress-item {
+    text-align: center;
+    padding: 0 1px;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item .wrapper-progress .progress-item .progress {
+    width: 54px;
+    height: 7px;
+    background-color: #ebeff7;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item .wrapper-progress .progress-item .progress .progress-status {
+    width: 50%;
+    height: 100%;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item .wrapper-progress .progress-item .progress.active {
+    background-color: #3a5cac;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item .wrapper-progress .progress-item .progress.progress--borderLeft {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item .wrapper-progress .progress-item .progress.progress--borderLeft.progress__open .progress-status {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item .wrapper-progress .progress-item .progress.progress--borderRight {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item .wrapper-progress .progress-item .progress__lable {
+    color: #4a4a4a;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .read-more a {
+    color: #3a5cac;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.88px;
+    text-decoration: underline;
+    text-transform: none;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item .lever {
+    position: relative;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item .lever img {
+    width: 24px;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item .duration-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item .lever img {
+    position: absolute;
+    left: -30px;
+    top: -5px;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item .lever span {
+    color: #4a4a4a;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.88px;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item .duration .process__finish {
+    width: 50px;
+    height: 14px;
+    border-radius: 8px;
+    background-color: #3a5cac;
+}
+
+.container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item .duration__hour {
+    color: #4a4a4a;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.88px;
+    margin-left: 10px;
+}
+
+.app-wrapper__course .course .course__row-select .course__input__wrapper {
+    font-size: 14px;
+    position: relative;
+    padding-left: 50px;
+    border: 1px solid #979797;
+    color: #4a4a4a;
+    font-weight: 600;
+    letter-spacing: 1.78px;
+    max-width: 100%;
+    width: auto;
+    display: none;
+    align-items: center;
+    animation: fade-in 0.3s linear;
+}
+
+.course__input__wrapper .course__bg__overlay {
+    background-color: rgba(216, 216, 216, 0.2);
+    cursor: not-allowed;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 25;
+    display: none;
+}
+
+.app-wrapper__course
+.course
+.course__row-select
+.course__input__wrapper
+.course__input__text[disabled],
+.switch .switch__checkbox[disabled] {
+    cursor: not-allowed;
+    background-color: transparent;
+}
+
+.switch .switch__checkbox[disabled] ~ .switch__text {
+    background-color: #D8D8D8;
+    border-radius: 999px;
+    z-index: 10;
+    opacity: .5;
+    cursor: not-allowed
+}
+
+.app-wrapper__course
+.course
+.course__row-select
+.course__input__wrapper
+.course__input__text[disabled] + .course__bg__overlay {
+    display: block;
+}
+
+.app-wrapper__course
+.course
+.course__row-select
+.course__input__wrapper
+.course__input__text:focus {
+    outline: none;
+}
+
+.app-wrapper__course
+.course
+.course__row-select
+.course__input__wrapper
+.course__input__text {
+    padding: 15px 20px 15px 0;
+    width: 100%;
+    border: 0;
+    margin-bottom: 0;
+    flex: 1 1 0;
+}
+
+.app-wrapper__course
+.course
+.course__row-select
+.course__input__wrapper
+.course__input__list {
+    position: absolute;
+    max-height: 150px;
+    width: calc(100% + 1px);
+    background-color: #fff;
+    border: 1px solid #ebeff7;
+    top: calc(100% + 2px);
+    left: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 10;
+    overflow-y: auto;
+    display: none;
+}
+
+.app-wrapper__course
+.course
+.course__row-select
+.course__input__wrapper
+.course__input__list
+> ul {
+    list-style-type: none;
+    background-color: transparent;
+}
+
+.app-wrapper__course
+.course
+.course__row-select
+.course__input__wrapper
+.course__input__list
+.course__input__item {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.app-wrapper__course
+.course
+.course__row-select
+.course__input__wrapper
+.course__input__list
+.course__input__item:hover {
+    background-color: rgba(58, 92, 172, 0.5);
+}
+
+.app-wrapper__course
+.course
+.course__row-select
+.course__input__wrapper
+.course__input__text::placeholder {
+    color: rgba(74, 74, 74, 0.5);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1.78px;
+    text-transform: uppercase;
+}
+
+.app-wrapper__course
+.course
+.course__row-select
+.course__input__wrapper::before,
+.app-wrapper__course
+.course
+.course__row-select
+.course__input__wrapper::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    height: 5px;
+    width: 20px;
+    background-color: #3a5cac;
+}
+
+.app-wrapper__course
+.course
+.course__row-select
+.course__input__wrapper::after {
+    top: 22px;
+}
+
+.app-wrapper__course
+.course
+.course__row-select
+.course__input__wrapper
+.course__input__line {
+    position: absolute;
+    height: 5px;
+    width: 31px;
+    background-color: #3a5cac;
+    top: 29px;
+    left: 9px;
+}
+
+.app-wrapper__course .course .course__label {
+    line-height: 25px;
+    padding-left: 0;
+    font-weight: 700;
+}
+
+.app-wrapper__course .course .course__label::first-letter {
+    text-transform: uppercase;
+}
+
+.app-wrapper__course .course .course__info .course__info__col {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.app-wrapper__course .course .course__info .course__info__label {
+    min-width: 100px;
+    display: inline-block;
+}
+
+.app-wrapper__course .course .course__info .course__info__description {
+    display: flex;
+}
+
+.app-wrapper__course
+.course
+.course__info
+.course__info__description
+.course__info__label {
+    width: 105px;
+}
+
+.app-wrapper__course
+.course
+.course__info
+.course__info__description
+.course__info__value {
+    line-height: 25px;
+    text-align: left;
+    width: calc(100% - 100px);
+}
+
+.app-wrapper__course .course .course__info .course__info-button {
+    text-align: right;
+}
+
+.app-wrapper__course .course .course__participants > .course__label {
+    margin-bottom: 15px;
+}
+
+.app-wrapper__course .course .course__participants .program-tab__content__item {
+    display: block;
+}
+
+.app-wrapper__course .course .course__participants .program-tab__content__item .course__input__wrapper::after {
+    top: 22px;
+}
+
+.app-wrapper__course
+.course
+.course__participants
+.program-tab__content__item
+.table-session
+.table
+td::before {
+    flex: 0 0 110px;
+}
+
+.app-wrapper__course .course__row-info .wrapper-progress {
+    display: flex;
+    flex-direction: row;
+    margin: 15px auto 0;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.app-wrapper__course .course__row-info .wrapper-progress .progress-item {
+    text-align: center;
+    padding: 0 1px;
+    max-width: 20%;
+    flex: 1 1 20%;
+}
+
+.app-wrapper__course .course__row-info .wrapper-progress .progress-item .progress {
+    width: 100%;
+    height: 7px;
+    background-color: #ebeff7;
+    overflow: hidden;
+    position: relative;
+}
+
+.app-wrapper__course .course__row-info .wrapper-progress .progress-item .progress::before {
+    content: '';
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: transparent;
+}
+
+.app-wrapper__course
+.wrapper-progress
+.progress-item
+.progress
+.progress-status {
+    width: 50%;
+    height: 100%;
+}
+
+.app-wrapper__course
+.wrapper-progress
+.progress-item
+.progress.progress--borderLeft {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.app-wrapper__course
+.wrapper-progress
+.progress-item
+.progress.progress--borderRight {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.app-wrapper__course .course__row-info .wrapper-progress .progress-item .progress__lable {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.app-wrapper__course
+.wrapper-progress.status-open
+.progress-item:first-child
+.progress {
+    background-color: #3a5cac;
+}
+
+.app-wrapper__course
+.wrapper-progress.status-class
+.progress-item:first-child
+.progress,
+.app-wrapper__course
+.wrapper-progress.status-class
+.progress-item:nth-child(2)
+.progress::before {
+    background-color: #3a5cac;
+}
+
+.app-wrapper__course
+.wrapper-progress.status-quiz
+.progress-item:first-child
+.progress,
+.app-wrapper__course
+.wrapper-progress.status-quiz
+.progress-item:nth-child(2)
+.progress,
+.app-wrapper__course
+.wrapper-progress.status-quiz
+.progress-item:nth-child(3)
+.progress::before {
+    background-color: #3a5cac;
+}
+
+.app-wrapper__course
+.wrapper-progress.status-homework
+.progress-item:first-child
+.progress,
+.app-wrapper__course
+.wrapper-progress.status-homework
+.progress-item:nth-child(2)
+.progress,
+.app-wrapper__course
+.wrapper-progress.status-homework
+.progress-item:nth-child(3)
+.progress,
+.app-wrapper__course
+.wrapper-progress.status-homework
+.progress-item:nth-child(4)
+.progress::before {
+    background-color: #3a5cac;
+}
+
+.app-wrapper__course
+.wrapper-progress.status-finished
+.progress-item
+.progress {
+    background-color: #3a5cac;
+}
+
+.course .table-courses {
+    height: 340px;
+    max-width: 100%;
+    width: 720px;
+    margin: 0 auto;
+    overflow: auto
+}
+
+.course .table-content td {
+    word-break: break-word
+}
+
+.course__input__wrapper .course__switch__wrapper {
+    width: 55px;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 20;
+    display: none;
+}
+
+.course__switch__wrapper .switch {
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    border-radius: 999px;
+    height: 25px;
+    box-shadow: inset 10px 10px 0px 15px #D8D8D8;
+}
+
+.switch .switch__checkbox {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.switch .switch__label {
+    width: 50%;
+    height: 100%;
+    background-color: #3a5cac;
+    transition: transform 0.5s;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.switch .switch__label::after {
+    content: 'T';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1.78px;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+}
+
+.switch .switch__checkbox:checked + .switch__label::after {
+    content: 'S';
+}
+
+.switch .switch__checkbox:checked + .switch__label {
+    transform: translateX(100%);
+}
+
+@media (max-width: 374px) {
+    .app-wrapper__course .course__input__wrapper {
+        padding-left: 45px;
+    }
+
+    .app-wrapper__course .course .course__info .course__info__label {
+        min-width: 100px;
+    }
+
+    .app-wrapper__course .course__row-info .wrapper-progress .progress-item .progress {
+        width: 50px;
+    }
+
+    .app-wrapper__course .course__row-info .wrapper-progress .progress-item .progress__lable {
+        font-size: 10px;
+    }
+
+    .app-wrapper__course
+    .course
+    .course__info
+    .course__info__description
+    .course__info__label {
+        width: 90px;
+    }
+
+    .app-wrapper__course
+    .course
+    .course__row-select
+    .course__input__wrapper
+    .course__input__text {
+        padding: 15px 10px 15px 0;
+    }
+
+    .app-wrapper__course
+    .course
+    .course__row-select
+    .course__input__wrapper
+    .course__input__text::placeholder {
+        font-size: 12px;
+    }
+
+    .course__input__wrapper .course__switch__wrapper {
+        width: 47px;
+    }
+
+    .course__switch__wrapper .switch {
+        width: 40px;
+        height: 20px;
+    }
+
+    .switch .switch__label::after {
+        line-height: 20px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 720px) {
+    .app-wrapper__course .course .course__row-select .section-filter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container--aligned-layout .contentPage .project .project__item .item__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container--aligned-layout .contentPage .project .project__item .item__content .wrapper-item {
+        margin-top: 10px;
+        margin-left: -5px;
+    }
+
+    .app-wrapper__course .course .course__row-select .section-filter .dropdown-semester {
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .app-wrapper__course .course .course__row-select .section-filter .dropdown-semester .choices__list--dropdown {
+        z-index: 21;
+    }
+
+    .app-wrapper__course .course .course__row-select .section-filter .course__input__wrapper {
+        width: 100%;
+    }
+
+    .app-wrapper__course .course .course__participants .program-tab__content__item .table-session {
+        margin-top: 15px;
+    }
+
+    .app-wrapper__course .course .course__participants .program-tab__content__item .table-session .table tr {
+        border: 1px solid #4a4a4a1f;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1023px) {
+    .app-wrapper__course .section-form .form-radio {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between
+    }
+
+    .app-wrapper__course .form-radio .wrapper-item {
+        margin: 10px 10px 0;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .app-wrapper__course .course .course__row-select .course__input__wrapper {
+        font-size: 16px;
+        width: 80%;
+        max-width: 800px;
+        margin: 30px auto 0;
+    }
+
+    .table-session .table .sort__score {
+        position: relative;
+    }
+
+    .table-session .table .sort__score::after {
+        content: "";
+        height: 0;
+        width: 0;
+        border-style: solid;
+        border-color: #fff transparent transparent transparent;
+        border-width: 6px;
+        position: absolute;
+        right: 11.5px;
+        top: 65%;
+        margin-top: -2.5px;
+        cursor: pointer;
+
+    }
+
+    .table-session .table .sort__score::before {
+        content: "";
+        height: 0;
+        width: 0;
+        border-style: solid;
+        border-color: transparent transparent #fff transparent;
+        margin-top: -7.5px;
+        border-width: 6px;
+        position: absolute;
+        right: 11.5px;
+        top: 20%;
+        margin-top: -2.5px;
+        cursor: pointer;
+
+    }
+
+    .app-wrapper__course .form-radio .wrapper-item {
+        margin-bottom: 0;
+    }
+
+    .app-wrapper__course
+    .course
+    .course__row-select
+    .course__input__wrapper
+    .course__input__text::placeholder {
+        font-size: 16px;
+    }
+
+    .app-wrapper__course .course .course__info .course__info__col {
+        margin-bottom: 20px;
+    }
+
+    .app-wrapper__course .course .course__info .course__info-button {
+        text-align: right;
+        margin: 20px 0;
+    }
+
+    .app-wrapper__course
+    .course
+    .course__participants
+    .program-tab__content__item {
+        text-align: center;
+    }
+
+    .app-wrapper__course
+    .course
+    .course__participants
+    .program-tab__content__item
+    .table-session
+    .table
+    tr
+    > td:first-child {
+        text-align: left;
+    }
+
+    .app-wrapper__course .course__row-info .wrapper-progress {
+        position: absolute;
+        left: 105px;
+        top: 10px;
+        width: 350px;
+        margin: 0;
+        justify-content: flex-start;
+    }
+
+    .app-wrapper__course
+    .course
+    .course__info
+    .course__info__col:nth-child(2n + 1)
+    .course__info__label,
+    .app-wrapper__course
+    .course
+    .course__info
+    .course__info__col:last-child
+    .course__info__label,
+    .app-wrapper__course
+    .course
+    .course__info
+    .course__info__col:nth-child(2)
+    .course__info__label {
+        min-width: 105px;
+    }
+
+    .app-wrapper__course
+    .course
+    .course__info
+    .course__info__col:nth-child(4)
+    .course__info__label {
+        min-width: 72px;
+    }
+
+    .app-wrapper__course .course .course__info .course__info__col:last-child {
+        padding-right: 15px;
+        margin-bottom: 0;
+    }
+
+    .app-wrapper__course
+    .course
+    .course__info
+    .course__info__description
+    > .course__info__value {
+        text-align: justify;
+    }
+
+    .app-wrapper__course .section-form .form-radio {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .app-wrapper__course .section-form .form-radio .radio-item .radio__title {
+        font-size: 16px;
+        letter-spacing: 1.78px;
+        margin-bottom: 5px;
+    }
+
+    .app-wrapper__course .section-form .form-radio .radio-item .radio__time {
+        font-size: 12px;
+        letter-spacing: 1.78px;
+        line-height: 15px;
+    }
+
+    .course .table-courses {
+        height: auto;
+        width: 100%;
+        overflow: unset;
+    }
+
+    .course__input__wrapper .course__switch__wrapper {
+        width: 185px;
+    }
+
+    .course__switch__wrapper .switch {
+        width: 60px;
+        height: 28px;
+    }
+
+    .switch .switch__text {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .switch .switch__label::after {
+        content: none;
+    }
+
+    .switch .switch__text::after {
+        content: 'trainer';
+        position: absolute;
+        top: 0;
+        left: 120%;
+        height: 100%;
+        line-height: 28px;
+        color: #4a4a4a;
+        font-weight: 500;
+        letter-spacing: 1.78px;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    .switch .switch__checkbox:checked ~ .switch__text::after {
+        content: 'supervisor';
+    }
+
+    .switch .switch__checkbox:checked + .switch__label::after {
+        content: none;
+    }
+}

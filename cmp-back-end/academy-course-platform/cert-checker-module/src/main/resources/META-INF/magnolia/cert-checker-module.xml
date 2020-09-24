@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module SYSTEM "module.dtd" >
+<module>
+  <name>cert-checker-module</name>
+  <displayName>${project.name}</displayName>
+  <description>${project.description}</description>
+  <class>vn.ekino.certificate.CertificateServicesModule</class>
+  <versionHandler>vn.ekino.certificate.setup.CertificateServicesModuleVersionHandler</versionHandler>
+  <version>${project.version}</version>
+
+  <!-- For more information on module descriptor configuration options -->
+  <!-- https://documentation.magnolia-cms.com/display/DOCS/XML-based+module+descriptor -->
+
+  <components>
+    <id>main</id>
+
+    <component>
+      <type>info.magnolia.dam.templating.functions.DamTemplatingFunctions</type>
+      <implementation>info.magnolia.dam.templating.functions.DamTemplatingFunctions</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.repository.DamRepository</type>
+      <implementation>vn.ekino.certificate.repository.DamRepository</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.repository.UserRepository</type>
+      <implementation>vn.ekino.certificate.repository.UserRepository</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.repository.InternProgramRepository</type>
+      <implementation>vn.ekino.certificate.repository.InternProgramRepository</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.repository.EnrolProgramRepository</type>
+      <implementation>vn.ekino.certificate.repository.EnrolProgramRepository</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.repository.WebsiteRepository</type>
+      <implementation>vn.ekino.certificate.repository.WebsiteRepository</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.repository.GeneratedInternshipCertificateRepository</type>
+      <implementation>vn.ekino.certificate.repository.GeneratedInternshipCertificateRepository</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.repository.InternshipRepository</type>
+      <implementation>vn.ekino.certificate.repository.InternshipRepository</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.repository.PhaseRepository</type>
+      <implementation>vn.ekino.certificate.repository.PhaseRepository</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.repository.CategoryRepository</type>
+      <implementation>vn.ekino.certificate.repository.CategoryRepository</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.repository.ProgramRepository</type>
+      <implementation>vn.ekino.certificate.repository.ProgramRepository</implementation>
+      <scope>singleton</scope>
+    </component>
+    <component>
+      <type>vn.ekino.certificate.service.ProgramService</type>
+      <implementation>vn.ekino.certificate.service.ProgramService</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.repository.CategoryRepository</type>
+      <implementation>vn.ekino.certificate.repository.CategoryRepository</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.service.EnrolService</type>
+      <implementation>vn.ekino.certificate.service.EnrolService</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.service.PublishingService</type>
+      <implementation>vn.ekino.certificate.service.PublishingService</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>info.magnolia.commands.CommandsManager</type>
+      <implementation>info.magnolia.commands.CommandsManager</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.repository.CourseRepository</type>
+      <implementation>vn.ekino.certificate.repository.CourseRepository</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.repository.CategoryRepository</type>
+      <implementation>vn.ekino.certificate.repository.CategoryRepository</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.repository.AttendanceRepository</type>
+      <implementation>vn.ekino.certificate.repository.AttendanceRepository</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.service.MailService</type>
+      <implementation>vn.ekino.certificate.service.MailService</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.service.ExcelService</type>
+      <implementation>vn.ekino.certificate.service.ExcelService</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.service.EventChangeService</type>
+      <implementation>vn.ekino.certificate.service.EventChangeService</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.service.SaveFormService</type>
+      <implementation>vn.ekino.certificate.service.SaveFormService</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.repository.OJTProjectRepository</type>
+      <implementation>vn.ekino.certificate.repository.OJTProjectRepository</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.repository.OJTUserResultRepository</type>
+      <implementation>vn.ekino.certificate.repository.OJTUserResultRepository</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.repository.AssessmentCriteriaRepository</type>
+      <implementation>vn.ekino.certificate.repository.AssessmentCriteriaRepository</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.repository.UserAttitudeResultRepository</type>
+      <implementation>vn.ekino.certificate.repository.UserAttitudeResultRepository</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.repository.AttitudeAssessmentRepository</type>
+      <implementation>vn.ekino.certificate.repository.AttitudeAssessmentRepository</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.service.ParticipantService</type>
+      <implementation>vn.ekino.certificate.service.ParticipantService</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.service.UserProfileService</type>
+      <implementation>vn.ekino.certificate.service.UserProfileService</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.repository.NotificationRepository</type>
+      <implementation>vn.ekino.certificate.repository.NotificationRepository</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.service.CommentService</type>
+      <implementation>vn.ekino.certificate.service.CommentService</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.repository.CommentRepository</type>
+      <implementation>vn.ekino.certificate.repository.CommentRepository</implementation>
+      <scope>singleton</scope>
+    </component>
+
+    <component>
+      <type>vn.ekino.certificate.service.ProgramCourseService</type>
+      <implementation>vn.ekino.certificate.service.ProgramCourseService</implementation>
+      <scope>singleton</scope>
+    </component>
+    <component>
+      <type>vn.ekino.certificate.service.RedisService</type>
+      <implementation>vn.ekino.certificate.service.RedisService</implementation>
+      <scope>singleton</scope>
+    </component>
+    <component>
+      <type>vn.ekino.certificate.service.MyProgressService</type>
+      <implementation>vn.ekino.certificate.service.MyProgressService</implementation>
+      <scope>singleton</scope>
+    </component>
+    <component>
+      <type>vn.ekino.certificate.service.CalendarService</type>
+      <implementation>vn.ekino.certificate.service.CalendarService</implementation>
+      <scope>singleton</scope>
+    </component>
+
+  </components>
+
+  <dependencies>
+    <dependency>
+      <name>core</name>
+      <version>*</version>
+    </dependency>
+
+    <dependency>
+      <name>ui-admincentral</name>
+      <version>${magnoliaUiVersion$}/*</version>
+    </dependency>
+    <!--  Add other dependencies here, e.g the mte (magnolia templating essentials).
+    <dependency>
+      <name>mte</name>
+      <version>0.7/*</version>
+    </dependency>
+    -->
+    <dependency>
+      <name>categorization</name>
+      <version>2.4.1/*</version>
+      <optional>true</optional>
+    </dependency>
+
+  </dependencies>
+
+  <servlets>
+    <servlet>
+      <name>AuthenticateServlet</name>
+      <class>vn.ekino.certificate.servlet.AuthenticateServlet</class>
+      <comment>Used to authenticate.</comment>
+      <mappings>
+        <mapping>/.authenticate</mapping>
+      </mappings>
+    </servlet>
+
+    <servlet>
+      <name>EnrolServlet</name>
+      <class>vn.ekino.certificate.servlet.EnrolServlet</class>
+      <comment>Used to enrollment.</comment>
+      <mappings>
+        <mapping>/.enrol</mapping>
+      </mappings>
+    </servlet>
+
+    <servlet>
+      <name>ForgotPasswordServlet</name>
+      <class>vn.ekino.certificate.servlet.ForgotPasswordServlet</class>
+      <comment>Used to forgot password.</comment>
+      <mappings>
+        <mapping>/.forgotPassword</mapping>
+      </mappings>
+    </servlet>
+
+    <servlet>
+      <name>ResetPasswordServlet</name>
+      <class>vn.ekino.certificate.servlet.ResetPasswordServlet</class>
+      <comment>Used to reset password.</comment>
+      <mappings>
+        <mapping>/.resetPassword</mapping>
+      </mappings>
+    </servlet>
+
+    <servlet>
+      <name>ChangePasswordServlet</name>
+      <class>vn.ekino.certificate.servlet.ChangePasswordServlet</class>
+      <comment>Used to change password.</comment>
+      <mappings>
+        <mapping>/.changePassword</mapping>
+      </mappings>
+    </servlet>
+
+    <servlet>
+      <name>UserProfileServlet</name>
+      <class>vn.ekino.certificate.servlet.UserProfileServlet</class>
+      <comment>Used to update user profile.</comment>
+      <mappings>
+        <mapping>/.profile</mapping>
+      </mappings>
+    </servlet>
+
+  </servlets>
+
+  <repositories>
+    <repository>
+      <name>magnolia</name>
+      <workspaces>
+        <workspace>certificates</workspace>
+      </workspaces>
+      <nodeTypeFile>/cert-checker-module/jcr-node-type-files/academy-nodetypes.cnd</nodeTypeFile>
+    </repository>
+  </repositories>
+</module>

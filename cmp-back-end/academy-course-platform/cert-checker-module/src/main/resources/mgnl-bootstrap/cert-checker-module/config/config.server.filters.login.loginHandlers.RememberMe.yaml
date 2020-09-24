@@ -1,0 +1,4 @@
+'RememberMe': 
+  'class': 'vn.ekino.certificate.config.security.RememberMeLoginHandler'
+
+

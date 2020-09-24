@@ -1,0 +1,39 @@
+form:
+  tabs:
+    - name: tabMain
+      fields:
+        - name: linkTitle
+          label: Link title
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+        - name: linkPage
+          fieldType: link
+          required: true
+          targetWorkspace: website
+          appName: pages
+          label: Redirect to result page
+        - name: linkTitleForgot
+          label: Link title (For Button on Forgot password page)
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          required: true
+        - name: linkPageForgot
+          fieldType: link
+          required: true
+          targetWorkspace: website
+          appName: pages
+          label: Redirect to home page
+        - name: linkTitleReset
+          label: Link title (For Button on Reset password page)
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          required: true
+        - name: linkPageReset
+          fieldType: link
+          required: true
+          targetWorkspace: website
+          appName: pages
+          label: Redirect to login page
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

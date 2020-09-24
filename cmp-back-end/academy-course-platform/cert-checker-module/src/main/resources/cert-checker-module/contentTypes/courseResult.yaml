@@ -1,0 +1,8 @@
+datasource:
+  workspace: courseResults
+  autoCreate: true
+
+model:
+  nodeType: mgnl:courseResult
+  properties:
+    - name: name

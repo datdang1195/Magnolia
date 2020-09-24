@@ -1,0 +1,17 @@
+datasource:
+  workspace: OJT-User-Result
+  autoCreate: true
+
+model:
+  nodeType: mgnl:ojtUserResult
+  properties:
+  - name: userEnrolProgram
+  - name: ojtProject
+  - name: role
+  - name: mentor
+  - name: ojtEvaluation
+    type: Decimal
+  - name: comment
+  - name: note
+
+

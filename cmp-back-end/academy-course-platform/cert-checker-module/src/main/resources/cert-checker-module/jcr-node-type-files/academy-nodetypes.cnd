@@ -1,0 +1,38 @@
+<mgnl = 'http://www.magnolia.info/jcr/mgnl'>
+
+[mgnl:phase]> mgnl:content
+ orderable
+[mgnl:program]> mgnl:content
+ orderable
+[mgnl:generatedCertificate]> mgnl:content
+ orderable
+[mgnl:enrolledProgram]> mgnl:content
+ orderable
+[mgnl:course]> mgnl:content
+ orderable
+[mgnl:programCourse]> mgnl:content
+ orderable
+[mgnl:news]> mgnl:content
+orderable
+[mgnl:attendance]> mgnl:content
+ orderable
+[mgnl:ojtProject]> mgnl:content
+ orderable
+[mgnl:userAttitudeResult]> mgnl:content
+ orderable
+[mgnl:ojtUserResult]> mgnl:content
+ orderable
+[mgnl:assessment]> mgnl:content
+ orderable
+[mgnl:courseResult]> mgnl:content
+ orderable
+[mgnl:userEvaluation]> mgnl:content
+ orderable
+[mgnl:ojtUserAssessment]> mgnl:content
+ orderable
+[mgnl:userAttitudeAssessment]> mgnl:content
+ orderable
+[mgnl:notification]> mgnl:content
+ orderable
+[mgnl:comment]> mgnl:content
+ orderable

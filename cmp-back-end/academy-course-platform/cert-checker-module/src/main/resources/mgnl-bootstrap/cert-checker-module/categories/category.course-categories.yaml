@@ -1,0 +1,243 @@
+'course-categories': 
+  jcr:primaryType: 'mgnl:folder'
+  jcr:uuid: 'cc366a8d-74b8-4482-94a4-c957570d82bc'
+  mgnl:activationStatus: true
+  mgnl:created: 2019-09-13T02:22:05.194Z
+  mgnl:createdBy: 'superuser'
+  mgnl:lastActivated: 2019-10-02T03:11:54.453Z
+  mgnl:lastActivatedBy: 'superuser'
+  mgnl:lastModified: 2020-09-22T03:33:49.857Z
+  mgnl:lastModifiedBy: 'thu-thuan.vo-thi@ekino.com'
+  'Tools': 
+    'displayName': 'Tools'
+    'level': 'level-1'
+    'name': 'Tools'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: '90aeeddd-3ee0-46a2-811b-1adf83e2057a'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-09-13T02:22:22.342Z
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2019-10-02T03:11:54.853Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2019-10-01T10:30:50.484Z
+    mgnl:lastModifiedBy: 'superuser'
+    'relatedUUID': 
+      jcr:uuid: '692fe55e-fd09-4d61-b5ff-9b7947941f7e'
+      mgnl:activationStatus: true
+      mgnl:created: 2019-10-01T10:30:50.482Z
+      mgnl:createdBy: 'superuser'
+      mgnl:lastActivated: 2019-10-02T03:11:54.854Z
+      mgnl:lastActivatedBy: 'superuser'
+      mgnl:lastModified: 2019-10-01T10:30:50.482Z
+      mgnl:lastModifiedBy: 'superuser'
+  'Architect': 
+    'displayName': 'Architect'
+    'level': 'level-1'
+    'name': 'Architect'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: 'd7fcd347-1c6d-4c55-a046-79ebe2abc378'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-10-02T03:07:34.875Z
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2019-10-02T03:11:54.817Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2019-10-02T03:07:34.875Z
+    mgnl:lastModifiedBy: 'superuser'
+  'General-Development': 
+    'displayName': 'General Development'
+    'level': 'level-1'
+    'name': 'General Development'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: '026e8dfb-60dc-4fe6-a6b9-d6b93619d855'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-10-02T03:07:53.107Z
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2019-10-02T03:11:54.783Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2020-09-22T02:59:00.967Z
+    mgnl:lastModifiedBy: 'thu-thuan.vo-thi@ekino.com'
+    'relatedUUID': 
+      jcr:uuid: '34b136ef-aa5e-4437-aa91-7ac28a26f007'
+      mgnl:created: 2020-09-22T02:59:00.957Z
+      mgnl:createdBy: 'thu-thuan.vo-thi@ekino.com'
+      mgnl:lastModified: 2020-09-22T02:59:00.957Z
+      mgnl:lastModifiedBy: 'thu-thuan.vo-thi@ekino.com'
+  'General': 
+    'displayName': 'General'
+    'level': 'level-1'
+    'name': 'General'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: 'bc52c54b-7116-4c86-adf4-236abe4dfd0b'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-10-02T03:08:28.922Z
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2019-10-02T03:11:54.746Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2019-10-02T03:08:28.922Z
+    mgnl:lastModifiedBy: 'superuser'
+  'Design': 
+    'displayName': 'Design'
+    'level': 'level-1'
+    'name': 'Design'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: '4d473510-a7ae-4f40-9ef1-4fa323166926'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-10-02T03:08:45.817Z
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2019-10-02T03:11:54.705Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2019-10-02T03:08:45.817Z
+    mgnl:lastModifiedBy: 'superuser'
+  'JIRA': 
+    'displayName': 'JIRA'
+    'level': 'level-1'
+    'name': 'JIRA'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: '4d26b7eb-90ed-4dfd-9886-940b4022dd3f'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-10-02T03:10:01.345Z
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2019-10-02T03:11:54.676Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2019-10-02T03:10:01.345Z
+    mgnl:lastModifiedBy: 'superuser'
+  'Methodology': 
+    'displayName': 'Methodology'
+    'level': 'level-1'
+    'name': 'Methodology'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: 'da5436e3-4b96-4562-896e-3bd96fdad623'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-10-02T03:10:23.433Z
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2019-10-02T03:11:54.648Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2019-10-02T03:10:23.433Z
+    mgnl:lastModifiedBy: 'superuser'
+  'Network': 
+    'displayName': 'Network'
+    'level': 'level-1'
+    'name': 'Network'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: 'c12fe2ee-4cad-481e-96d4-0c0a3d4eb1ee'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-10-02T03:10:37.838Z
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2019-10-02T03:11:54.611Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2019-10-02T03:10:37.838Z
+    mgnl:lastModifiedBy: 'superuser'
+  'Planning': 
+    'displayName': 'Planning'
+    'level': 'level-1'
+    'name': 'Planning'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: 'd2ff98cb-1035-45c4-8e6f-31cb6f38d93d'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-10-02T03:10:45.025Z
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2019-10-02T03:11:54.582Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2019-10-02T03:10:45.025Z
+    mgnl:lastModifiedBy: 'superuser'
+  'Quality': 
+    'displayName': 'Quality'
+    'level': 'level-1'
+    'name': 'Quality'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: '1e3f0a0e-4084-4547-9f1a-58a1be2cfa60'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-10-02T03:10:55.449Z
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2019-10-02T03:11:54.543Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2019-10-02T03:10:55.449Z
+    mgnl:lastModifiedBy: 'superuser'
+  'Security': 
+    'displayName': 'Security'
+    'level': 'level-1'
+    'name': 'Security'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: '2cee50e6-aaee-493d-9763-6c300a2574eb'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-10-02T03:11:15.113Z
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2019-10-02T03:11:54.511Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2019-10-02T03:11:15.113Z
+    mgnl:lastModifiedBy: 'superuser'
+  'Solutions': 
+    'displayName': 'Solutions'
+    'level': 'level-1'
+    'name': 'Solutions'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: '28ed4fcc-6533-4ff7-9b07-a71b94388a4c'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-10-02T03:11:32.210Z
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2019-10-02T03:11:54.479Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2019-10-02T03:11:32.210Z
+    mgnl:lastModifiedBy: 'superuser'
+  'Front-End': 
+    'displayName': 'Front-End'
+    'level': 'level-1'
+    'name': 'Front-End'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: 'a211bb3a-6af0-44f4-9345-dcd35f1f4962'
+    mgnl:created: 2020-09-22T03:32:03.422Z
+    mgnl:createdBy: 'thu-thuan.vo-thi@ekino.com'
+    mgnl:lastModified: 2020-09-22T03:32:03.422Z
+    mgnl:lastModifiedBy: 'thu-thuan.vo-thi@ekino.com'
+  'Back-End': 
+    'displayName': 'Back-End'
+    'level': 'level-1'
+    'name': 'Back-End'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: '92c4204e-af0a-4b9d-b569-4d5b9de8e609'
+    mgnl:created: 2020-09-22T03:32:19.681Z
+    mgnl:createdBy: 'thu-thuan.vo-thi@ekino.com'
+    mgnl:lastModified: 2020-09-22T03:32:19.681Z
+    mgnl:lastModifiedBy: 'thu-thuan.vo-thi@ekino.com'
+  'DevOps': 
+    'displayName': 'DevOps'
+    'level': 'level-1'
+    'name': 'DevOps'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: '9150a036-3f4b-440a-9735-0db5d0079564'
+    mgnl:created: 2020-09-22T03:32:37.127Z
+    mgnl:createdBy: 'thu-thuan.vo-thi@ekino.com'
+    mgnl:lastModified: 2020-09-22T03:32:37.127Z
+    mgnl:lastModifiedBy: 'thu-thuan.vo-thi@ekino.com'
+  'Innovation': 
+    'displayName': 'Innovation'
+    'level': 'level-1'
+    'name': 'Innovation'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: '254a30a0-4039-45f8-a0a2-22ab6ccc3cb0'
+    mgnl:created: 2020-09-22T03:33:17.246Z
+    mgnl:createdBy: 'thu-thuan.vo-thi@ekino.com'
+    mgnl:lastModified: 2020-09-22T03:33:17.246Z
+    mgnl:lastModifiedBy: 'thu-thuan.vo-thi@ekino.com'
+  'Digital-Project-Management': 
+    'displayName': 'Digital Project Management'
+    'level': 'level-1'
+    'name': 'Digital Project Management'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: '58db8c90-15f4-41b9-b23f-94bed8c66e29'
+    mgnl:created: 2020-09-22T03:33:37.669Z
+    mgnl:createdBy: 'thu-thuan.vo-thi@ekino.com'
+    mgnl:lastModified: 2020-09-22T03:33:37.669Z
+    mgnl:lastModifiedBy: 'thu-thuan.vo-thi@ekino.com'
+  'Soft-skills': 
+    'displayName': 'Soft-skills'
+    'level': 'level-1'
+    'name': 'Soft-skills'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: 'ffdb4a25-6810-4c17-98af-3a344c464eff'
+    mgnl:created: 2020-09-22T03:33:49.858Z
+    mgnl:createdBy: 'thu-thuan.vo-thi@ekino.com'
+    mgnl:lastModified: 2020-09-22T03:33:49.858Z
+    mgnl:lastModifiedBy: 'thu-thuan.vo-thi@ekino.com'
+
+

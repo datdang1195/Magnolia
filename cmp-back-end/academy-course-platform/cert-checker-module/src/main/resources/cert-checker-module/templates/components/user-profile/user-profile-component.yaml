@@ -1,0 +1,6 @@
+templateScript: /cert-checker-module/templates/components/user-profile/user-profile-component.ftl
+renderType: freemarker
+class: info.magnolia.module.site.templates.PageTemplateDefinition
+title: User Profile Component
+modelClass: vn.ekino.certificate.model.UserProfileModel
+dialog: cert-checker-module:pages/user-profile-component-properties

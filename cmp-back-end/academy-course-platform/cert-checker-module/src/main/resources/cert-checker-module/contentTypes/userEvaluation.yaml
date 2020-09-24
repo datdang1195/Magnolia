@@ -1,0 +1,8 @@
+datasource:
+  workspace: userEvaluations
+  autoCreate: true
+
+model:
+  nodeType: mgnl:userEvaluation
+  properties:
+    - name: name

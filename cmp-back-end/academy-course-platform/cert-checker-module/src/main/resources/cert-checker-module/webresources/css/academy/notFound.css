@@ -1,0 +1,88 @@
+.app-wrapper__notFound {
+    padding: 0 20px 53px;
+}
+
+.container-notFound {
+    width: 1070px;
+    margin: auto;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.container-notFound .message-icon {
+    width: 412px;
+    height: 239px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.container-notFound .message-error {
+    color: #3a5cac;
+    font-size: 110px;
+    font-weight: 700;
+    letter-spacing: 4.65px;
+    line-height: 52px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.container-notFound .message-title {
+    color: #3a5cac;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.01px;
+    line-height: 52px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .container-notFound {
+        width: 100%;
+    }
+
+    .container-notFound .message-icon {
+        width: 288px;
+        height: 167px;
+        margin-bottom: 60px;
+    }
+
+    .container-notFound .message-error {
+        font-size: 70px;
+        font-weight: 700;
+        letter-spacing: 4.65px;
+        margin-bottom: 10px;
+    }
+
+    .container-notFound .message-title {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 1.01px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-notFound {
+        width: 100%;
+    }
+
+    .container-notFound .message-icon {
+        width: 164px;
+        height: 95px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .container-notFound .message-error {
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 4.65px;
+        margin-bottom: 0;
+    }
+
+    .container-notFound .message-title {
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 1.01px;
+        line-height: 30px;
+    }
+}

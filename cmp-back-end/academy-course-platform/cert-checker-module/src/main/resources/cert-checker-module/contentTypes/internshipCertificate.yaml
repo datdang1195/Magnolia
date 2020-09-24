@@ -1,0 +1,16 @@
+datasource:
+  workspace: internshipCertificates
+  autoCreate: true
+
+model:
+  nodeType: mgnl:internshipCertificate
+  properties:
+    - name: name
+      type: String
+    - name: code
+      type: String
+    - name: internship
+    - name: issueDate
+      type: Date
+    - name: generatedFiles
+

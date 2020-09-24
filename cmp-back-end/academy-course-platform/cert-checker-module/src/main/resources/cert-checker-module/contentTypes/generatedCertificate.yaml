@@ -1,0 +1,16 @@
+datasource:
+  workspace: generatedCertificate
+  autoCreate: true
+
+model:
+  nodeType: mgnl:generatedCertificate
+  properties:
+    - name: name
+      type: String
+    - name: code
+      type: String
+    - name: enrolProgram
+    - name: issueDate
+      type: Date
+    - name: generatedFiles
+

@@ -1,0 +1,112 @@
+!content-type:userAttitudeResult
+name: User-Attitude
+icon: icon-preview-app
+
+#
+subApps:
+  browser:
+    workbench:
+      editable: false
+      contentViews: !override
+        - name: list
+          class: info.magnolia.ui.workbench.list.ListPresenterDefinition
+          columns:
+            - name: path
+              enabled: false
+            - name: userEnrolProgram
+              label: User Enrol Program
+              expandRatio: 2
+              refItemPropertyName: userEnrolProgram
+              referencedItemWorkspace: enrolledProgram
+              referencedItemPropertyName: name
+              formatterClass: vn.ekino.certificate.workbench.ReferencedJcrItemColumnFormatter
+              class: vn.ekino.certificate.workbench.ReferencedJcrItemColumnDefinition
+              sortable: true
+            - name: attitudeEvaluation
+              label: Attitude Evaluation
+              expandRatio: 2
+              propertyName: attitudeEvaluation
+              class: info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition
+              sortable: true
+            - name: generalComment
+              label: General Comment
+              expandRatio: 2
+              propertyName: generalComment
+              class: info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition
+              sortable: true
+    actions:
+      activate:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+      deactivate:
+        command: deactivate
+        icon: icon-unpublish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.DeactivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+            - name: IsPublishedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsPublishedRule
+      activateDeleted:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsDeletedRule
+
+  detail:
+    actions:
+      commit:
+        class: vn.ekino.certificate.action.SaveFormActionDefinition
+    editor:
+      actionArea:
+        actionRenderers:
+          commit:
+            rendererClass: vn.ekino.certificate.render.UniqueActionRender
+      form:
+        tabs:
+          default:
+            name: phaseDetailsTab
+            fields:
+              - name: name
+                fieldType: hidden
+                type: Stringr
+                required: false
+              - name: userEnrolProgram
+                fieldType: combobox
+                label: User Enrol Program
+                initialMethod: getEnrolProgramApproved
+                required: true
+              - name: generalComment
+                fieldType: richText
+                type: String
+                label: General Comment
+              - name: attitudeEvaluation
+                fieldType: text
+                type: Decimal
+                label: Attitude Evaluation
+                validators:
+                  - name: scoreValidator
+                    class: vn.ekino.certificate.validator.score.ScoreValidatorDefinition
+                    errorMessage: Please input numerical values within range [0.0 - 100.0]
+
+# security
+#permissions:
+#  roles: []

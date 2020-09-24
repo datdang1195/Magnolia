@@ -1,0 +1,826 @@
+.app-wrapper__progress {
+  margin: 0 20px;
+}
+
+.program {
+  color: #4a4a4a;
+  font-size: 14px;
+}
+
+.program-plan {
+  margin-top: 5px;
+}
+
+.program-plan__name {
+  font-weight: 700;
+  letter-spacing: 1.33px;
+  line-height: 22px;
+  padding-left: 5px;
+  font-size: 18px;
+}
+
+.program-summary {
+  margin-top: 20px;
+}
+
+.program-summary__label {
+  margin-bottom: 10px;
+  color: #4a4a4a;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.78px;
+}
+
+.program-summary__label__name {
+  padding-left: 5px;
+  text-transform: uppercase;
+}
+
+.program-summary__button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.program-result {
+  margin-top: 10px;
+}
+
+.program-result__item {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.program-result__item:nth-child(odd) {
+  padding-right: 10px;
+}
+
+.program-result__item:nth-child(even) {
+  padding-left: 10px;
+}
+
+.program-result__label {
+  font-weight: 700;
+}
+
+.program-result__number {
+  border: 1px solid #979797;
+  padding: 10px 0 6px;
+  margin-top: 5px;
+  font-weight: 500;
+  min-height: 33px;
+}
+
+.program-training {
+  margin-top: 15px;
+  display: block;
+}
+
+.program-training__item {
+  display: flex;
+}
+
+.program-training__text {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.78px;
+  color: #4a4a4a;
+  margin-top: 2px;
+  padding: 5px 0;
+}
+
+.program-training__label {
+  min-width: 110px;
+  padding: 5px 0 4px;
+  font-weight: 700;
+  color: #4a4a4a;
+  font-size: 14px;
+  letter-spacing: 1.78px;
+  flex: 0 0 135px;
+}
+
+.program-tab__radio,
+.program-tab__content__item {
+  display: none;
+}
+
+.program-tab__content__item.show {
+  display: block;
+}
+
+.program-tab__list {
+  margin-top: 22px;
+  border-bottom: 1px solid #979797;
+  display: flex;
+}
+
+.program-tab__name {
+  padding: 10px 6px;
+  cursor: pointer;
+  position: relative;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.program-tab__name.active {
+  background-color: #3a5cac;
+  color: #fff;
+}
+
+.program-tab__content {
+  padding-top: 15px;
+}
+
+.program-tab__content__item .evn-col:nth-child(n+3) .program-evaluation__cell,
+.program-tab__content__item .evn-col:nth-child(1) .program-evaluation__cell {
+  text-align: center;
+}
+
+[id="course-panel"] .evn-col {
+  display: flex;
+  align-items: stretch;
+}
+
+.program-evaluation .evn-col {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+[id="course-panel"] .evn-col:nth-child(n+3) {
+  max-width: 34px;
+}
+
+[id="course-panel"] .evn-col:nth-child(n+3) .program-evaluation__cell {
+  padding: 0;
+}
+
+[id="course-panel"] .evn-col.program-course-number {
+  max-width: 30px;
+}
+
+[id="course-panel"] .evn-row:last-child .program-evaluation__cell {
+  border-bottom: 1px solid #979797;
+}
+
+[id="course-panel"] .evn-row:nth-child(odd) .program-evaluation__cell {
+  background-color: #e8f0fe;
+}
+
+[id="course-panel"] .evn-col.program-course-number .program-evaluation__cell {
+  border-left: 1px solid #979797;
+}
+
+.program-evaluation__label {
+  font-weight: 700;
+  text-align: center;
+  padding: 8px 0 6px;
+  background-color: #5776c1;
+  color: #fff;
+  font-size: 11px;
+  flex: 1;
+  word-break: break-word;
+}
+
+.program-course-name .program-evaluation__cell {
+  word-break: break-word;
+}
+
+.program-evaluation__cell {
+  border-top: 1px solid #979797;
+  border-right: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+  padding: 8px 5px 5px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+[id="job-training-panel"] .evn-col {
+  display: flex;
+  align-items: stretch;
+}
+
+[id="job-training-panel"] .evn-col .program-statistic__cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[id="job-training-panel"] .evn-row:nth-child(odd) .program-statistic__cell {
+  background-color: #e8f0fe;
+}
+
+.program-statistic__label {
+  flex: 1;
+  font-weight: 700;
+  text-align: center;
+  background-color: #5776c1;
+  padding: 8px 0 6px;
+  color: #fff;
+}
+
+.program-statistic__cell {
+  border-top: 1px solid #979797;
+  border-right: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+  padding: 8px 5px 5px;
+  flex: 1;
+}
+
+.program-statistic__cell[data-label="Score"] {
+  text-align: center;
+}
+
+[id="job-training-panel"] .evn-col:nth-child(1) .program-statistic__cell {
+  border-left: 1px solid #979797;
+}
+
+.table-session .table .program-statistic__cell--last {
+  font-weight: 700;
+  padding: 40px 8px;
+}
+
+[id="attitude-panel"] .evn-row {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+[id="attitude-panel"] .evn-col {
+  display: flex;
+  align-items: stretch;
+  padding: 5px 0;
+}
+
+[id="attitude-panel"] .evn-col:nth-child(1) .program-attitude__cell {
+  border-left: 1px solid #979797;
+}
+
+[id="attitude-panel"] .evn-row:nth-child(odd) .program-attitude__cell {
+  background-color: #e8f0fe;
+}
+
+[id="attitude-panel"] .evn-col--2 .program-attitude__cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.program-attitude__top-label {
+  font-weight: 700;
+  text-align: center;
+  flex: 1;
+}
+
+.program-attitude__left-label {
+  font-weight: 700;
+  background-color: #5776c1;
+  padding: 8px 5px;
+  color: #fff;
+}
+
+.program-attitude__cell {
+  border-top: 1px solid #979797;
+  border-right: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+  flex: 1;
+  padding: 8px 5px 5px;
+}
+
+.table-session .table .program-attitude__cell--last {
+  font-weight: 700;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.program-attitude__commnet__text {
+  padding: 0;
+}
+
+.program-attitude__commnet__text-area {
+  margin-top: 10px;
+  min-height: 200px;
+  border: 1px solid #979797;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.33px;
+  line-height: 22px;
+}
+
+.program-summary-item {
+  text-align: center;
+  margin: 9px 0 15px;
+}
+
+.program-summary-item:nth-child(2n+1) .program-summary-item__cell {
+  border-left: 1px solid #979797;
+}
+
+.program-summary-item .program-summary-item__cell {
+  border-top: 1px solid #979797;
+  border-right: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+}
+
+.program-summary-item__label {
+  font-weight: 700;
+}
+
+.program-summary-item__cell {
+  padding: 10px 0 6px;
+  min-height: 35px;
+  margin-top: 5px;
+}
+
+.program-summary-item.total {
+  font-weight: 700;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.program-summary-item.total .program-summary-item__cell {
+  background-color: #3a5cac;
+  color: #fff;
+}
+
+.program__certificate {
+  margin: 50px 70px 0;
+}
+
+.program__certificate-image {
+  max-width: 100%;
+}
+
+.program-status {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.78px;
+  text-transform: uppercase;
+}
+
+.program-status__col,
+.program-participant-status__col {
+  display: flex;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.program-status__label,
+.program-participant-status__label {
+  flex: 0 0 110px;
+  text-align: left;
+  color: #4a4a4a;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.78px;
+}
+
+.program-status__cell,
+.program-participant-status__cell {
+  display: flex;
+  flex: 1;
+}
+
+.program-person {
+  display: none;
+}
+
+.program-person.show {
+  display: flex;
+}
+
+.program-status .program-status__value {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.78px;
+  color: #4a4a4a;
+}
+
+.program-participant-status__value {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.78px;
+  color: #4a4a4a
+}
+
+.program-status .program-status__value.status {
+  color: #3a5cac;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.78px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+[id="attitude-panel"] .table-header-title {
+  display: none;
+}
+
+[id="attitude-panel"] .attitude-session .table thead tr {
+  display: none;
+}
+
+.table-session .table [data-label="Comment"] {
+  width: 100%;
+}
+
+[id="attitude-panel"] .attitude-session {
+  padding-bottom: 10px;
+}
+
+
+[id="attitude-panel"] .attitude-session .table-session {
+  margin-top: 10px;
+}
+
+.table-session .scroll-content {
+  padding: 1px;
+}
+
+.table-session {
+  max-height: 340px;
+}
+
+.app-wrapper__progress .course__input__wrapper {
+  font-size: 14px;
+  position: relative;
+  padding-left: 50px;
+  border: 1px solid #979797;
+  color: #4a4a4a;
+  font-weight: 600;
+  letter-spacing: 1.78px;
+}
+
+.app-wrapper__progress .course__input__text:focus {
+  outline: none;
+}
+
+.app-wrapper__progress .course__input__text {
+  border: 0;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 10px 15px 0;
+  width: 100%;
+  margin-bottom: 0;
+  color: #4a4a4a;
+}
+
+.app-wrapper__progress .course__input__list {
+  position: absolute;
+  max-height: 150px;
+  width: calc(100% + 1px);
+  background-color: #fff;
+  border: 1px solid #ebeff7;
+  top: calc(100% + 2px);
+  left: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 10;
+  overflow-y: auto;
+  display: none;
+}
+
+.app-wrapper__progress .course__input__list>ul {
+  list-style-type: none;
+  background-color: transparent;
+}
+
+.app-wrapper__progress .course__input__list .course__input__item {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.app-wrapper__progress .course__input__item:hover {
+  background-color: rgba(58, 92, 172, 0.5);
+}
+
+.app-wrapper__progress .course__input__text::placeholder {
+  color: rgba(74, 74, 74, 0.5);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1.78px;
+  text-transform: uppercase;
+}
+
+.app-wrapper__progress .program .course__input__wrapper::before,
+.app-wrapper__progress .program .course__input__wrapper::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  height: 5px;
+  width: 20px;
+  background-color: #3a5cac;
+}
+
+.app-wrapper__progress .course__input__wrapper::after {
+  top: 22px;
+}
+
+.app-wrapper__progress .course__input__line {
+  position: absolute;
+  height: 5px;
+  width: 31px;
+  background-color: #3a5cac;
+  top: 29px;
+  left: 9px;
+}
+
+.app-wrapper__progress .session-search {
+  margin-top: 25px;
+}
+
+.app-wrapper__progress .scrollbar-thumb {
+  background: rgba(0, 0, 0, .3);
+}
+
+.app-wrapper__progress .course__input__wrapper {
+  font-size: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.table-training .table {
+  margin-bottom: 9px;
+}
+
+.table-session {
+  margin-top: 10px;
+}
+
+.table-training .table.table--last {
+  margin-bottom: 0;
+}
+
+.program-item.hide {
+  display: none;
+}
+
+.program-tab-name-status{
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+  width: 21%;
+}
+.program-tab-name-status-semester select{
+  min-width: 225px;
+  height: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  border: none;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+.evn-row-name{
+  min-width: 110px;
+  padding: 5px 0 4px;
+  font-weight: 700;
+  color: #3a5cac;
+  font-size: 16px;
+  letter-spacing: 1.78px;
+  flex: 0 0 135px;
+  text-transform: uppercase;
+
+}
+.program-tab-name-search-status-input {
+  position: absolute;
+  border: 1px solid #979797;
+  font-size: 16px;
+  margin-left: 53px;
+  font-weight: 700;
+  width: 74%;
+  margin-bottom: 0;
+  color: #4a4a4a;
+  height: 30px;
+}
+
+.program-tab-name-search-status-input::placeholder{
+  color: rgba(74, 74, 74, 0.5);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1.78px;
+  text-transform: uppercase;
+}
+
+
+
+@media (min-width: 768px) {
+
+  [id="attitude-panel"] .table-header-title {
+    display: flex;
+  }
+
+  .program-attitude__commnet__text {
+    padding: 0 5px;
+  }
+
+  [id="job-training-panel"] .table-session .table tbody tr td:not(:last-child) {
+    width: 17%;
+    text-align: center;
+  }
+
+  [id="course-panel"] .table-session .table tbody tr td:not(:nth-child(2)) {
+    width: 10%;
+    text-align: center;
+  }
+
+  [id="course-panel"] .table-session .table tbody tr td:first-child {
+    width: 7%;
+  }
+
+  [id="attitude-panel"] .attitude-session .table-session {
+    margin-top: 0;
+  }
+
+  .app-wrapper__progress .course__input__wrapper {
+    font-size: 16px;
+    width: 70%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .app-wrapper__progress .course__input__text::placeholder {
+    font-size: 16px;
+  }
+
+  .app-wrapper__progress .session-search {
+    margin-top: 15px;
+  }
+
+  [id="attitude-panel"] .table-session .table [data-label="Behavior"] {
+    width: 65%;
+  }
+
+  [id="attitude-panel"] .table-session .table [data-label="Score"] {
+    text-align: center;
+  }
+
+  [id="attitude-panel"] .table-session .table [data-label="Comment"] {
+    width: 30%;
+  }
+
+  [id="attitude-panel"] .table-header__first-column {
+    flex: 0 0 64%;
+    max-width: 64%;
+  }
+
+  [id="attitude-panel"] .table-header__second-column {
+    flex: 0 0 5%;
+    max-width: 5%;
+  }
+
+  [id="attitude-panel"] .table-header__third-column {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+
+  .table-session {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .program-training {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .program-training__item {
+    flex: 0 0 50%;
+  }
+
+  .program-evaluation__label {
+    font-size: 14px;
+  }
+
+  .program-evaluation__cell {
+    border-left: 1px solid #979797;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  [id="course-panel"] .evn-col {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .program-result__item {
+    padding-left: 14px;
+  }
+
+  .program-result__item:nth-child(4n+1) {
+    padding-left: 0;
+  }
+
+  .program-tab__content__item .evn-row {
+    margin: 0 -10px;
+  }
+
+  [id="course-panel"] .evn-col.program-course-number {
+    max-width: 40px;
+  }
+
+  [id="course-panel"] .evn-col:nth-child(n+3) {
+    max-width: 80px;
+  }
+
+  .program-tab__name {
+    min-width: 150px;
+    font-size: 14px;
+  }
+
+  .program-statistic__cell {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 1px solid #979797;
+  }
+
+  .program-statistic__label {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  [id="attitude-panel"] .evn-col {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .program-attitude__cell {
+    border: 1px solid #979797;
+  }
+
+  .program-summary-item {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .program-summary-item__cell {
+    border: 1px solid #979797;
+  }
+
+  .program-status {
+    margin: 0 150px;
+  }
+
+  .program-participant-status {
+    margin-left: 150px;
+  }
+
+  .program-status .program-status__value.status {
+    margin: 15px 0;
+  }
+
+  .app-wrapper__progress .course__input__wrapper {
+    font-size: 16px;
+    width: 70%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .app-wrapper__progress .course__input__text::placeholder {
+    font-size: 16px;
+  }
+
+  .app-wrapper__progress .session-search {
+    margin-top: 15px;
+  }
+
+  .program-status__label--email,
+  .program-status__label--role {
+    flex-basis: 64px;
+  }
+
+  .program-status__label--phone,
+  .program-status__label--participants {
+    flex-basis: 120px;
+  }
+
+  .program-status__label--start-date,
+  .program-status__label--status {
+    flex-basis: 95px;
+  }
+
+  .program-status__label--end-date {
+    flex-basis: 83px;
+  }
+
+  .table-session {
+    max-height: none;
+  }
+}
+.js-program-participant-status{
+  padding-bottom: 15px;
+}
+.content__time span{
+  font-weight: bold;
+}

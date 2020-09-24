@@ -1,0 +1,9 @@
+version: '3'
+services:
+  author:
+    build: ./academy-course-platform
+    ports:
+      - "8090:8080"
+    volumes:
+      - ./author/repositories:/apache-tomcat-9.0.17/webapps/ROOT/repositories
+      - ./author/logs:/apache-tomcat-9.0.17/webapps/ROOT/logs

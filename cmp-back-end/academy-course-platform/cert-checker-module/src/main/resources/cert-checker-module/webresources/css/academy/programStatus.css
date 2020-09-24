@@ -1,0 +1,421 @@
+.app-wrapper__programStatus {
+    padding: 0 20px;
+}
+
+.container-programStatus {
+    max-width: 1070px;
+    margin: auto;
+    padding-bottom: 80px;
+}
+
+.container-programStatus .content-programStatus .wrapper-section {
+    margin-top: 15px;
+}
+
+.content-programStatus .section__title {
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.78px;
+}
+
+.content-programStatus .section-item {
+    margin-bottom: 30px;
+}
+
+.container-programStatus .wrapper-table .total-participants {
+    color: #3a5cac;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.78px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-programStatus .wrapper-table .table-overflow.table-desktop {
+    display: block;
+    height: 340px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: height 0.5s;
+}
+
+.container-programStatus .wrapper-table .table-overflow.table-mobile {
+    display: none;
+}
+
+.container-programStatus .wrapper-table .table-content {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.container-programStatus .wrapper-table .table-content tr:not(:first-child) {
+    background-color: #ffffff;
+}
+
+.container-programStatus .wrapper-table .table-content thead th {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.78px;
+    position: sticky;
+    top: -1px;
+    background-color: #3a5cac;
+    text-align: left;
+}
+
+.container-programStatus .wrapper-table .table-content thead th:nth-child(1) {
+    width: 5%;
+}
+
+.container-programStatus .wrapper-table .table-content thead th:nth-child(2) {
+    width: 20%;
+}
+
+.container-programStatus .wrapper-table .table-content thead th:nth-child(3) {
+    width: 15%;
+}
+
+.container-programStatus .wrapper-table .table-content thead th:nth-child(4) {
+    width: 15%;
+}
+
+.container-programStatus .wrapper-table .table-overflow.table-desktop .table-content thead th:nth-child(6) {
+    width: 25%;
+}
+
+.container-programStatus .wrapper-table .table-content th,
+.container-programStatus .wrapper-table .table-content td {
+    border: 1px solid #979797;
+    border-collapse: collapse;
+    padding: 8px 10px 7px;
+    color: #231f20;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.78px;
+}
+
+.container-programStatus .wrapper-table .table-content .link-check-here {
+    color: #3a5cac;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.78px;
+    text-decoration: underline;
+}
+
+.container-programStatus .wrapper-table .table-content .icon-check-here {
+    margin-left: 10px;
+}
+
+.container-programStatus .wrapper-see {
+    width: 110px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.container-programStatus .wrapper-see:hover {
+    cursor: pointer;
+}
+
+.container-programStatus .wrapper-see.hidden {
+    display: none;
+}
+
+.container-programStatus .see__label {
+    color: #3a5cac;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.78px;
+    text-decoration: underline;
+}
+
+.container-programStatus .see-more-participants::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #3a5cac;
+    margin-left: 5px;
+    margin-top: 4px;
+}
+
+.container-programStatus .see-less-participants::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #3a5cac;
+    margin-left: 5px;
+    margin-top: 4px;
+    transform: rotate(180deg);
+}
+
+.content-programStatus .section-item .section__label {
+    color: #4a4a4a;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.78px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.content-programStatus .section-item .onJobTraining-item {
+    margin-bottom: 10px;
+}
+
+.content-programStatus .section__course {
+    margin-bottom: 20px;
+    margin-top: 17px;
+}
+
+.content-programStatus .section__course .wrapper-info-courses {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content-programStatus .section__course .wrapper-info-courses .info-course {
+    width: 20%;
+    text-align: center;
+}
+
+.content-programStatus .section__course .wrapper-info-courses .info-course:not(:last-child) {
+    margin-right: 20px;
+}
+
+.content-programStatus .section__course .info-course .info-course__label {
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.56px;
+}
+
+.content-programStatus .section__course .info-course .info-course__value {
+    line-height: 22px;
+    border: 1px solid #979797;
+    padding: 5px 0 6px;
+    margin-top: 7px;
+    min-height: 33px;
+    color: #231f20;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.56px;
+}
+
+.content-programStatus .section-item .onJobTraining-item .wrapper-groups {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.content-programStatus .section-item .onJobTraining-item .info-group {
+    display: flex;
+    align-items: flex-start;
+    flex: 0 0 50%;
+}
+
+.content-programStatus .section-item .onJobTraining-item .info-group .group__label {
+    display: inline-block;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.78px;
+    line-height: 25px;
+    flex: 0 0 135px;
+}
+
+.content-programStatus .section-item .onJobTraining-item .info-group .group__value {
+    margin-top: 2px;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.78px;
+    line-height: 25px;
+}
+
+.content-programStatus .section-item .section__btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.table-overflow .scrollbar-thumb {
+    background: rgba(0, 0, 0, .3);
+}
+
+.content-programStatus .session-filter--margin {
+    margin-bottom: 30px;
+}
+
+.content-programStatus .line {
+    height: 1px;
+    background: #979797;
+    margin-bottom: 10px;
+}
+
+.container-programStatus .content-programStatus .hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .container-programStatus {
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+
+    .container-programStatus .content-programStatus .wrapper-section {
+        margin-top: 25px;
+    }
+
+    .container-programStatus .wrapper-table .table-overflow {
+        max-height: 340px;
+    }
+
+    .container-programStatus .wrapper-see {
+        display: none;
+    }
+
+    .container-programStatus .see__label {
+        font-size: 14px;
+        letter-spacing: 1.56px;
+    }
+
+    .container-programStatus .see-more-participants::after {
+        margin-top: 5px;
+    }
+
+    .container-programStatus .see-less-participants::after {
+        margin-top: 5px;
+    }
+
+    .content-programStatus .section__course {
+        margin-top: 0;
+    }
+
+    .content-programStatus .section__course .wrapper-info-courses {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content-programStatus .section__course .wrapper-info-courses .info-course {
+        width: calc(50% - 10px);
+        margin-top: 10px;
+    }
+
+    .content-programStatus .section__course .wrapper-info-courses .info-course:nth-child(even) {
+        margin-right: 0;
+    }
+
+    .content-programStatus .section-item .section__label {
+        margin-bottom: 10px;
+    }
+
+    .content-programStatus .section-item .onJobTraining-item {
+        margin-bottom: 30px;
+    }
+
+    .content-programStatus .section-item .onJobTraining-item:first-child {
+        margin-top: 15px;
+    }
+
+    .content-programStatus .section-item .onJobTraining-item .wrapper-groups {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .content-programStatus .section-item .onJobTraining-item .info-group:nth-child(2n + 1) {
+        order: -1;
+    }
+
+    .content-programStatus .section-item .onJobTraining-item .info-group .group__label {
+        font-size: 14px;
+        flex: 0 0 135px;
+        line-height: 25px;
+        letter-spacing: 1.56px;
+    }
+
+    .content-programStatus .section-item .onJobTraining-item .info-group .group__value {
+        font-size: 14px;
+        line-height: 25px;
+        letter-spacing: 1.56px;
+    }
+
+    .container-programStatus .wrapper-table .table-content {
+        border-collapse: inherit;
+    }
+
+    .content-programStatus .table-content thead tr {
+        display: none;
+    }
+
+    .content-programStatus .table-content tr {
+        box-shadow: 0 3px 3px hsla(0, 0%, 4%, .1), 0 0 0 1px hsla(0, 0%, 4%, .1);
+        border-radius: 1px;
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    .content-programStatus .table-content tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .container-programStatus .wrapper-table .table-content td {
+        display: flex;
+        width: auto;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #f5f5f5;
+        text-align: left;
+    }
+
+    .content-programStatus .table-content td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        padding-right: 10px;
+        text-align: left;
+        flex: 0 0 110px;
+    }
+
+    .content-programStatus .table-content tr:nth-child(2n) td {
+        background-color: #e8f0fe;
+    }
+
+    .container-programStatus .wrapper-table .table-content th,
+    .container-programStatus .wrapper-table .table-content td {
+        color: #231f20;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 1.56px;
+    }
+
+    .container-programStatus .wrapper-table .table-overflow.table-desktop {
+        display: none;
+    }
+
+    .container-programStatus .wrapper-table .table-overflow.table-mobile {
+        display: block;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .container-programStatus .wrapper-table .table-overflow.table-mobile td {
+        word-break: break-word
+    }
+
+    .content-programStatus .line {
+        margin-bottom: 20px;
+    }
+
+    .container-programStatus .wrapper-table .total-participants {
+        font-size: 14px;
+    }
+
+    .content-programStatus .session-filter .wrapper-filter.wrapper-filter--center {
+        justify-content: center;
+    }
+}

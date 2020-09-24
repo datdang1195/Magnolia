@@ -1,0 +1,78 @@
+'groups': 
+  'Common': 
+    'color': '#9A3332'
+    'permanent': 'true'
+    'apps': 
+      'pages': 
+      'assets': 
+      'News': 
+      'Phase': 
+      'Program': 
+      'Course': 
+  'Admin-Scope': 
+    'color': '#9A3332'
+    'permanent': 'true'
+    'apps': 
+      'Enrolled-Program': 
+      'Program-Course': 
+      'Attendance': 
+  'Project': 
+    'color': '#9A3332'
+    'permanent': 'true'
+    'apps': 
+      'OJT-Project': 
+      'Assessment': 
+  'Score': 
+    'color': '#9A3332'
+    'permanent': 'true'
+    'apps': 
+      'Course-Result': 
+      'OJT-User': 
+      'OJT-User-Assessment': 
+      'User-Attitude': 
+      'User-Attitude-Assessment': 
+      'User-Evaluation': 
+      'Generated-Certificate': 
+  'manage': 
+    'color': '#4B8E9E'
+    'permanent': 'true'
+    'apps': 
+      'security': 
+      'categories': 
+      'rssAggregator': 
+      'configuration': 
+      'definitions-app': 
+      'password-manager': 
+  'tools': 
+    'color': '#666666'
+    'permanent': 'true'
+    'apps': 
+      'jcr-browser': 
+      'mail': 
+      'cacheTools': 
+      'logTools': 
+      'publishing': 
+      'about': 
+      'jcr-tools': 
+    'permissions': 
+      'roles': 
+        'superuser': 'superuser'
+  'dev': 
+    'color': '#666666'
+    'permanent': 'true'
+    'apps': 
+      'messages': 
+      'groovy': 
+      'restTools': 
+    'permissions': 
+      'roles': 
+        'superuser': 'superuser'
+  'stk': 
+    'label': 'Web dev'
+    jcr:primaryType: 'mgnl:content'
+    'apps': 
+      jcr:primaryType: 'mgnl:content'
+      'resources': 
+      'site': 
+
+

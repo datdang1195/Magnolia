@@ -1,0 +1,18 @@
+datasource:
+  workspace: OJT-Project
+  autoCreate: true
+
+model:
+  nodeType: mgnl:ojtProject
+  properties:
+  - name: name
+  - name: program
+  - name: projectName
+  - name: projectLead
+  - name: status
+  - name: description
+  - name: startDate
+    type: Date
+  - name: endDate
+    type: Date
+

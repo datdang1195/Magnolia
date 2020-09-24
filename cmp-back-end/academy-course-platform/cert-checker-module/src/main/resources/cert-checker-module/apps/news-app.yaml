@@ -1,0 +1,136 @@
+!content-type:news
+name: News
+icon: icon-notifications-app
+
+#
+subApps:
+  browser:
+    workbench:
+      editable: false
+      contentViews: !override
+        - name: list
+          class: info.magnolia.ui.workbench.list.ListPresenterDefinition
+          columns:
+            - name: path
+              enabled: false
+            - name: name
+              expandRatio: 2
+              propertyName: name
+              class: info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition
+              sortable: true
+            - name: date
+              expandRatio: 1
+              propertyName: date
+              label: Created Date
+              class: info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition
+              sortable: true
+    actions:
+      activate:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+      deactivate:
+        command: deactivate
+        icon: icon-unpublish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.DeactivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+            - name: IsPublishedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsPublishedRule
+      activateDeleted:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsDeletedRule
+      saveNotify:
+        class: 'vn.ekino.certificate.action.SaveFormActionDefinition'
+        availability:
+          root: 'true'
+          nodeTypes:
+            content: 'mgnl:news'
+
+  detail:
+    actions:
+      saveNotify:
+        class: vn.ekino.certificate.action.SaveAndNotifyActionDefinition
+        label: Save & Notify
+      commit:
+        class: vn.ekino.certificate.action.SaveFormActionDefinition
+      cancel:
+        class: info.magnolia.ui.form.action.CancelFormActionDefinition
+
+    editor:
+      actions: !override
+        - name: saveNotify
+        - name: commit
+        - name: cancel
+      actionArea:
+        actionRenderers:
+          saveNotify:
+            rendererClass: vn.ekino.certificate.render.CertificateActionRender
+          commit:
+            rendererClass: vn.ekino.certificate.render.UniqueActionRender
+          cancel:
+            rendererClass: vn.ekino.certificate.render.CertificateActionRender
+      form:
+        tabs:
+          default:
+            fields:
+              - name: name
+                label: Path Title
+              - name: title
+                fieldType: richText
+                type: String
+                label: Title
+              - name: subtitle
+                fieldType: richText
+                type: String
+                label: Subtitle
+              - name: image
+                label: Image
+                required: true
+                class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+                targetWorkspace: dam
+                appName: assets
+                identifierToPathConverter:
+                  class: info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+                contentPreviewDefinition:
+                  contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
+              - name: displayImage
+                label: Display Image
+                fieldType: checkbox
+                buttonLabel: Select to display image
+                defaultValue: true
+              - name: content
+                fieldType: richText
+                configJsFile: /.resources/cert-checker-module/webresources/js/configJsFile.js
+                label: Content
+              - name: date
+                fieldType: date
+                type: Date
+                defaultValue: now
+                label: Date of News
+              - name: author
+                fieldType: text
+                label: Author
+# security
+#permissions:
+#  roles: []

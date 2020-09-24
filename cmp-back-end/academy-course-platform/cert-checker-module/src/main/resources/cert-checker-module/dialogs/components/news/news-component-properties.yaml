@@ -1,0 +1,24 @@
+form:
+  tabs:
+    - name: tabMain
+      fields:
+        - name: quantityOfLatestNews
+          label: Quantity of latest news
+          fieldType: text
+          required: true
+        - name: pageSize
+          label: Page size
+          fieldType: text
+          required: true
+        - name: newsDetailPage
+          label: Link to news detail page
+          fieldType: link
+          required: true
+          targetWorkspace: website
+          appName: pages
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

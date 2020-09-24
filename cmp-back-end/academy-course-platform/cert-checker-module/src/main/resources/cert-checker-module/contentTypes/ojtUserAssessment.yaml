@@ -1,0 +1,12 @@
+datasource:
+  workspace: OJT-User-Assessment
+  autoCreate: true
+
+model:
+  nodeType: mgnl:ojtUserAssessment
+  properties:
+    - name: name
+    - name: ojtUserResult
+    - name: assessment
+    - name: assessmentScore
+    - name: assessmentComment

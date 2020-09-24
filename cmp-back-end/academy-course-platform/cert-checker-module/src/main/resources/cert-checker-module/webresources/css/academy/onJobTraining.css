@@ -1,0 +1,262 @@
+.app-wrapper__onJobTraining {
+    padding: 0 20px;
+}
+.container-onJobTraining {
+    max-width: 1070px;
+    margin: auto;
+    padding-bottom: 80px;
+}
+.container-onJobTraining .onJobTraining {
+    padding-bottom: 40px;
+}
+.container-onJobTraining .onJobTraining {
+    text-align: center;
+}
+
+.container-onJobTraining .onJobTraining .wrapper-title {
+    display: flex;
+    color: #4A4A4A;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.78px;
+    text-transform: uppercase;
+    padding-top: 13px;
+    justify-content: center;
+}
+
+.container-onJobTraining .content-onJobTraining .onJobTraining-project,
+.container-onJobTraining .content-onJobTraining .wrapper-section {
+    margin-bottom: 10px;
+}
+
+.container-onJobTraining .content-onJobTraining .onJobTraining-group {
+    width: 50%;
+    display: flex;
+    align-items: baseline;
+}
+
+.container-onJobTraining .content-onJobTraining .onJobTraining-project.onJobTraining-group {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+}
+
+.container-onJobTraining .content-onJobTraining .onJobTraining-group .group__label {
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.88px;
+    display: inline-block;
+    flex: 0 0 120px;
+}
+
+.container-onJobTraining .content-onJobTraining .onJobTraining-group .group__value {
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.33px;
+    line-height: 22px;
+}
+
+.container-onJobTraining .content-onJobTraining .wrapper-section {
+    display: flex;
+    flex-direction: row;
+}
+.content-onJobTraining .onJobTraining-description {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 10px;
+}
+.app-wrapper__onJobTraining .content-onJobTraining .description__label,
+.app-wrapper__onJobTraining .content-onJobTraining .participant__label {
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.88px;
+    line-height: 22px;
+    flex: 0 0 120px;
+    /*max-width: 122px;*/
+}
+.content-onJobTraining .onJobTraining-description .description__value {
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.33px;
+    width: calc(100% - 122px);
+    max-width: calc(100% - 122px);
+}
+
+.content-onJobTraining .onJobTraining-description .description__value p {
+    line-height: 24px;
+}
+
+.content-onJobTraining .onJobTraining-description .description__value ul {
+    margin-left: 20px;
+}
+
+.content-onJobTraining .onJobTraining-description .description__value ol {
+    margin-left: 25px;
+}
+
+   .content-onJobTraining .list-participants .participant__content.role-supervisor {
+       padding: 10px 0;
+       width: 100%;
+   }
+.content-onJobTraining .list-participants .participant__content .table {
+    width: 100%;
+    border-spacing: 10px;
+    margin-left: -10px;
+}
+.content-onJobTraining .list-participants .participant__content .table tr:nth-child(2n) td {
+    background-color: #e8f0fe;
+}
+.content-onJobTraining .list-participants .participant__content .table td {
+    border: 1px solid #979797;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.33px;
+    line-height: 22px;
+    padding: 5px 8px;
+}
+.content-onJobTraining .list-participants .participant__content.role-supervisor .table tr td:nth-child(4) {
+    text-align: center;
+}
+.content-onJobTraining .list-participants .participant__content.role-supervisor .table tr td:nth-child(5) {
+    width: 50%;
+}
+.content-onJobTraining .list-participants .participant__content .table th {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.88px;
+    padding: 8px;
+    background-color: #5776c1;
+    color: #fff;
+}
+
+   .content-onJobTraining .list-participants .participant__content.role-participants {
+       padding: 10px 0;
+       width: 100%;
+   }
+.content-onJobTraining .list-participants .participant__content.role-participants .table tr td:nth-child(4) {
+    width: 50%;
+}
+.app-wrapper__onJobTraining .goToTopPage {
+    margin-bottom: 10px;
+}
+.app-wrapper__onJobTraining .wrapper-goTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    padding: 7px;
+    margin: auto;
+}
+.app-wrapper__onJobTraining .wrapper-goTop .icon-goTop {
+    width: 13px;
+    height: 13px;
+}
+.app-wrapper__onJobTraining .wrapper-goTop:hover {
+    cursor: pointer;
+}
+.app-wrapper__onJobTraining .wrapper-goTop .goTo__title {
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.88px;
+    text-transform: uppercase;
+    padding-left: 2px;
+    margin-top: 4px;
+}
+@media (max-width: 768px) {
+    .container-onJobTraining {
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+    .container-onJobTraining .onJobTraining {
+        padding-bottom: 20px;
+    }
+
+    .container-onJobTraining .onJobTraining .wrapper-title {
+        display: block;
+    }
+    .container-onJobTraining .onJobTraining .wrapper-title .line {
+        display: none;
+    }
+    .container-onJobTraining .onJobTraining .wrapper-title .course-group {
+        margin-top: 5px;
+    }
+
+    /*.container-onJobTraining .onJobTraining .phase__tilte {*/
+    /*    padding-top: 10px;*/
+    /*}*/
+    .container-onJobTraining .content-onJobTraining .onJobTraining-project {
+        padding: 3px 0;
+        margin: 0;
+    }
+    .container-onJobTraining .content-onJobTraining .wrapper-section {
+        padding: 0;
+        margin: 0;
+    }
+    .content-onJobTraining .onJobTraining-description {
+        display: block;
+        mgarin: 0;
+    }
+    .wrapper-section .onJobTraining-group {
+        padding: 3px 0;
+    }
+    .content-onJobTraining .onJobTraining-description .description__value {
+        padding-top: 5px;
+    }
+    .container-onJobTraining .content-onJobTraining .onJobTraining-group {
+        width: 100%;
+    }
+    .container-onJobTraining .content-onJobTraining .wrapper-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .content-onJobTraining .list-participants {
+        padding: 3px 0;
+    }
+    .participant__content .program-evaluation__label {
+        font-size: 14px;
+    }
+    .content-onJobTraining .list-participants .participant__content .table {
+        border-spacing: 0;
+        margin-left: 0;
+    }
+    .content-onJobTraining .list-participants .participant__content .table tr:nth-child(1) {
+        display: none;
+    }
+    .content-onJobTraining .list-participants .participant__content.role-supervisor .table tr td:nth-child(5) {
+        width: 100%;
+    }
+    .content-onJobTraining .list-participants .participant__content.role-participants .table tr td:nth-child(4) {
+        width: 100%;
+    }
+    .content-onJobTraining .list-participants .participant__content .table tr {
+        box-shadow: 0 3px 3px hsla(0, 0%, 4%, .1), 0 0 0 1px hsla(0, 0%, 4%, .1);
+        border-radius: 1px;
+        display: block;
+        margin-bottom: 12px;
+    }
+    .content-onJobTraining .list-participants .participant__content.role-participants {
+        max-width: 100%;
+    }
+    .content-onJobTraining .list-participants .participant__content .table td {
+        display: flex;
+        width: auto;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #f5f5f5;
+        text-align: left;
+    }
+    .content-onJobTraining .list-participants .participant__content .table td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        padding-right: 10px;
+        text-align: left;
+        flex: 0 0 80px;
+    }
+}

@@ -1,0 +1,19 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global layout */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Graphik-Regular";
+}
+
+.app-wrapper__academy {
+    background-color: #ffffff;
+    flex: 1 1 calc(100vh - 270px);
+    position: relative;
+}

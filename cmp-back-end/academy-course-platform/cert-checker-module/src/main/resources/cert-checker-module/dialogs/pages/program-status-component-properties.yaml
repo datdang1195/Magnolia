@@ -1,0 +1,27 @@
+form:
+  tabs:
+    - name: tabMain
+      fields:
+        - name: courseLink
+          fieldType: link
+          required: true
+          targetWorkspace: website
+          appName: pages
+          label: Course list
+        - name: ojtLink
+          fieldType: link
+          required: true
+          targetWorkspace: website
+          appName: pages
+          label: On-the-job training detail
+        - name: participantLink
+          fieldType: link
+          required: true
+          targetWorkspace: website
+          appName: pages
+          label: Participant detail
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

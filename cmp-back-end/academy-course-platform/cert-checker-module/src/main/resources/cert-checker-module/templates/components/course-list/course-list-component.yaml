@@ -1,0 +1,7 @@
+templateScript: /cert-checker-module/templates/components/course-list/course-list-component.ftl
+renderType: freemarker
+visible: true
+title: Course List Page
+class: info.magnolia.module.site.templates.PageTemplateDefinition
+modelClass: vn.ekino.certificate.model.CourseListModel
+dialog: cert-checker-module:pages/course-list-component-properties

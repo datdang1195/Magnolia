@@ -1,0 +1,544 @@
+.app-wrapper__courseList {
+    padding: 0 20px 53px;
+}
+
+.container-courseList {
+    width: 1070px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.container-courseList .courseList {
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.container-courseList .courseList .courseList__date {
+    color: #4a4a4a;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.78px;
+    text-transform: uppercase;
+    padding: 12px 0;
+}
+
+
+.container-courseList .contentPage .course__total {
+    color: #4a4a4a;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1.78px;
+    text-align: center;
+}
+
+.container-courseList .contentPage .course__total .course__total--bold {
+    font-weight: 700;
+}
+
+.container-courseList .contentPage .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.container-courseList .contentPage .menu .schedule {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-right: 25px;
+}
+
+.container-courseList .contentPage .menu .training {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-left: 25px;
+}
+
+.container-courseList .contentPage .menu .schedule:hover,
+.training:hover {
+    cursor: pointer;
+}
+
+.container-courseList .contentPage .menu .schedule__lable,
+.training__lable {
+    color: #3a5cac;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2.22px;
+    text-transform: uppercase;
+}
+
+.container-courseList .contentPage .menu .schedule__img {
+    background-image: url('../../images/schedule-desk.png');
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-right: 2px
+}
+
+.container-courseList .contentPage .menu .training__img {
+    background-image: url('../../images/job-training-desk.png');
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 26px;
+    margin-right: 5px;
+}
+.container-courseList .contentPage .dropdown {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.container-courseList .contentPage .dropdown .form-radio .wrapper-item {
+    margin-bottom: 15px;
+    position: relative;
+    cursor: pointer;
+    padding-left: 40px;
+}
+
+.container-courseList .contentPage .dropdown .form-radio {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+// flex-direction: column;
+}
+
+.container-courseList .contentPage .dropdown .form-radio .radio__title{
+    font-size: 16px;
+    letter-spacing: 1.78px;
+    color: #4a4a4a;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 7px;
+
+
+}
+
+.container-courseList .contentPage .dropdown .form-radio .wrapper-item input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.container-courseList .contentPage .dropdown .form-radio .wrapper-item .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32px;
+    width: 32px;
+    border: 1px solid #979797;
+    border-radius: 50%;
+}
+.container-courseList .contentPage .dropdown .form-radio .wrapper-item input:checked ~ .checkmark:after{
+    display: block;
+}
+
+.container-courseList .contentPage .dropdown .form-radio .wrapper-item .checkmark::after {
+    content: '';
+    position: absolute;
+    display: none;
+    top: 7px;
+    left: 7px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #3a5cac;
+}
+.container-courseList .contentPage .dropdown .dropdown-categories {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    margin-top: 30px;
+}
+.container-courseList .contentPage .dropdown .dropdown-semester {
+    width: 30%;
+    height: 35px;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 20px;
+    letter-spacing: 1.56px;
+    border-radius: 0;
+    position: relative;
+}
+.container-courseList .contentPage .dropdown .dropdown-semester .select-value{
+    padding-left: 12px;
+    line-height: 35px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.container-courseList .contentPage .dropdown .dropdown-semester .dropdown-select{
+    width: 100%;
+    height: 47px;
+    border: 1px solid #979797;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.56px;
+}
+
+.container-courseList .choices {
+    text-transform: uppercase;
+}
+
+.container-courseList .contentPage .project {
+    padding-top: 30px;
+}
+
+.container-courseList .contentPage .project .project__item {
+    border-bottom: 1px solid #979797;
+    padding-bottom: 13px;
+    padding-top: 13px;
+}
+
+.container-courseList .contentPage .project .f-cat.active{
+    display: block;
+}
+
+.container-courseList .contentPage .project .project__item .item__title {
+    color: #4a4a4a;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.78px;
+    padding-bottom: 5px;
+}
+
+.container-courseList .contentPage .project .project__item .item__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    order: 1;
+}
+
+/*style progress open status*/
+   .container-courseList .contentPage .project .project__item .item__content .wrapper-item.status-open .progress__open .progress-status {
+       background-color: #3a5cac;
+   }
+
+/*style progress class status*/
+   .container-courseList .contentPage .project .project__item .item__content .wrapper-item.status-class .wrapper-progress .progress.progress__open {
+       background-color: #3a5cac;
+   }
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item.status-class .progress__class .progress-status {
+    background-color: #3a5cac;
+}
+
+/*style progress quiz status*/
+
+   .container-courseList .contentPage .project .project__item .item__content .wrapper-item.status-quiz .wrapper-progress .progress.progress__open {
+       background-color: #3a5cac;
+   }
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item.status-quiz .wrapper-progress .progress.progress__class {
+    background-color: #3a5cac;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item.status-quiz .progress__quiz .progress-status {
+    background-color: #3a5cac;
+}
+
+/*style progress homework status*/
+
+   .container-courseList .contentPage .project .project__item .item__content .wrapper-item.status-homework .wrapper-progress .progress.progress__open {
+       background-color: #3a5cac;
+   }
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item.status-homework .wrapper-progress .progress.progress__class {
+    background-color: #3a5cac;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item.status-homework .wrapper-progress .progress.progress__quiz {
+    background-color: #3a5cac;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item.status-homework .progress__homework .progress-status {
+    background-color: #3a5cac;
+}
+
+/*style progress finished status*/
+
+   .container-courseList .contentPage .project .project__item .item__content .wrapper-item.status-finished .wrapper-progress .progress.progress__open {
+       background-color: #3a5cac;
+   }
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item.status-finished .wrapper-progress .progress.progress__class {
+    background-color: #3a5cac;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item.status-finished .wrapper-progress .progress.progress__quiz {
+    background-color: #3a5cac;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item.status-finished .wrapper-progress .progress.progress__homework {
+    background-color: #3a5cac;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item.status-finished .wrapper-progress .progress.progress__finished {
+    background-color: #3a5cac;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item .wrapper-progress {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item .wrapper-progress .progress-item {
+    text-align: center;
+    padding: 0 1px;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item .wrapper-progress .progress-item .progress {
+    width: 54px;
+    height: 7px;
+    background-color: #ebeff7;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item .wrapper-progress .progress-item .progress .progress-status {
+    width: 50%;
+    height: 100%;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item .wrapper-progress .progress-item .progress.active {
+    background-color: #3a5cac;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item .wrapper-progress .progress-item .progress.progress--borderLeft {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item .wrapper-progress .progress-item .progress.progress--borderLeft.progress__open .progress-status {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item .wrapper-progress .progress-item .progress.progress--borderRight {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item .wrapper-progress .progress-item .progress__lable {
+    color: #4a4a4a;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .read-more a {
+    color: #3a5cac;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.88px;
+    text-decoration: underline;
+    text-transform: none;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item .lever {
+    position: relative;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item .lever img {
+    width: 24px;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item .duration-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item .lever img {
+    position: absolute;
+    left: -30px;
+    top: -5px;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item .lever span {
+    color: #4a4a4a;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.88px;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item .duration .process__finish {
+    width: 50px;
+    height: 14px;
+    border-radius: 8px;
+    background-color: #3a5cac;
+}
+
+.container-courseList .contentPage .project .project__item .item__content .wrapper-item .duration__hour {
+    color: #4a4a4a;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.88px;
+    margin-left: 10px;
+}
+
+/*pagination*/
+   .container-courseList .contentPage .courseList-pagination {
+       padding-top: 15px;
+   }
+
+.container-courseList .contentPage .goToTopPage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    width: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.container-courseList .contentPage .goToTopPage:hover {
+    cursor: pointer;
+}
+
+.container-courseList .contentPage .goToTopPage .goTo__title {
+    color: #4a4a4a;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.88px;
+    text-transform: uppercase;
+    padding-left: 2px;
+}
+
+
+@media (max-width: 1024px) {
+    .app-wrapper__courseList {
+        padding: 0 0 53px;
+    }
+
+    .app-wrapper__courseList .breadcrumb {
+        padding-left: 20px;
+    }
+
+    .container-courseList {
+        width: 100%;
+        padding-bottom: 25px;
+    }
+
+    .container-courseList .contentPage .menu .schedule {
+        margin-right: 10px;
+    }
+
+    .container-courseList .contentPage .menu .training {
+        margin-left: 5px;
+    }
+
+    .container-courseList .contentPage .menu .schedule__lable,
+    .training__lable {
+        font-size: 14px;
+        letter-spacing: 1.71px;
+    }
+
+    .container-courseList .contentPage .menu .schedule__img {
+        background-image: url('../../images/schedule-mobile.png');
+        background-repeat: no-repeat;
+        width: 23px;
+        height: 23px;
+        margin-right: 0;
+    }
+
+    .container-courseList .contentPage .menu .training__img {
+        background-image: url('../../images/job-training-mobile.png');
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 21px;
+        margin-right: 3px;
+    }
+
+    .container-courseList .contentPage .dropdown-project {
+        width: 290px;
+        margin-top: 20px;
+    }
+
+
+    .container-courseList .contentPage .project .project__item .item__title {
+        font-size: 14px;
+        letter-spacing: 1.56px;
+        padding-bottom: 10px;
+    }
+
+    .container-courseList .contentPage .project .project__item .project-item-wrapper {
+        max-width: 600px;
+        margin: auto;
+        padding: 0 20px;
+    }
+
+    .container-courseList .contentPage .project .project__item .item__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-courseList .contentPage .project .project__item .item__content .wrapper-item {
+        order: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container-courseList .contentPage .project .project__item .item__content .wrapper-item .wrapper-progress {
+        margin-right: 0;
+        order: 1;
+        margin-top: 15px;
+        margin-left: -10px;
+    }
+
+    .container-courseList .contentPage .project .project__item .item__content .read-more {
+        order: 1;
+        padding-top: 18px;
+    }
+
+    .container-courseList .contentPage .project .project__item .item__content .wrapper-item .lever span {
+        font-weight: 500;
+    }
+
+    .container-courseList .contentPage .project .project__item .item__content .wrapper-item .lever {
+        margin-left: 25px;
+        order: 0;
+    }
+
+/*pagination*/
+
+   .container-courseList .contentPage .courseList-pagination {
+       padding-left: 0;
+       max-width: 600px;
+       margin: auto;
+       text-align: center;
+       padding-bottom: 10px;
+   }
+
+}
+@media (max-width: 720px){
+    .container-courseList .contentPage .dropdown .form-radio {
+        display: flex;
+        flex-direction: column;
+        padding-left: 32%;
+    }
+    .container-courseList .contentPage .dropdown .form-radio .wrapper-item{
+        width: 100%;
+        margin: 10px auto;
+
+    }
+}

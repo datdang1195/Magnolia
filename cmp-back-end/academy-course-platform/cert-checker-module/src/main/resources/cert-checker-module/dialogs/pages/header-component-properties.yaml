@@ -1,0 +1,111 @@
+#theme: course
+form:
+  tabs:
+    - name: tabMain
+      fields:
+        - name: type
+          fieldType: hidden
+          type: String
+          required: true
+          defaultValue: 'header'
+        - name: referenceLink
+          fieldType: hidden
+          required: true
+          defaultValue: '/manage-header-footer'
+        - name: logo
+          fieldType: link
+          targetWorkspace: dam
+          appName: assets
+          label: Select logo
+          required: true
+          identifierToPathConverter:
+            class: info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+          contentPreviewDefinition:
+            contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
+        - name: loginPage
+          fieldType: link
+          required: true
+          targetWorkspace: website
+          appName: pages
+          label: Login page
+        - name: enrolPage
+          fieldType: link
+          required: true
+          targetWorkspace: website
+          appName: pages
+          label: Enrol page
+        - name: profilePage
+          fieldType: link
+          required: true
+          targetWorkspace: website
+          appName: pages
+          label: User Profile page
+        - name: navigation
+          fieldType: multiValue
+          label: Navigation
+          buttonSelectAddLabel: Add New Navigation
+          transformerClass: info.magnolia.ui.form.field.transformer.multi.DelegatingMultiValueFieldTransformer
+          field:
+            name: session
+            fieldType: composite
+            label: Session
+            layout: vertical
+            transformerClass: info.magnolia.ui.form.field.transformer.composite.DelegatingCompositeFieldTransformer
+            styleName: description
+            fields:
+              - name: title
+                fieldType: text
+                label: Title
+                required: true
+              - name: link
+                fieldType: link
+                label: Link
+                targetWorkspace: website
+                appName: pages
+              - name: grantedRoles
+                fieldType: twinColSelect
+                type: String
+                label: Granted roles
+                repository: userroles
+                path: /
+                labelProperty: title
+                valueProperty: title
+                required: true
+              - name: submnav
+                fieldType: multiValue
+                label: Sub Navigation
+                buttonSelectAddLabel: Add New Sub Navigation
+                transformerClass: info.magnolia.ui.form.field.transformer.multi.DelegatingMultiValueFieldTransformer
+                field:
+                  name: submitem
+                  fieldType: composite
+                  label: Sub Item
+                  layout: vertical
+                  transformerClass: info.magnolia.ui.form.field.transformer.composite.DelegatingCompositeFieldTransformer
+                  styleName: description
+                  fields:
+                    - name: titleSub
+                      fieldType: text
+                      label: Title of Sub
+                      required: true
+                    - name: linkSub
+                      fieldType: link
+                      label: Link of Sub
+                      targetWorkspace: website
+                      appName: pages
+                      required: true
+                    - name: subGrantedRoles
+                      fieldType: twinColSelect
+                      type: String
+                      label: Sub Granted roles
+                      repository: userroles
+                      path: /
+                      labelProperty: title
+                      valueProperty: title
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+    implementationClass: vn.ekino.certificate.action.SaveHeaderComponentDialogAction
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

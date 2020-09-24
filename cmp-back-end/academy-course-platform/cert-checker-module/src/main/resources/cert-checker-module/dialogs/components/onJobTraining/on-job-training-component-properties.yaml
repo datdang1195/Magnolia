@@ -1,0 +1,26 @@
+form:
+  tabs:
+    - name: tabMain
+      fields:
+        - name: supervisorRole
+          label: Supervisor Role
+          fieldType: select
+          repository: userroles
+          path: /
+          labelProperty: name
+          valueProperty: name
+          required: true
+        - name: participantRole
+          label: Participant Role
+          fieldType: select
+          repository: userroles
+          path: /
+          labelProperty: name
+          valueProperty: name
+          required: true
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

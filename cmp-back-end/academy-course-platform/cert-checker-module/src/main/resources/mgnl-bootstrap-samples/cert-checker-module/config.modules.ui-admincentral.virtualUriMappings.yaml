@@ -1,0 +1,6 @@
+'virtualUriMappings': 
+  jcr:primaryType: 'mgnl:content'
+  'default': 
+    'class': 'info.magnolia.virtualuri.mapping.DefaultVirtualUriMapping'
+    'fromUri': '/'
+    'toUri': 'forward:/general'

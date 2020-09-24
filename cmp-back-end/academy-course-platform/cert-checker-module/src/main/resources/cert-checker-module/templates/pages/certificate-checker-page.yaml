@@ -1,0 +1,15 @@
+templateScript: /cert-checker-module/templates/pages/certificate-checker-page.ftl
+renderType: freemarker
+visible: true
+title: Certificate checker page
+dialog: cert-checker-module:pages/certificate-checker-page-properties
+class: info.magnolia.module.site.templates.PageTemplateDefinition
+cssFiles:
+  bundle:
+    link: /.resources/cert-checker-module/webresources/css/bundle.css
+
+jsFiles:
+  jquery:
+    link: /.resources/cert-checker-module/webresources/js/jquery/jquery-3.4.1.min.js
+  bundle:
+    link: /.resources/cert-checker-module/webresources/js/bundle.js

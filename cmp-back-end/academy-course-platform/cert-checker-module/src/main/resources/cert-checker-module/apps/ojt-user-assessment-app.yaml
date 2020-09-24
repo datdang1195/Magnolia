@@ -1,0 +1,133 @@
+!content-type:ojtUserAssessment
+name: OJT-User-Assessment
+icon: icon-preview-app
+
+#
+subApps:
+  browser:
+    workbench:
+      editable: false
+      contentViews: !override
+        - name: list
+          class: info.magnolia.ui.workbench.list.ListPresenterDefinition
+          columns:
+            - name: path
+              enabled: false
+            - name: name
+              label: Assessment Name
+              expandRatio: 2
+              propertyName: name
+              class: info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition
+              sortable: true
+            - name: ojtUserResult
+              label: OJT User Result
+              expandRatio: 2
+              refItemPropertyName: ojtUserResult
+              referencedItemWorkspace: OJT-User-Result
+              referencedItemPropertyName: name
+              formatterClass: vn.ekino.certificate.workbench.ReferencedJcrItemColumnFormatter
+              class: vn.ekino.certificate.workbench.ReferencedJcrItemColumnDefinition
+              sortable: true
+            - name: assessment
+              label: Assessment
+              expandRatio: 2
+              refItemPropertyName: assessment
+              referencedItemWorkspace: assessments
+              referencedItemPropertyName: name
+              formatterClass: vn.ekino.certificate.workbench.ReferencedJcrItemColumnFormatter
+              class: vn.ekino.certificate.workbench.ReferencedJcrItemColumnDefinition
+              sortable: true
+            - name: assessmentScore
+              label: Assessment Score
+              expandRatio: 2
+              propertyName: assessmentScore
+              class: info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition
+              sortable: true
+            - name: assessmentComment
+              label: Assessment Comment
+              expandRatio: 2
+              propertyName: assessmentComment
+              class: info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition
+              sortable: true
+    actions:
+      activate:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+      deactivate:
+        command: deactivate
+        icon: icon-unpublish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.DeactivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+            - name: IsPublishedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsPublishedRule
+      activateDeleted:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsDeletedRule
+  detail:
+    actions:
+      commit:
+        class: vn.ekino.certificate.action.SaveFormActionDefinition
+    editor:
+      actionArea:
+        actionRenderers:
+          commit:
+            rendererClass: vn.ekino.certificate.render.UniqueActionRender
+      form:
+        tabs:
+          default:
+            fields:
+              - name: name
+                fieldType: hidden
+                type: String
+                required: false
+              - name: ojtUserResult
+                label: OJT User Result
+                fieldType: select
+                required: true
+                repository: OJT-User-Result
+                path: /
+                labelProperty: name
+                valueProperty: 'jcr:uuid'
+              - name: assessment
+                label: Assessment
+                fieldType: combobox
+                required: true
+                initialMethod: getAssessmentOJT
+              - name: assessmentScore
+                label: Assessment Score
+                fieldType: text
+                required: true
+                type: Decimal
+                validators:
+                  - name: assessmentScoreValidator
+                    class: vn.ekino.certificate.validator.score.ScoreValidatorDefinition
+                    errorMessage: Please input numerical values within range [0.0 - 100.0]
+              - name: assessmentComment
+                label: Assessment Comment
+                fieldType: richText
+                type: String
+# security
+#permissions:
+#  roles: []

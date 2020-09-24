@@ -1,0 +1,5 @@
+renderType: freemarker
+templateScript: /cert-checker-module/templates/components/unauthorized-access/unauthorized-access-component.ftl
+visible: true
+title: Unauthorized Accesss Component
+class: info.magnolia.module.site.templates.PageTemplateDefinition

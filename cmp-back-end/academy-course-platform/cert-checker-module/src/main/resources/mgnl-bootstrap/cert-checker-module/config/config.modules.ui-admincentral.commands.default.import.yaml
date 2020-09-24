@@ -1,0 +1,4 @@
+'import': 
+  'class': 'vn.ekino.certificate.command.ImportCommand'
+
+

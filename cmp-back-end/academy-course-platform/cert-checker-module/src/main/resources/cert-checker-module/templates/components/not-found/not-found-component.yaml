@@ -1,0 +1,5 @@
+templateScript: /cert-checker-module/templates/components/not-found/not-found-component.ftl
+renderType: freemarker
+visible: true
+title: Not Found Component
+class: info.magnolia.module.site.templates.PageTemplateDefinition

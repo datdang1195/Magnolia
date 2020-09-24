@@ -1,0 +1,29 @@
+'program-status': 
+  jcr:primaryType: 'mgnl:folder'
+  jcr:uuid: 'e476799b-5eb0-4ae7-b099-48da9525fe3f'
+  mgnl:created: 2019-11-06T15:52:23.915+07:00
+  mgnl:createdBy: 'superuser'
+  mgnl:lastModified: 2019-11-06T15:53:17.024+07:00
+  mgnl:lastModifiedBy: 'superuser'
+  'On-Going': 
+    'displayName': 'On-Going'
+    'level': 'level-1'
+    'name': 'On-Going'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: '5724152e-4da6-4a09-9dc7-692b89a41b76'
+    mgnl:created: 2019-11-06T15:52:47.089+07:00
+    mgnl:createdBy: 'superuser'
+    mgnl:lastModified: 2019-11-06T15:52:47.089+07:00
+    mgnl:lastModifiedBy: 'superuser'
+  'Completed': 
+    'displayName': 'Completed'
+    'level': 'level-1'
+    'name': 'Completed'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: 'c9ea96c7-2b4b-4e9a-a0e5-5f52cf85f9f9'
+    mgnl:created: 2019-11-06T15:53:17.025+07:00
+    mgnl:createdBy: 'superuser'
+    mgnl:lastModified: 2019-11-06T15:53:17.025+07:00
+    mgnl:lastModifiedBy: 'superuser'
+
+

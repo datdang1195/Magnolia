@@ -1,0 +1,5 @@
+templateScript: /cert-checker-module/templates/components/reuse/reuse-component.ftl
+renderType: freemarker
+class: info.magnolia.module.site.templates.PageTemplateDefinition
+dialog: cert-checker-module:pages/reuse-component-properties
+title: Reuse component

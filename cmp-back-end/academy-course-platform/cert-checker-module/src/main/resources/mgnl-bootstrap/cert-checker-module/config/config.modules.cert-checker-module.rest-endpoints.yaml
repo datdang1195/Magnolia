@@ -1,0 +1,6 @@
+'rest-endpoints': 
+  'cert-checker': 
+    'class': 'info.magnolia.rest.registry.ConfiguredEndpointDefinition'
+    'implementationClass': 'vn.ekino.certificate.rest.v1.CertCheckerEndpoint'
+
+

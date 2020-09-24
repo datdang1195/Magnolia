@@ -1,0 +1,5 @@
+'multichoice': 
+  'definitionClass': 'vn.ekino.certificate.field.MultiChoiceDefinition'
+  'factoryClass': 'vn.ekino.certificate.field.MultiChoiceFactory'
+
+

@@ -1,0 +1,12 @@
+datasource:
+  workspace: programCourses
+  autoCreate: true
+
+model:
+  nodeType: mgnl:programCourse
+  properties:
+    - name: name
+      required: false
+    - name: program
+      required: true
+    - name: courses

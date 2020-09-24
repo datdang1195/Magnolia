@@ -1,0 +1,6 @@
+templateScript: /cert-checker-module/templates/components/my-progress/my-progress-component.ftl
+renderType: freemarker
+class: info.magnolia.module.site.templates.PageTemplateDefinition
+title: My Progress Component
+modelClass: vn.ekino.certificate.model.MyProgressModel
+dialog: cert-checker-module:pages/my-progress-component-properties

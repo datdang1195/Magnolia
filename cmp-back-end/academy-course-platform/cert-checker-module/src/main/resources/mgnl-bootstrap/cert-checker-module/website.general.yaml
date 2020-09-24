@@ -1,0 +1,57 @@
+'general':
+  'title': 'Homepage'
+  jcr:primaryType: 'mgnl:page'
+  jcr:uuid: 'c5716fb5-f456-47e8-a01c-b2d00a9b0e0d'
+  mgnl:created: 2019-10-08T17:49:59.926+07:00
+  mgnl:createdBy: 'superuser'
+  mgnl:lastModified: 2019-10-08T17:50:19.526+07:00
+  mgnl:lastModifiedBy: 'superuser'
+  mgnl:template: 'cert-checker-module:pages/academy-template-page/academy-template-page'
+  'header':
+    jcr:primaryType: 'mgnl:area'
+    jcr:uuid: 'caf15734-3b7a-4bf4-b7ed-2277660ef2b8'
+    mgnl:created: 2019-10-08T17:50:01.705+07:00
+    mgnl:createdBy: 'superuser'
+    mgnl:lastModified: 2019-10-08T17:50:11.401+07:00
+    mgnl:lastModifiedBy: 'superuser'
+    '0':
+      'referenceId': 'e2eca270-a890-4303-804d-ecc936f2f1c2'
+      'referenceLink': '/manage-header-footer'
+      'referencePath': '/manage-header-footer/header/0'
+      'referenceTemplate': 'cert-checker-module:components/header/header-component'
+      'type': 'header'
+      jcr:primaryType: 'mgnl:component'
+      jcr:uuid: 'a3f61565-6e0b-4f7d-b4bc-eaaaf6ee5090'
+      mgnl:created: 2019-10-08T17:50:11.402+07:00
+      mgnl:createdBy: 'superuser'
+      mgnl:lastModified: 2019-10-08T17:50:11.402+07:00
+      mgnl:lastModifiedBy: 'superuser'
+      mgnl:template: 'cert-checker-module:components/reuse/reuse-component'
+  'main':
+    jcr:primaryType: 'mgnl:area'
+    jcr:uuid: '53a343e9-2d2e-4793-b459-926b99500af6'
+    mgnl:created: 2019-10-08T17:50:01.735+07:00
+    mgnl:createdBy: 'superuser'
+    mgnl:lastModified: 2019-10-08T17:50:01.735+07:00
+    mgnl:lastModifiedBy: 'superuser'
+  'footer':
+    jcr:primaryType: 'mgnl:area'
+    jcr:uuid: '7ea65c72-e542-46cd-8742-f87a8b24e25c'
+    mgnl:created: 2019-10-08T17:50:01.767+07:00
+    mgnl:createdBy: 'superuser'
+    mgnl:lastModified: 2019-10-08T17:50:19.526+07:00
+    mgnl:lastModifiedBy: 'superuser'
+    '0':
+      'referenceId': 'df1f3c8b-6235-4ba7-aa5c-48f5ddb87a0a'
+      'referenceLink': '/manage-header-footer'
+      'referencePath': '/manage-header-footer/footer/0'
+      'referenceTemplate': 'cert-checker-module:components/footer/footer-component'
+      'type': 'footer'
+      jcr:primaryType: 'mgnl:component'
+      jcr:uuid: '4810ceb6-be55-472b-989a-1a1ff09479b5'
+      mgnl:created: 2019-10-08T17:50:19.527+07:00
+      mgnl:createdBy: 'superuser'
+      mgnl:lastModified: 2019-10-08T17:50:19.527+07:00
+      mgnl:lastModifiedBy: 'superuser'
+      mgnl:template: 'cert-checker-module:components/reuse/reuse-component'
+

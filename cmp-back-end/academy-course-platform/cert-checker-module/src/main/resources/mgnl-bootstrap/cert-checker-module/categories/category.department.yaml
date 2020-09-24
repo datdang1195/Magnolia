@@ -1,0 +1,104 @@
+'department': 
+  jcr:primaryType: 'mgnl:folder'
+  jcr:uuid: 'ce7538da-b8a2-4e7d-9a14-9ece36bd1959'
+  mgnl:activationStatus: true
+  mgnl:created: 2019-11-29T03:27:52.444Z
+  mgnl:createdBy: 'superuser'
+  mgnl:lastActivated: 2019-12-09T07:15:05.082Z
+  mgnl:lastActivatedBy: 'superuser'
+  mgnl:lastModified: 2019-12-09T07:14:42.837Z
+  mgnl:lastModifiedBy: 'superuser'
+  'Java': 
+    'displayName': 'Java'
+    'level': 'level-1'
+    'name': 'Java'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: '7d8e80db-5958-4b49-bac8-2a1af300e881'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-11-29T03:28:30.079Z
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2019-12-09T07:15:05.891Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2019-12-09T07:13:52.807Z
+    mgnl:lastModifiedBy: 'superuser'
+    'relatedUUID': 
+      jcr:uuid: 'd56c5c4e-5403-4041-8154-7b26c16f820a'
+      mgnl:activationStatus: true
+      mgnl:created: 2019-11-29T04:44:22.715Z
+      mgnl:createdBy: 'superuser'
+      mgnl:lastActivated: 2019-12-09T07:15:05.892Z
+      mgnl:lastActivatedBy: 'superuser'
+      mgnl:lastModified: 2019-12-09T07:13:52.807Z
+      mgnl:lastModifiedBy: 'superuser'
+  'PHP': 
+    'displayName': 'PHP'
+    'level': 'level-1'
+    'name': 'PHP'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: '91d098c5-f15e-4cdd-96ab-76ca5de44ad5'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-11-29T04:44:46.272Z
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2019-12-09T07:15:05.698Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2019-12-09T07:14:02.821Z
+    mgnl:lastModifiedBy: 'superuser'
+    'relatedUUID': 
+      jcr:uuid: '3b1ba901-eb65-471d-ab5c-29b6d10f9db1'
+      mgnl:activationStatus: true
+      mgnl:created: 2019-12-09T07:14:02.819Z
+      mgnl:createdBy: 'superuser'
+      mgnl:lastActivated: 2019-12-09T07:15:05.698Z
+      mgnl:lastActivatedBy: 'superuser'
+      mgnl:lastModified: 2019-12-09T07:14:02.819Z
+      mgnl:lastModifiedBy: 'superuser'
+  'QC': 
+    'displayName': 'QC'
+    'level': 'level-1'
+    'name': 'QC'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: 'f96e102b-3ac6-4d62-a1a6-0434cce08f7b'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-11-29T04:45:05.645Z
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2019-12-09T07:15:05.535Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2019-12-09T07:14:18.475Z
+    mgnl:lastModifiedBy: 'superuser'
+    'relatedUUID': 
+      jcr:uuid: '3a4215ec-f24c-484a-8d83-b9a446381e58'
+      mgnl:activationStatus: true
+      mgnl:created: 2019-12-09T07:14:18.470Z
+      mgnl:createdBy: 'superuser'
+      mgnl:lastActivated: 2019-12-09T07:15:05.536Z
+      mgnl:lastActivatedBy: 'superuser'
+      mgnl:lastModified: 2019-12-09T07:14:18.470Z
+      mgnl:lastModifiedBy: 'superuser'
+  'QC-Auto': 
+    'displayName': 'QC-Auto'
+    'level': 'level-1'
+    'name': 'QC-Auto'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: '962cac1c-c56d-4480-8492-01e82987d043'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-12-09T07:14:33.078Z
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2019-12-09T07:15:05.328Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2019-12-09T07:14:33.078Z
+    mgnl:lastModifiedBy: 'superuser'
+  '-NET': 
+    'displayName': '.NET'
+    'level': 'level-1'
+    'name': '.NET'
+    jcr:primaryType: 'mgnl:category'
+    jcr:uuid: '194573f3-c9e9-4057-9844-089f764de4e1'
+    mgnl:activationStatus: true
+    mgnl:created: 2019-12-09T07:14:42.840Z
+    mgnl:createdBy: 'superuser'
+    mgnl:lastActivated: 2019-12-09T07:15:05.169Z
+    mgnl:lastActivatedBy: 'superuser'
+    mgnl:lastModified: 2019-12-09T07:14:42.840Z
+    mgnl:lastModifiedBy: 'superuser'
+
+

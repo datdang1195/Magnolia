@@ -1,0 +1,105 @@
+!content-type:attendance
+name: Attendance
+icon: icon-sitemaps-app
+
+subApps:
+  browser:
+    workbench:
+      editable: false
+      contentViews: !override
+        - name: list
+          class: info.magnolia.ui.workbench.list.ListPresenterDefinition
+          columns:
+            - name: path
+              enabled: false
+            - name: sessiondate
+              expandRatio: 2
+              propertyName: date
+              label: Attendance Date
+              class: info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition
+              sortable: true
+            - name: name
+              label: Course
+              expandRatio: 3
+              refItemPropertyName: course
+              referencedItemWorkspace: courses
+              referencedItemPropertyName: name
+              formatterClass: vn.ekino.certificate.workbench.ReferencedJcrItemColumnFormatter
+              class: vn.ekino.certificate.workbench.ReferencedJcrItemColumnDefinition
+              sortable: true
+    actions:
+      activate:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+      deactivate:
+        command: deactivate
+        icon: icon-unpublish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.DeactivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+            - name: IsPublishedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsPublishedRule
+      activateDeleted:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsDeletedRule
+
+  detail:
+    actions:
+      commit:
+        class: vn.ekino.certificate.action.SaveFormActionDefinition
+    editor:
+      form:
+        tabs:
+          default:
+            label: Attendance details
+            name: attendanceDetails
+            fields:
+              - name: name
+                label: Name
+                fieldType: hidden
+              - name: date
+                fieldType: datewithevent
+                dateFormat: dd/MM/yyyy
+                type: Date
+                required: true
+                label: Issue Date
+                defaultValue: now
+                comboboxName: course
+                validators:
+                  - name: endDateValidator
+                    class: vn.ekino.certificate.validator.attendance.AttendanceValidatorDefinition
+                    errorMessage: Date with Course already created.
+              - name: course
+                fieldType: combobox
+                label: Course
+                required: true
+                targetFieldName: users
+                targetFieldType: multiChoice
+                implementationMethod: getUsersByCourse
+                dateFieldName: date
+                hiddenFieldName: listUser
+              - name: users
+                label: Users absence
+                fieldType: multichoice
+                multiselect: true

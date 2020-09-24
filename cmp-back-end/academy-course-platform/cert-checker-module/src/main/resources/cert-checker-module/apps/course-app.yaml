@@ -1,0 +1,212 @@
+!content-type:course
+name: Course
+icon: icon-tasks-app
+theme: course
+#
+subApps:
+  browser:
+    workbench:
+      editable: false
+      contentViews: !override
+        - name: list
+          class: info.magnolia.ui.workbench.list.ListPresenterDefinition
+          columns:
+            - name: path
+              expandRatio: 2
+              enabled: false
+            - name: title
+              expandRatio: 2
+              propertyName: name
+              label: Title
+              class: info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition
+              sortable: true
+            - name: category
+              label: Category
+              expandRatio: 3
+              refItemPropertyName: category
+              referencedItemWorkspace: category
+              referencedItemPropertyName: name
+              formatterClass: vn.ekino.certificate.workbench.ReferencedJcrItemColumnFormatter
+              class: vn.ekino.certificate.workbench.ReferencedJcrItemColumnDefinition
+              sortable: true
+    actions:
+      activate:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+      deactivate:
+        command: deactivate
+        icon: icon-unpublish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.DeactivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+            - name: IsPublishedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsPublishedRule
+      activateDeleted:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsDeletedRule
+      saveNotify:
+        class: 'vn.ekino.certificate.action.SaveFormActionDefinition'
+        availability:
+          root: 'true'
+          nodeTypes:
+            content: 'mgnl:course'
+
+  detail:
+    actions:
+      saveNotify:
+        class: vn.ekino.certificate.action.SaveAndNotifyActionDefinition
+        label: Save & Notify
+      commit:
+        class: vn.ekino.certificate.action.SaveFormActionDefinition
+      cancel:
+        class: info.magnolia.ui.form.action.CancelFormActionDefinition
+
+    editor:
+      actions: !override
+        - name: saveNotify
+        - name: commit
+        - name: cancel
+      actionArea:
+        actionRenderers:
+          saveNotify:
+            rendererClass: vn.ekino.certificate.render.CertificateActionRender
+          commit:
+            rendererClass: vn.ekino.certificate.render.UniqueActionRender
+          cancel:
+            rendererClass: vn.ekino.certificate.render.CertificateActionRender
+      form:
+        tabs:
+          default:
+            label: Course Tab
+            fields:
+              - name: courseId
+                fieldType: text
+                label: Course ID
+                required: true
+              - name: name
+                fieldType: text
+                label: Title
+                maxLength: 106
+              - name: description
+                fieldType: richText
+                label: Description
+              - name: outline
+                fieldType: richText
+                label: Outline
+              - name: prerequisites
+                fieldType: multiValue
+                label: Prerequisites
+                field:
+                  fieldType: select
+                  name: courses
+                  repository: courses
+                  path: /
+                  labelProperty: name
+                  valueProperty: 'jcr:uuid'
+                  filteringMode: contains
+                  pageLength: 20
+                  textInputAllowed: true
+              - name: category
+                fieldType: select
+                repository: category
+                path: /course-categories
+                labelProperty: name
+                valueProperty: 'jcr:uuid'
+                label: Category
+              - name: group
+                fieldType: select
+                repository: category
+                path: /course-groups
+                labelProperty: name
+                valueProperty: 'jcr:uuid'
+                label: Group
+              - name: online
+                fieldType: checkbox
+                label: Online
+                buttonLabel: Select online or offline course
+                defaultValue: true
+          materialTab:
+            label: Material Tab
+            fields:
+              - name: materialTitle
+                fieldType: text
+                label: Title
+              - name: materialDescription
+                fieldType: richText
+                label: Description
+              - name: materialLinks
+                fieldType: multiValue
+                label: Course Link
+                transformerClass: info.magnolia.ui.form.field.transformer.multi.MultiValueSubChildrenNodePropertiesTransformer
+                field:
+                  name: courseLinks
+                  fieldType: composite
+                  label: Course Links
+                  layout: vertical
+                  styleName: material
+                  transformerClass: info.magnolia.ui.form.field.transformer.composite.NoOpCompositeTransformer
+                  fields:
+                    - name: linkName
+                      fieldType: text
+                      label: Link Name
+                    - name: url
+                      fieldType: text
+                      label: URL
+          homeworkTab:
+            label: Homework Tab
+            fields:
+              - name: homeworkTitle
+                fieldType: text
+                label: Title
+              - name: homeworkDescription
+                fieldType: richText
+                label: Description
+              - name: homeworkLinks
+                validators:
+                  - name: homeworkValidator
+                    class: vn.ekino.certificate.validator.homework.HomeworkValidatorDefinition
+                    errorMessage: Please input title and description of homework.
+                fieldType: multiValue
+                label: Homework Links
+                transformerClass: info.magnolia.ui.form.field.transformer.multi.MultiValueSubChildrenNodePropertiesTransformer
+                field:
+                  name: homeworkLink
+                  fieldType: composite
+                  label: Homework Link
+                  layout: vertical
+                  styleName: material
+                  transformerClass: info.magnolia.ui.form.field.transformer.composite.NoOpCompositeTransformer
+                  fields:
+                    - name: fileName
+                      fieldType: text
+                      label: File Name
+                      required: true
+                    - name: fileLink
+                      label: File Link
+                      required: true
+                      class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+                      targetWorkspace: dam
+                      appName: assets
+                      identifierToPathConverter:
+                        class: info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator

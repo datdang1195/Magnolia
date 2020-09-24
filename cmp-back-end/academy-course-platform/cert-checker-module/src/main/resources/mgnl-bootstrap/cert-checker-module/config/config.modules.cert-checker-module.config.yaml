@@ -1,0 +1,11 @@
+'config': 
+  'serverPath': 'http://localhost:8080'
+  'authorPath': 'http://localhost:8080'
+  'adminEmail': 'test.academy.ekino@gmail.com'
+  'loginPath': '/login'
+  'emailReplyTo': 'ekino.academy@gmail.com'
+  'participantRole': 'participant'
+  'accessDinedPage': 'access-denied'
+  'unauthorizedAccessPage': 'unauthorized-access'
+
+

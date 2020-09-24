@@ -1,0 +1,169 @@
+.app-wrapper__enrolLanding {
+    padding: 0 20px;
+}
+
+.container-landingPage {
+    width: 970px;
+    margin: auto;
+    padding-bottom: 80px;
+}
+
+.container-landingPage .landingPage {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container-landingPage .landingPage .landingPage__date {
+    color: #4a4a4a;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.78px;
+    text-transform: uppercase;
+    padding: 12px 0;
+}
+
+.contentPage .section {
+    padding-bottom: 25px;
+}
+
+.contentPage .section .section__description ul,
+ol {
+    padding-left: 20px;
+}
+.contentPage .section .section__description ul li {
+    color: #4a4a4a;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.33px;
+    line-height: 22px;
+}
+.contentPage .section .section__description ol li {
+    color: #4a4a4a;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.33px;
+    line-height: 22px;
+}
+
+.contentPage .section .section__lable {
+    color: #4a4a4a;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.78px;
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+
+.contentPage .section .section__description,.section__listSkills {
+    color: #4a4a4a;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.33px;
+    line-height: 22px;
+}
+
+.contentPage .section .section__content {
+    color: #4a4a4a;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.33px;
+    line-height: 22px;
+    padding-bottom: 30px;
+}
+
+.contentPage .btn {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.container-landingPage .contentPage .btn button {
+    height: 60px;
+    border-radius: 30px;
+    background-color: #3a5cac;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    width: 388px;
+    letter-spacing: 2.22px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.container-landingPage .contentPage .btn button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.modal-message.hidden {
+    display: none;
+}
+.modal-backdrop.hidden {
+    display: none;
+}
+
+.message__row {
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.message__col:nth-child(2) {
+    margin-left: 20px;
+}
+
+.modal-message .modal-content.modal-content--enrol {
+    padding: 20px 30px 45px;
+}
+
+.modal-message .message__label.message__label--enrol {
+    max-width: 300px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #0c0901;
+}
+
+.modal-message .modal-dialog.modal-dialog--enrol {
+    max-width: 420px;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 0;
+}
+
+.modal-message .message__question,
+.modal-message b {
+    font-weight: 500;
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .container-landingPage {
+        width: 100%;
+        padding-bottom: 60px;
+    }
+
+    .contentPage .btn {
+        padding-top: 30px;
+    }
+
+    .container-landingPage .contentPage .btn button {
+        height: 48px;
+        border-radius: 24px;
+        width: 280px;
+        font-size: 16px;
+        letter-spacing: 1.78px;
+    }
+    .modal-message .modal-dialog.modal-dialog--enrol {
+        width: 90%;
+        height: auto;
+    }
+
+    .modal-message .message__label.message__label--enrol {
+        width: 85%;
+    }
+
+    .modal-message .modal-content.modal-content--enrol {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}

@@ -1,0 +1,49 @@
+'fields':
+  'name':
+    'class': 'info.magnolia.ui.form.field.definition.TextFieldDefinition'
+    'required': 'true'
+  'displayName':
+    'class': 'info.magnolia.ui.form.field.definition.TextFieldDefinition'
+  'level':
+    'class': 'info.magnolia.ui.form.field.definition.SelectFieldDefinition'
+    'type': 'String'
+    'options':
+      'level1':
+        'selected': 'true'
+        'value': 'level-1'
+      'level2':
+        'selected': 'false'
+        'value': 'level-2'
+      'level3':
+        'selected': 'false'
+        'value': 'level-3'
+      'level4':
+        'selected': 'false'
+        'value': 'level-4'
+      'level5':
+        'selected': 'false'
+        'value': 'level-5'
+  'relatedUUID':
+    'buttonSelectAddLabel': 'field.link.select.add'
+    'class': 'info.magnolia.ui.form.field.definition.MultiValueFieldDefinition'
+    'transformerClass': 'info.magnolia.ui.form.field.transformer.multi.MultiValueSubChildrenNodeTransformer'
+    'field':
+      'appName': 'categories'
+      'buttonSelectNewLabel': 'field.link.select.new'
+      'buttonSelectOtherLabel': 'field.link.select.another'
+      'class': 'info.magnolia.ui.form.field.definition.LinkFieldDefinition'
+      'fieldEditable': 'false'
+      'targetWorkspace': 'category'
+      'identifierToPathConverter':
+        'class': 'info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter'
+  'icon':
+    'appName': 'assets'
+    'fieldType': 'link'
+    'name': 'icon'
+    'label': 'Icon'
+    'targetWorkspace': 'dam'
+    'type': 'String'
+    'identifierToPathConverter':
+      'class': 'info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator'
+    'contentPreviewDefinition':
+      'contentPreviewClass': 'info.magnolia.dam.app.ui.field.DamFilePreviewComponent'

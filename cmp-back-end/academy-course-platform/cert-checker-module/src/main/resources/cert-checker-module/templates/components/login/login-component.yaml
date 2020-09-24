@@ -1,0 +1,6 @@
+templateScript: /cert-checker-module/templates/components/login/login-component.ftl
+renderType: freemarker
+class: info.magnolia.module.site.templates.PageTemplateDefinition
+title: Login Component
+modelClass: vn.ekino.certificate.model.BaseModel
+dialog: cert-checker-module:pages/login-component-properties

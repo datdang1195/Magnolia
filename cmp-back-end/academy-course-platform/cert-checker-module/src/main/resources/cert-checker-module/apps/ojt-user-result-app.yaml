@@ -1,0 +1,170 @@
+!content-type:ojtUserResult
+name: OJT-User
+icon: icon-preview-app
+
+#
+subApps:
+  browser:
+    workbench:
+      editable: false
+      contentViews: !override
+        - name: list
+          class: info.magnolia.ui.workbench.list.ListPresenterDefinition
+          columns:
+            - name: path
+              enabled: false
+            - name: userEnrolProgram
+              label: User Enrol Program
+              expandRatio: 2
+              refItemPropertyName: userEnrolProgram
+              referencedItemWorkspace: enrolledProgram
+              referencedItemPropertyName: name
+              formatterClass: vn.ekino.certificate.workbench.ReferencedJcrItemColumnFormatter
+              class: vn.ekino.certificate.workbench.ReferencedJcrItemColumnDefinition
+              sortable: true
+            - name: ojtProject
+              label: OJT Project
+              expandRatio: 2
+              refItemPropertyName: ojtProject
+              referencedItemWorkspace: OJT-Project
+              referencedItemPropertyName: name
+              formatterClass: vn.ekino.certificate.workbench.ReferencedJcrItemColumnFormatter
+              class: vn.ekino.certificate.workbench.ReferencedJcrItemColumnDefinition
+              sortable: true
+            - name: role
+              label: Role
+              expandRatio: 2
+              refItemPropertyName: role
+              referencedItemWorkspace: category
+              referencedItemPropertyName: name
+              formatterClass: vn.ekino.certificate.workbench.ReferencedJcrItemColumnFormatter
+              class: vn.ekino.certificate.workbench.ReferencedJcrItemColumnDefinition
+              sortable: true
+            - name: mentor
+              label: Mentor
+              expandRatio: 2
+              refItemPropertyName: mentor
+              referencedItemWorkspace: users
+              referencedItemPropertyName: jcrName
+              formatterClass: vn.ekino.certificate.workbench.ReferencedJcrItemColumnFormatter
+              class: vn.ekino.certificate.workbench.ReferencedJcrItemColumnDefinition
+              sortable: true
+            - name: ojtEvaluation
+              label: OJT Evaluation
+              expandRatio: 2
+              propertyName: ojtEvaluation
+              class: info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition
+              sortable: true
+            - name: comment
+              label: Comment
+              expandRatio: 2
+              propertyName: comment
+              class: info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition
+              sortable: true
+            - name: note
+              label: Note
+              expandRatio: 2
+              propertyName: note
+              class: info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition
+              sortable: true
+    actions:
+      activate:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+      deactivate:
+        command: deactivate
+        icon: icon-unpublish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.DeactivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+            - name: IsPublishedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsPublishedRule
+      activateDeleted:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsDeletedRule
+
+  detail:
+    actions:
+      commit:
+        class: vn.ekino.certificate.action.SaveFormActionDefinition
+    editor:
+      actionArea:
+        actionRenderers:
+          commit:
+            rendererClass: vn.ekino.certificate.render.UniqueActionRender
+      form:
+        tabs:
+          default:
+            name: phaseDetailsTab
+            fields:
+              - name: name
+                fieldType: hidden
+                type: String
+                required: false
+              - name: userEnrolProgram
+                fieldType: combobox
+                label: User Enrol Program
+                required: true
+                targetFieldName: ojtProject
+                implementationMethod: getOJTProjectByUserEnrol
+                initialMethod: getEnrolProgramApproved
+              - name: ojtProject
+                fieldType: combobox
+                label: OJT Project
+                required: true
+              - name: role
+                fieldType: select
+                required: true
+                label: Role
+                repository: category
+                path: /roles
+                labelProperty: name
+                valueProperty: 'jcr:uuid'
+              - name: mentor
+                fieldType: select
+                label: Mentor
+                repository: users
+                path: /admin
+                labelProperty: jcrName
+                valueProperty: 'jcr:uuid'
+              - name: comment
+                fieldType: richText
+                type: String
+                label: Comment
+              - name: note
+                fieldType: richText
+                type: String
+                label: Note for Participant
+              - name: ojtEvaluation
+                fieldType: text
+                type: Decimal
+                label: OJT Evaluation
+                validators:
+                  - name: scoreValidator
+                    class: vn.ekino.certificate.validator.score.ScoreValidatorDefinition
+                    errorMessage: Please input numerical values within range [0.0 - 100.0]
+
+# security
+#permissions:
+#  roles: []

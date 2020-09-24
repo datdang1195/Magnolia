@@ -1,0 +1,3 @@
+'datewithevent':
+  'definitionClass': 'vn.ekino.certificate.field.DateWithEventDefinition'
+  'factoryClass': 'vn.ekino.certificate.field.DateWithEventDefinitionFactory'

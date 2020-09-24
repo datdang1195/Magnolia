@@ -1,0 +1,7 @@
+templateScript: /cert-checker-module/templates/components/on-job-training/on-job-training-component.ftl
+renderType: freemarker
+visible: true
+title: On job training component
+class: info.magnolia.module.site.templates.PageTemplateDefinition
+modelClass: vn.ekino.certificate.model.OnJobTrainingModel
+dialog: cert-checker-module:components/onJobTraining/on-job-training-component-properties

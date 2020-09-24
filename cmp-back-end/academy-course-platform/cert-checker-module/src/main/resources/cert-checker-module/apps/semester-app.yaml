@@ -1,0 +1,113 @@
+!content-type:semester
+name: Semester
+icon: icon-tasks-app
+
+#
+subApps:
+  browser:
+    workbench:
+      editable: false
+      contentViews: !override
+        - name: list
+          class: info.magnolia.ui.workbench.list.ListPresenterDefinition
+          columns:
+            - name: path
+              enabled: false
+            - name: startDate
+              width: 160
+              label: Start Date
+              class: info.magnolia.ui.workbench.column.definition.MetaDataColumnDefinition
+              propertyName: startDate
+              formatterClass: info.magnolia.ui.workbench.column.DateColumnFormatter
+              sortable: true
+            - name: endDate
+              width: 160
+              label: End Date
+              class: info.magnolia.ui.workbench.column.definition.MetaDataColumnDefinition
+              propertyName: endDate
+              formatterClass: info.magnolia.ui.workbench.column.DateColumnFormatter
+              sortable: true
+    actions:
+      activate:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+      deactivate:
+        command: deactivate
+        icon: icon-unpublish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.DeactivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+            - name: IsPublishedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsPublishedRule
+      activateDeleted:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsDeletedRule
+
+  detail:
+    editor:
+      form:
+        tabs:
+          default:
+            name: phaseDetailsTab
+            fields:
+              - name: name
+                fieldType: text
+                type: String
+                required: true
+                label: Semester
+              - name: title
+                fieldType: select
+                label: Semester title
+                options:
+                  - name: semester-1
+                    value: Semester 1
+                    label: Semester 1
+                    selected: true
+                  - name: semester-2
+                    value: Semester 2
+                    label: Semester 2
+              - name: program
+                fieldType: select
+                required: true
+                label: Program
+                repository: programs
+                path: /
+                labelProperty: name
+                valueProperty: 'jcr:uuid'
+              - name: startDate
+                fieldType: date
+                time: false
+                type: Date
+                label: Start Date
+                defaultValue: now
+              - name: endDate
+                fieldType: date
+                time: false
+                type: Date
+                label: End Date
+                defaultValue: now
+                validators:
+                  - name: endDateValidator
+                    class: vn.ekino.certificate.validator.date.EndDateValidatorDefinition
+                    errorMessage: End date must be greater or equal start date.

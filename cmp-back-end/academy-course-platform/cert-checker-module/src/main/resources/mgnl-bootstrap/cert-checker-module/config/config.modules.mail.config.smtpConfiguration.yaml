@@ -1,0 +1,10 @@
+'smtpConfiguration': 
+  'port': '465'
+  'security': 'ssl'
+  'server': 'smtp.gmail.com'
+  'authentication': 
+    'class': 'info.magnolia.module.mail.smtp.authentication.UsernamePasswordSmtpAuthentication'
+    'passwordKeyStoreId': 'bbc6ced2-f570-4fd3-9a46-98b1520f5720'
+    'user': 'test.academy.ekino@gmail.com'
+
+

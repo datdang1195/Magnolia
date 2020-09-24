@@ -1,0 +1,6 @@
+templateScript: /cert-checker-module/templates/components/participant-status/participant-status.ftl
+renderType: freemarker
+class: info.magnolia.module.site.templates.PageTemplateDefinition
+title: Participant Status Component
+modelClass: vn.ekino.certificate.model.ParticipantStatusModel
+dialog: cert-checker-module:pages/participant-status-component-properties

@@ -1,0 +1,39 @@
+'user':
+  'fields':
+    'jcrName':
+      'class': 'info.magnolia.ui.form.field.definition.TextFieldDefinition'
+      'required': 'true'
+      'validators':
+        'unique':
+          'class': 'info.magnolia.security.app.dialog.field.validator.UniqueUserNameValidatorDefinition'
+    'pswd':
+      'class': 'info.magnolia.ui.form.field.definition.PasswordFieldDefinition'
+    'enabled':
+      'class': 'info.magnolia.security.app.dialog.field.EnabledFieldDefinition'
+    'title':
+      'class': 'info.magnolia.ui.form.field.definition.TextFieldDefinition'
+    'email':
+      'class': 'info.magnolia.ui.form.field.definition.TextFieldDefinition'
+      'validators':
+        'email':
+          'class': 'info.magnolia.ui.form.validator.definition.EmailValidatorDefinition'
+          'errorMessage': 'validation.message.non.valid.email'
+    'phone':
+      'class': 'info.magnolia.ui.form.field.definition.TextFieldDefinition'
+    'profile':
+      'class': 'info.magnolia.ui.form.field.definition.SelectFieldDefinition'
+      'labelProperty': 'name'
+      'label': 'Profile'
+      'path': '/profile'
+      'repository': 'category'
+      'valueProperty': 'jcr:uuid'
+    'department':
+      'class': 'info.magnolia.ui.form.field.definition.SelectFieldDefinition'
+      'labelProperty': 'name'
+      'label': 'Department'
+      'path': '/department'
+      'repository': 'category'
+      'valueProperty': 'jcr:uuid'
+    'language':
+      'class': 'info.magnolia.security.app.dialog.field.SystemLanguagesFieldDefinition'
+

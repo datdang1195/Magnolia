@@ -1,0 +1,13 @@
+templateScript: /cert-checker-module/templates/pages/program-list-page.ftl
+renderType: freemarker
+visible: true
+title: Program list page
+dialog: cert-checker-module:pages/dummy-page-properties
+class: info.magnolia.module.site.templates.PageTemplateDefinition
+modelClass: vn.ekino.certificate.model.ProgramListModel
+
+jsFiles:
+  jquery:
+    link: /.resources/cert-checker-module/webresources/js/jquery/jquery-3.4.1.min.js
+  program:
+    link: /.resources/cert-checker-module/webresources/js/program.js

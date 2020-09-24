@@ -1,0 +1,10 @@
+templateScript: /cert-checker-module/templates/pages/dummy-page.ftl
+renderType: freemarker
+visible: true
+dialog: cert-checker-module:pages/dummy-page-properties
+areas:
+  main:
+    renderType: freemarker
+    availableComponents:
+      dummy-component:
+        id: cert-checker-module:components/dummy-component

@@ -1,0 +1,4 @@
+templateScript: /cert-checker-module/templates/components/footer/footer-component.ftl
+renderType: freemarker
+dialog: cert-checker-module:pages/footer-component-properties
+title: Footer Component

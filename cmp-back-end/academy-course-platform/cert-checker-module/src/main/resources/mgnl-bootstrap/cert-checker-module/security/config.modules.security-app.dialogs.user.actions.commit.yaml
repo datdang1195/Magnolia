@@ -1,0 +1,5 @@
+'commit': 
+  'class': 'vn.ekino.certificate.action.SaveUserActionDefinition'
+  'implementationClass': 'vn.ekino.certificate.action.SaveUserAction'
+
+

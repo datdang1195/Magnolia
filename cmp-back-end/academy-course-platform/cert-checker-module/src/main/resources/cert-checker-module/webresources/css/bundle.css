@@ -1,0 +1,4 @@
+body{padding:0}
+:root{--menu-height:30px;--item-height:calc(var(--menu-height) - 10px)}.wrapper.svelte-1ml41n7{display:none;position:absolute;top:0;left:0;right:0;height:var(--menu-height)}.wrapper.svelte-1ml41n7:hover>ul.svelte-1ml41n7{transform:translateY(0)}ul.svelte-1ml41n7{list-style:none;margin:0;padding:0 5px;height:var(--menu-height);background-color:rgba(0, 0, 0, 0.8);display:flex;align-items:center;transform:translateY(calc(-1 * var(--menu-height)));transition:transform 0.2s linear}li.svelte-1ml41n7 .link{display:block;height:var(--item-height);line-height:var(--item-height);color:white;text-decoration:none;font-size:12px;padding-left:10px;padding-right:10px}li.svelte-1ml41n7 .link.active{background:rgba(255, 255, 255, 0.3)}
+
+/*# sourceMappingURL=bundle.css.map */

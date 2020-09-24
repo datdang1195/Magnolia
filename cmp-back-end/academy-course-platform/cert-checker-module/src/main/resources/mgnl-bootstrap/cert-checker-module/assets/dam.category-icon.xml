@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sv:node xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" sv:name="category-icon">
+  <sv:property sv:name="jcr:primaryType" sv:type="Name">
+    <sv:value>mgnl:folder</sv:value>
+  </sv:property>
+  <sv:property sv:name="jcr:uuid" sv:type="String">
+    <sv:value>905f5755-cb43-4fd6-af18-95967da04c06</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:created" sv:type="Date">
+    <sv:value>2019-09-23T14:36:38.605+07:00</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:createdBy" sv:type="String">
+    <sv:value>user1</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+    <sv:value>2019-09-23T14:52:39.911+07:00</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+    <sv:value>user1</sv:value>
+  </sv:property>
+  <sv:node sv:name="Common.svg">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:asset</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>464bba38-8c4f-486f-b307-fa3a204f50bd</sv:value>
+    </sv:property>
+    <sv:property sv:name="metadataStandard" sv:type="String">
+      <sv:value>Simple Dublin Core Metadata Element Set (DCMES)</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2019-09-23T14:52:26.093+07:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>user1</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2019-09-23T14:52:26.093+07:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>user1</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Common</sv:value>
+    </sv:property>
+    <sv:node sv:name="jcr:content">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:resource</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>d719c43b-72dc-41fd-8c5d-1d9e442465a1</sv:value>
+      </sv:property>
+      <sv:property sv:name="extension" sv:type="String">
+        <sv:value>svg</sv:value>
+      </sv:property>
+      <sv:property sv:name="fileName" sv:type="String">
+        <sv:value>Common.svg</sv:value>
+      </sv:property>
+      <sv:property sv:name="height" sv:type="Long">
+        <sv:value>0</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:data" sv:type="Binary">
+        <sv:value>PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDIwIDI0Ij48Zz48Zz48Zz48cGF0aCBmaWxsPSIjNGE0YTRhIiBkPSJNMTguMTY4IDIuNjloLS42OTV2MTcuMDc5YTIuMDYgMi4wNiAwIDAgMS0yLjA1OCAyLjA1OEgyLjc3di42MzNjMCAuNzI1LjU4OCAxLjMxNCAxLjMxMyAxLjMxNGgxNC4wODNjLjcyNSAwIDEuMzEzLS41ODkgMS4zMTMtMS4zMTRWNC4wMDNjMC0uNzI1LS41ODYtMS4zMTMtMS4zMS0xLjMxM3oiLz48L2c+PGc+PHBhdGggZmlsbD0iIzRhNGE0YSIgZD0iTTQuMDQ2IDguODQ2aDkuMTc1YS42Mi42MiAwIDAgMSAwIDEuMjQxSDQuMDQ2YS42Mi42MiAwIDAgMSAwLTEuMjR6bTkuMTc1IDQuNjA2SDQuMDQ2YS42Mi42MiAwIDAgMSAwLTEuMjQyaDkuMTc1YS42Mi42MiAwIDAgMSAwIDEuMjQyek04LjYzOCAxNi42Mkg0LjA0N2EuNjIuNjIgMCAwIDEgMC0xLjI0Mkg4LjY0YS42Mi42MiAwIDEgMS0uMDAyIDEuMjQyem02Ljc3NSA0LjQ2NGMuNzI1IDAgMS4zMTMtLjU4OSAxLjMxMy0xLjMxNFYxLjMxM0MxNi43MjYuNTg4IDE2LjEzOCAwIDE1LjQxMyAwSDYuMDMxdi40MzRjLjAwNS4wNDUuMDA3LjA5Mi4wMDcuMTRWNC4xN2MwIDEuMDItLjgyOSAxLjg1LTEuODUgMS44NUguNTkyYy0uMDM3IDAtLjA3Ny0uMDAzLS4xMTQtLjAwNUguMDJWMTkuNzdjMCAuNzI1LjU4OCAxLjMxNCAxLjMxMyAxLjMxNHoiLz48L2c+PGc+PHBhdGggZmlsbD0iIzRhNGE0YSIgZD0iTS41OTUgNS4yNzZINC4yMDNhMS4xMDIgMS4xMDIgMCAwIDAgMS4wOTItMS4wOTJWLjU3NGEuNTUzLjU1MyAwIDAgMC0uOTQ0LS4zOUwuMjAzIDQuMzMzYS41NTMuNTUzIDAgMCAwIC4zOTIuOTQzeiIvPjwvZz48L2c+PC9nPjwvc3ZnPg==</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:lastModified" sv:type="Date">
+        <sv:value>2019-09-23T14:52:24.656+07:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:lastModifiedBy" sv:type="String">
+        <sv:value>system</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:mimeType" sv:type="String">
+        <sv:value>image/svg+xml</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2019-09-23T14:52:26.096+07:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>user1</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2019-09-23T14:52:26.096+07:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>user1</sv:value>
+      </sv:property>
+      <sv:property sv:name="size" sv:type="Long">
+        <sv:value>901</sv:value>
+      </sv:property>
+      <sv:property sv:name="width" sv:type="Long">
+        <sv:value>0</sv:value>
+      </sv:property>
+    </sv:node>
+  </sv:node>
+  <sv:node sv:name="Digital_architect.svg">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:asset</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>6e72f2a3-cdbe-497e-a43e-db83f626a8aa</sv:value>
+    </sv:property>
+    <sv:property sv:name="metadataStandard" sv:type="String">
+      <sv:value>Simple Dublin Core Metadata Element Set (DCMES)</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2019-09-23T14:52:32.560+07:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>user1</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2019-09-23T14:52:32.560+07:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>user1</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Digital_architect</sv:value>
+    </sv:property>
+    <sv:node sv:name="jcr:content">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:resource</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>53bdb38e-5450-453b-87e3-cd55ee1edc35</sv:value>
+      </sv:property>
+      <sv:property sv:name="extension" sv:type="String">
+        <sv:value>svg</sv:value>
+      </sv:property>
+      <sv:property sv:name="fileName" sv:type="String">
+        <sv:value>Digital_architect.svg</sv:value>
+      </sv:property>
+      <sv:property sv:name="height" sv:type="Long">
+        <sv:value>0</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:data" sv:type="Binary">
+        <sv:value>PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMiIgaGVpZ2h0PSIyMiIgdmlld0JveD0iMCAwIDIyIDIyIj48Zz48Zz48Zz48cGF0aCBmaWxsPSIjNGE0YTRhIiBkPSJNMTkuNiAwYTIuNDAyIDIuNDAyIDAgMCAwLTIuMTEgMy41NDRMMTMuNTYgNy40NzZhMy4xNzcgMy4xNzcgMCAwIDAtMy45MTggMEw2LjU3MyA0LjQwN2MuMTQxLS4yMzguMjI3LS41MTIuMjI3LS44MDggMC0uODgyLS43MTgtMS42LTEuNi0xLjYtLjg4MiAwLTEuNi43MTgtMS42IDEuNiAwIC44ODIuNzE4IDEuNiAxLjYgMS42LjI5NiAwIC41Ny0uMDg2LjgwOC0uMjI3bDMuMDY3IDMuMDY4YTMuMTgxIDMuMTgxIDAgMCAwIDAgMy45MThMNC4wMSAxNy4wMjVBMi4zODggMi4zODggMCAwIDAgMi40IDE2LjQgMi40MDIgMi40MDIgMCAwIDAgMCAxOC44YzAgMS4zMjQgMS4wNzYgMi40IDIuNCAyLjRhMi40MDIgMi40MDIgMCAwIDAgMi4xMS0zLjU0NGw1LjEzMS01LjEzMmMuNDQzLjM0NC45NzYuNTc1IDEuNTYuNjQ4djQuMDY0YTIuNDAyIDIuNDAyIDAgMCAwLTIgMi4zNjRjMCAxLjMyNCAxLjA3NiAyLjQgMi40IDIuNCAxLjMyMyAwIDIuNC0xLjA3NiAyLjQtMi40YTIuNDAyIDIuNDAyIDAgMCAwLTItMi4zNjR2LTQuMDY0YTMuMTgxIDMuMTgxIDAgMCAwIDEuNTU5LS42NDhsMy4wNjcgMy4wNjhhMS41NzggMS41NzggMCAwIDAtLjIyNy44MDhjMCAuODgyLjcxOCAxLjYgMS42IDEuNi44ODIgMCAxLjYtLjcxOCAxLjYtMS42IDAtLjg4Mi0uNzE4LTEuNi0xLjYtMS42LS4yOTYgMC0uNTcuMDg2LS44MDguMjI3bC0zLjA2Ny0zLjA2OGEzLjE4MSAzLjE4MSAwIDAgMCAwLTMuOTE4bDMuODY2LTMuODY2Yy40MjYuMzg3Ljk5LjYyNSAxLjYwOS42MjUgMS4zMjQgMCAyLjQtMS4wNzYgMi40LTIuNEMyMiAxLjA3NiAyMC45MjQgMCAxOS42IDB6Ii8+PC9nPjwvZz48L2c+PC9zdmc+</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:lastModified" sv:type="Date">
+        <sv:value>2019-09-23T14:52:30.947+07:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:lastModifiedBy" sv:type="String">
+        <sv:value>system</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:mimeType" sv:type="String">
+        <sv:value>image/svg+xml</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2019-09-23T14:52:32.561+07:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>user1</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2019-09-23T14:52:32.561+07:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>user1</sv:value>
+      </sv:property>
+      <sv:property sv:name="size" sv:type="Long">
+        <sv:value>948</sv:value>
+      </sv:property>
+      <sv:property sv:name="width" sv:type="Long">
+        <sv:value>0</sv:value>
+      </sv:property>
+    </sv:node>
+  </sv:node>
+  <sv:node sv:name="Project_management.svg">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:asset</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>b41597b8-f8b2-409b-8f94-875a94ada647</sv:value>
+    </sv:property>
+    <sv:property sv:name="metadataStandard" sv:type="String">
+      <sv:value>Simple Dublin Core Metadata Element Set (DCMES)</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2019-09-23T14:52:39.913+07:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>user1</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2019-09-23T14:52:39.913+07:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>user1</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Project_management</sv:value>
+    </sv:property>
+    <sv:node sv:name="jcr:content">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:resource</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>c4dea7bd-5c4e-4aad-b6a0-470219034002</sv:value>
+      </sv:property>
+      <sv:property sv:name="extension" sv:type="String">
+        <sv:value>svg</sv:value>
+      </sv:property>
+      <sv:property sv:name="fileName" sv:type="String">
+        <sv:value>Project_management.svg</sv:value>
+      </sv:property>
+      <sv:property sv:name="height" sv:type="Long">
+        <sv:value>0</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:data" sv:type="Binary">
+        <sv:value>PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNSIgdmlld0JveD0iMCAwIDI0IDI1Ij48Zz48Zz48Zz48cGF0aCBmaWxsPSIjNGE0YTRhIiBkPSJNNC43NSAxNy4yODVjLS44IDAtMS40NDktLjY0Ny0xLjQ0OS0xLjQ0NXMuNjQ5LTEuNDQ1IDEuNDUtMS40NDVjLjggMCAxLjQ1LjY0NyAxLjQ1IDEuNDQ1cy0uNjUgMS40NDUtMS40NSAxLjQ0NXptMy44ODMtMS44NjNsLjU3NC0uMzMxYS40ODkuNDg5IDAgMCAwIC4xNzktLjY2OGwtMS4wODctMS44ODFhLjQ4OC40ODggMCAwIDAtLjY2Ny0uMThsLS41NzMuMzMyYS40OS40OSAwIDAgMS0uNzMzLS40MjN2LS42NjJhLjQ4OS40ODkgMCAwIDAtLjQ4OS0uNDg5SDMuNjY0YS40ODkuNDg5IDAgMCAwLS40ODguNDg5di42NjJhLjQ5LjQ5IDAgMCAxLS43MzMuNDIzbC0uNTc0LS4zMzFhLjQ4Ny40ODcgMCAwIDAtLjY2Ny4xNzlMLjExNiAxNC40MjNhLjQ4OS40ODkgMCAwIDAgLjE3OC42NjhsLjU3NC4zM2EuNDg5LjQ4OSAwIDAgMSAwIC44NDdsLS41NzQuMzMxYS40ODkuNDg5IDAgMCAwLS4xNzguNjY4bDEuMDg2IDEuODgxYS40ODguNDg4IDAgMCAwIC42NjcuMTc5bC41NzQtLjMzMWEuNDkuNDkgMCAwIDEgLjczMy40MjN2LjY2MmMwIC4yNy4yMTguNDg5LjQ4OC40ODloMi4xNzNjLjI3IDAgLjQ4OS0uMjE5LjQ4OS0uNDg5di0uNjYyYS40OS40OSAwIDAgMSAuNzMyLS40MjNsLjU3NC4zMzFhLjQ4Ny40ODcgMCAwIDAgLjY2Ny0uMTc5bDEuMDg3LTEuODgxYS40ODkuNDg5IDAgMCAwLS4xOC0uNjY4bC0uNTczLS4zM2EuNDg5LjQ4OSAwIDAgMSAwLS44NDd6Ii8+PC9nPjxnPjxwYXRoIGZpbGw9IiM0YTRhNGEiIGQ9Ik04LjI2MSAxLjk3NmEuNjcxLjY3MSAwIDAgMC0uOTQ5Ljk1bDEuMiAxLjE5OUM0LjEwMyA0LjM0My41MzUgNy44MDUuMTUgMTIuMTY3bC4xLS4xNzJhMS41OTkgMS41OTkgMCAwIDEgMS4zOC0uNzk3bC4wMzYuMDAxYy43NTYtMy4xNDMgMy40OTctNS41MiA2LjgxOC01LjcyN0w3LjMxMiA2LjY0NGEuNjcxLjY3MSAwIDAgMCAuOTQ5Ljk0OWwyLjMzNC0yLjMzNGEuNjcxLjY3MSAwIDAgMCAwLS45NDlMOC4yNiAxLjk3NnoiLz48L2c+PGc+PHBhdGggZmlsbD0iIzRhNGE0YSIgZD0iTTE2Ljc0MiA1LjQwNWEyLjcwNSAyLjcwNSAwIDAgMCAyLjcwMy0yLjcwM0EyLjcwNSAyLjcwNSAwIDAgMCAxNi43NDIgMGEyLjcwNSAyLjcwNSAwIDAgMC0yLjcwMiAyLjcwMiAyLjcwNSAyLjcwNSAwIDAgMCAyLjcwMiAyLjcwM3oiLz48L2c+PGc+PHBhdGggZmlsbD0iIzRhNGE0YSIgZD0iTTIyIDEyLjY5NFY4Ljk4YzAtMS4wMjgtLjY2MS0xLjk0LTEuNjM5LTIuMjZsLS4wMDQtLjAwMi0xLjQzLS4yMzZhLjI0LjI0IDAgMCAwLS4yOTUuMTQ3bC0xLjYyMiA0LjQ1YS4yOTMuMjkzIDAgMCAxLS41NSAwbC0xLjYyMi00LjQ1YS4yNC4yNCAwIDAgMC0uMjI0LS4xNThjLS4wMjQgMC0xLjUuMjQ3LTEuNS4yNDdhMi4zOTQgMi4zOTQgMCAwIDAtMS42NDQgMi4yNzV2My43MDJjMCAuNTU1LjQ1IDEuMDA1IDEuMDA1IDEuMDA1aDguNTJjLjU1NSAwIDEuMDA1LS40NSAxLjAwNS0xLjAwNXoiLz48L2c+PGc+PHBhdGggZmlsbD0iIzRhNGE0YSIgZD0iTTIzLjE5NyAxMy41OGMtLjA1Ny43NjgtLjY4NyAxLjIzOC0xLjQ1NSAxLjI5NGE3LjUxIDcuNTEgMCAwIDEtNi45MTUgNi4xODZMMTYgMTkuODlhLjY3MS42NzEgMCAwIDAtLjk0OS0uOTVsLTIuMzMzIDIuMzM0YS42NzEuNjcxIDAgMCAwIDAgLjk1bDIuMzMzIDIuMzMzYS42Ny42NyAwIDAgMCAuOTUgMCAuNjcxLjY3MSAwIDAgMCAwLS45NWwtMS4yLTEuMTk4YzQuNjctLjIzMiA4LjM5Ny00LjEwMyA4LjM5Ny04LjgyOHoiLz48L2c+PGc+PHBhdGggZmlsbD0iIzRhNGE0YSIgZD0iTTE3LjMzMyA2LjQyMmEuMzMyLjMzMiAwIDAgMC0uMjQ2LS4xMDJIMTYuNGEuMzMyLjMzMiAwIDAgMC0uMjQ1LjEwMi4zMTkuMzE5IDAgMCAwLS4wNDIuMzc1bC4zNjcuNTU0LS4xNzIgMS40NS4zMzguOTAxYy4wMzMuMDkuMTYyLjA5LjE5NSAwbC4zMzgtLjktLjE3Mi0xLjQ1LjM2OC0uNTU1YS4zMTkuMzE5IDAgMCAwLS4wNDItLjM3NXoiLz48L2c+PC9nPjwvZz48L3N2Zz4=</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:lastModified" sv:type="Date">
+        <sv:value>2019-09-23T14:52:38.065+07:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:lastModifiedBy" sv:type="String">
+        <sv:value>system</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:mimeType" sv:type="String">
+        <sv:value>image/svg+xml</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2019-09-23T14:52:39.916+07:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>user1</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2019-09-23T14:52:39.916+07:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>user1</sv:value>
+      </sv:property>
+      <sv:property sv:name="size" sv:type="Long">
+        <sv:value>2093</sv:value>
+      </sv:property>
+      <sv:property sv:name="width" sv:type="Long">
+        <sv:value>0</sv:value>
+      </sv:property>
+    </sv:node>
+  </sv:node>
+</sv:node>
+

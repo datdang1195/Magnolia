@@ -1,0 +1,6 @@
+templateScript: /cert-checker-module/templates/components/enrol/enrol-component.ftl
+renderType: freemarker
+class: info.magnolia.module.site.templates.PageTemplateDefinition
+title: Enrol Component
+modelClass: vn.ekino.certificate.model.EnrolModel
+dialog: cert-checker-module:pages/enrol-component-properties

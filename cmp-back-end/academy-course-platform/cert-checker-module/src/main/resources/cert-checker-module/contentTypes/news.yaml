@@ -1,0 +1,17 @@
+datasource:
+  workspace: news
+  autoCreate: true
+
+model:
+  nodeType: mgnl:news
+  properties:
+    - name: name
+      required: true
+    - name: title
+      required: true
+    - name: subtitle
+      required: true
+    - name: content
+      required: true
+    - name: date
+      type: Date

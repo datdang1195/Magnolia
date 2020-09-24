@@ -1,0 +1,12 @@
+datasource:
+  workspace: user-attitude-assessments
+  autoCreate: true
+
+model:
+  nodeType: mgnl:userAttitudeAssessment
+  properties:
+    - name: name
+    - name: userAttitudeResult
+    - name: assessment
+    - name: assessmentScore
+    - name: assessmentComment

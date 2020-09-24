@@ -1,0 +1,129 @@
+!content-type:intern
+name: Intern-Program
+icon: icon-tasks-app
+
+#
+subApps:
+  browser:
+    workbench:
+      editable: false
+      contentViews: !override
+        - name: list
+          class: info.magnolia.ui.workbench.list.ListPresenterDefinition
+          columns:
+            - name: path
+              enabled: false
+            - name: startDate
+              width: 160
+              label: Start Date
+              class: info.magnolia.ui.workbench.column.definition.MetaDataColumnDefinition
+              propertyName: startDate
+              formatterClass: info.magnolia.ui.workbench.column.DateColumnFormatter
+              sortable: true
+            - name: endDate
+              width: 160
+              label: End Date
+              class: info.magnolia.ui.workbench.column.definition.MetaDataColumnDefinition
+              propertyName: endDate
+              formatterClass: info.magnolia.ui.workbench.column.DateColumnFormatter
+              sortable: true
+    actions:
+      activate:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+      deactivate:
+        command: deactivate
+        icon: icon-unpublish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.DeactivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+            - name: IsPublishedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsPublishedRule
+      activateDeleted:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsDeletedRule
+
+  detail:
+    editor:
+      form:
+        tabs:
+          default:
+            name: internTab
+            fields:
+              - name: name
+                fieldType: textfield
+                label: Name
+                required: true
+              - name: startDate
+                fieldType: date
+                time: false
+                type: Date
+                required: true
+                label: Enrol Start Date
+                defaultValue: now
+              - name: endDate
+                fieldType: date
+                time: false
+                type: Date
+                required: true
+                label: Enrol End Date
+                defaultValue: now
+                validators:
+                  - name: endDateValidator
+                    class: vn.ekino.certificate.validator.date.EndDateValidatorDefinition
+                    errorMessage: End date must be greater or equal start date.
+              - name: certificateTemplateImage
+                required: true
+                fieldType: link
+                label: Certificate Template Image
+                class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+                targetWorkspace: dam
+                appName: assets
+                identifierToPathConverter:
+                  class: info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+                contentPreviewDefinition:
+                  contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
+              - name: descriptionList
+                label: Description
+                fieldType: multiValue
+                buttonSelectAddLabel: Add New Description
+                transformerClass: info.magnolia.ui.form.field.transformer.multi.MultiValueSubChildrenNodePropertiesTransformer
+                field:
+                  name: description
+                  fieldType: composite
+                  layout: vertical
+                  label: Description
+                  transformerClass: info.magnolia.ui.form.field.transformer.composite.NoOpCompositeTransformer
+                  styleName: description
+                  fields:
+                    - name: title
+                      fieldType: text
+                      label: Title
+                      required: true
+                    - name: content
+                      fieldType: richText
+                      tables: true
+                      height: 500
+                      label: Content
+                      source: true

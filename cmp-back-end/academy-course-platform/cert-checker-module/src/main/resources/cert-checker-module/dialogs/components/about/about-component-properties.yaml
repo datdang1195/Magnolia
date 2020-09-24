@@ -1,0 +1,38 @@
+form:
+  tabs:
+    - name: tabMain
+      fields:
+        - name: pageTitle
+          label: Title
+          fieldType: text
+          required: true
+        - name: paragraphs
+          fieldType: multiValue
+          required: true
+          label: Paragraphs
+          buttonSelectAddLabel: Add New Paragraph
+          transformerClass: info.magnolia.ui.form.field.transformer.multi.DelegatingMultiValueFieldTransformer
+          field:
+            fieldType: composite
+            label: Paragraph
+            layout: vertical
+            styleName: paragraph
+            transformerClass: info.magnolia.ui.form.field.transformer.composite.DelegatingCompositeFieldTransformer
+            fields:
+              subtitle:
+                class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+                label: Subtitle
+                type: String
+              content:
+                fieldType: richText
+                tables: true
+                images: true
+                source: true
+                height: 500
+                label: Content
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

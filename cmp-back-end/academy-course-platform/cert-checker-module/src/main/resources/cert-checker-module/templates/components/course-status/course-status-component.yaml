@@ -1,0 +1,7 @@
+templateScript: /cert-checker-module/templates/components/course-status/course-status-component.ftl
+renderType: freemarker
+visible: true
+title: Course Status Page
+class: info.magnolia.module.site.templates.PageTemplateDefinition
+modelClass: vn.ekino.certificate.model.CourseStatusModel
+dialog: cert-checker-module:pages/course-status-component-properties

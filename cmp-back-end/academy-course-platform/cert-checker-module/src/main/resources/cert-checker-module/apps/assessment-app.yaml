@@ -1,0 +1,125 @@
+!content-type:assessment
+name: Assessment
+icon: icon-backup-app
+
+#
+subApps:
+  browser:
+    workbench:
+      editable: false
+      contentViews: !override
+        - name: list
+          class: info.magnolia.ui.workbench.list.ListPresenterDefinition
+          columns:
+            - name: path
+              enabled: false
+            - name: name
+              label: Assessment Name
+              expandRatio: 2
+              propertyName: name
+              class: info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition
+              sortable: true
+            - name: code
+              label: Assessment ID
+              expandRatio: 2
+              propertyName: code
+              class: info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition
+              sortable: true
+            - name: program
+              label: Program
+              expandRatio: 2
+              refItemPropertyName: program
+              referencedItemWorkspace: programs
+              referencedItemPropertyName: name
+              formatterClass: vn.ekino.certificate.workbench.ReferencedJcrItemColumnFormatter
+              class: vn.ekino.certificate.workbench.ReferencedJcrItemColumnDefinition
+              sortable: true
+            - name: assessmentType
+              label: Assessment Type
+              expandRatio: 2
+              refItemPropertyName: assessmentType
+              referencedItemWorkspace: category
+              referencedItemPropertyName: name
+              formatterClass: vn.ekino.certificate.workbench.ReferencedJcrItemColumnFormatter
+              class: vn.ekino.certificate.workbench.ReferencedJcrItemColumnDefinition
+              sortable: true
+            - name: assessmentGroup
+              label: Assessment Group
+              expandRatio: 2
+              refItemPropertyName: assessmentGroup
+              referencedItemWorkspace: category
+              referencedItemPropertyName: name
+              formatterClass: vn.ekino.certificate.workbench.ReferencedJcrItemColumnFormatter
+              class: vn.ekino.certificate.workbench.ReferencedJcrItemColumnDefinition
+              sortable: true
+    actions:
+      activate:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+      deactivate:
+        command: deactivate
+        icon: icon-unpublish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.DeactivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+            - name: IsPublishedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsPublishedRule
+      activateDeleted:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsDeletedRule
+
+  detail:
+    editor:
+      form:
+        tabs:
+          default:
+            fields:
+              - name: code
+                fieldType: text
+                type: String
+                label: Assessment ID
+              - name: name
+                fieldType: text
+                type: String
+                label: Assessment Name
+              - name: program
+                fieldType: select
+                repository: programs
+                path: /
+                labelProperty: name
+                valueProperty: 'jcr:uuid'
+                label: Program
+              - name: assessmentType
+                fieldType: combobox
+                targetFieldName: assessmentGroup
+                implementationMethod: getAllAssessmentGroupByType
+                initialMethod: getAllAssessmentType
+                label: Assessment Type
+              - name: assessmentGroup
+                fieldType: combobox
+                label: Assessment Group
+
+# security
+#permissions:
+#  roles: []

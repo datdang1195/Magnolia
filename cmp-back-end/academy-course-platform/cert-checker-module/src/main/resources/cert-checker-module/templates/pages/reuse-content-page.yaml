@@ -1,0 +1,23 @@
+templateScript: /cert-checker-module/templates/pages/reuse-content-page.ftl
+renderType: freemarker
+title: Reuse content page
+visible: false
+theme:
+  name: academy-theme
+areas:
+  header:
+    renderType: freemarker
+    type: single
+    availableComponents:
+      header-component:
+        id: cert-checker-module:components/header/header-component
+  footer:
+    renderType: freemarker
+    type: single
+    availableComponents:
+      footer-component:
+        id: cert-checker-module:components/footer/footer-component
+
+
+
+

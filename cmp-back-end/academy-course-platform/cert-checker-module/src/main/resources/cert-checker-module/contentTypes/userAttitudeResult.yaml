@@ -1,0 +1,11 @@
+datasource:
+  workspace: userAttitudeResult
+  autoCreate: true
+
+model:
+  nodeType: mgnl:userAttitudeResult
+  properties:
+  - name: userEnrolProgram
+  - name: attitudeEvaluation
+    type: Decimal
+  - name: generalComment

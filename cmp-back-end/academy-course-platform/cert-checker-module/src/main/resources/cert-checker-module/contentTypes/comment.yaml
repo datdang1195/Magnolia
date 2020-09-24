@@ -1,0 +1,8 @@
+datasource:
+  workspace: comment
+  autoCreate: true
+
+model:
+  nodeType: mgnl:comment
+  properties:
+    - name: name

@@ -1,0 +1,142 @@
+!content-type:userEvaluation
+name: User-Evaluation
+icon: icon-preview-app
+#
+subApps:
+  browser:
+    workbench:
+      editable: false
+      contentViews: !override
+        - name: list
+    actions:
+      activate:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+      deactivate:
+        command: deactivate
+        icon: icon-unpublish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.DeactivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+            - name: IsPublishedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsPublishedRule
+      activateDeleted:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsDeletedRule
+
+  detail:
+    actions:
+      commit:
+        class: vn.ekino.certificate.action.SaveFormActionDefinition
+    editor:
+      actionArea:
+        actionRenderers:
+          commit:
+            rendererClass: vn.ekino.certificate.render.UniqueActionRender
+      form:
+        tabs:
+          default:
+            name: userEvaluationsTab
+            fields:
+              - name: name
+                fieldType: hidden
+                type: String
+                required: false
+              - name: userProgram
+                fieldType: select
+                label: User Program
+                repository: enrolledProgram
+                path: /
+                labelProperty: name
+                valueProperty: 'jcr:uuid'
+              - name: semester
+                fieldType: select
+                label: Semester
+                options:
+                  - name: fullprogram
+                    value: Full Program
+                    label: Full Program
+                    selected: true
+                  - name: semester-1
+                    value: Semester 1
+                    label: Semester 1                    
+                  - name: semester-2
+                    value: Semester 2
+                    label: Semester 2
+              - name: courseAverage
+                fieldType: text
+                label: Course Average
+                type: Decimal
+                validators:
+                  - name: scoreValidator
+                    class: vn.ekino.certificate.validator.score.ScoreValidatorDefinition
+                    errorMessage: Please input numerical values within range [0.0 - 100.0]
+              - name: OJTScore
+                fieldType: text
+                label: OJT Score
+                type: Decimal
+                validators:
+                  - name: scoreValidator
+                    class: vn.ekino.certificate.validator.score.ScoreValidatorDefinition
+                    errorMessage: Please input numerical values within range [0.0 - 100.0]
+              - name: attitudeScore
+                fieldType: text
+                label: Attitude Score
+                type: Decimal
+                validators:
+                  - name: scoreValidator
+                    class: vn.ekino.certificate.validator.score.ScoreValidatorDefinition
+                    errorMessage: Please input numerical values within range [0.0 - 100.0]
+              - name: finalExam
+                fieldType: text
+                label: Final Exam
+                type: Decimal
+                validators:
+                  - name: scoreValidator
+                    class: vn.ekino.certificate.validator.score.ScoreValidatorDefinition
+                    errorMessage: Please input numerical values within range [0.0 - 100.0]
+              - name: finalScore
+                fieldType: text
+                label: Final Score
+                type: Decimal
+                validators:
+                  - name: scoreValidator
+                    class: vn.ekino.certificate.validator.score.ScoreValidatorDefinition
+                    errorMessage: Please input numerical values within range [0.0 - 100.0]
+              - name: semesterResult
+                fieldType: text
+                label: Semester Result
+                type: Decimal
+                validators:
+                  - name: scoreValidator
+                    class: vn.ekino.certificate.validator.score.ScoreValidatorDefinition
+                    errorMessage: Please input numerical values within range [0.0 - 100.0]
+              - name: semesterAverage
+                fieldType: text
+                label: Semester Average
+                type: Decimal
+                validators:
+                  - name: scoreValidator
+                    class: vn.ekino.certificate.validator.score.ScoreValidatorDefinition
+                    errorMessage: Please input numerical values within range [0.0 - 100.0]

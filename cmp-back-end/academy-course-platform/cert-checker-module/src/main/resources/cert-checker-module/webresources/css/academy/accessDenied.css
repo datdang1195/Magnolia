@@ -1,0 +1,115 @@
+.app-wrapper__accessDenied {
+    padding: 0 20px 53px;
+}
+
+.container-accessDenied {
+    width: 1070px;
+    margin: auto;
+    text-align: center;
+}
+
+.container-accessDenied .accessDenied-icon {
+    width: 175px;
+    height: 243px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.container-accessDenied .accessDenied-title {
+    color: #3a5cac;
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: 3.04px;
+    text-transform: uppercase;
+}
+
+.container-accessDenied .accessDenied-error {
+    color: #3a5cac;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1.01px;
+    line-height: 32px;
+    max-width: 770px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.container-accessDenied .btn .goTo-home-page {
+    width: 388px;
+    height: 60px;
+    border-radius: 30px;
+    border: 3px solid #3a5cac;
+    background-color: #3a5cac;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2.22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 56px;
+    margin: auto;
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .container-accessDenied {
+        width: 100%;
+    }
+
+    .container-accessDenied .accessDenied-icon {
+        width: 140px;
+        height: 194px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .container-accessDenied .accessDenied-title {
+        font-size: 50px;
+        font-weight: 700;
+        letter-spacing: 3.65px;
+        margin-bottom: 10px;
+    }
+
+    .container-accessDenied .accessDenied-error {
+        font-size: 20px;
+        letter-spacing: 1.01px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-accessDenied {
+        width: 100%;
+    }
+
+    .container-accessDenied .accessDenied-icon {
+        width: 87px;
+        height: 121px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .container-accessDenied .accessDenied-title {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 2.42px;
+        margin-bottom: 0;
+    }
+
+    .container-accessDenied .accessDenied-error {
+        font-size: 14px;
+        letter-spacing: 1.01px;
+        line-height: 22px;
+        padding-top: 5px;
+        padding-bottom: 20px;
+    }
+
+    .container-accessDenied .btn .goTo-home-page {
+        height: 48px;
+        border-radius: 24px;
+        width: 280px;
+        font-size: 16px;
+        letter-spacing: 1.78px;
+        line-height: 44px;
+    }
+}

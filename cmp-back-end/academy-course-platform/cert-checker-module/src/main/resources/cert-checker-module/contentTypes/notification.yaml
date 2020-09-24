@@ -1,0 +1,8 @@
+datasource:
+  workspace: notification
+  autoCreate: true
+
+model:
+  nodeType: mgnl:notification
+  properties:
+    - name: name

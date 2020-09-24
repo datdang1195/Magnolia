@@ -1,0 +1,4 @@
+'flushAll': 
+  'class': 'vn.ekino.certificate.command.CacheServerCommand'
+
+

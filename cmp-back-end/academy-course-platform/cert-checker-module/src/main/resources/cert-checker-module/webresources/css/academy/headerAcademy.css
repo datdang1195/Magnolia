@@ -1,0 +1,738 @@
+
+.app-header__academy {
+    background-color: #ffffff;
+    padding: 28px 20px 20px 20px;
+    width: auto;
+}
+
+.app-header__academy .wrapper-app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-header__academy .wrapper-app-header .app-header__academylogo a img {
+    width: 69px;
+}
+
+.app-header__academymenu .login {
+    display: none;
+}
+
+.app-header__academymenu .desk-account {
+    display: none;
+}
+
+.app-header__academymenu .menu {
+    display: none;
+}
+
+.nav-icon:hover {
+    cursor: pointer;
+}
+
+.nav-menu {
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 48px;
+    display: block;
+    bottom: 0;
+    padding-bottom: 50px;
+}
+
+.nav-menu .wrapper-content-mobile {
+    width: 240px;
+    margin: auto;
+    position: relative;
+}
+
+.nav-menu .mobile-nav-icon {
+    text-align: right;
+    padding-right: 30px;
+}
+
+.nav-menu .mobile-nav-icon .icon-close:hover {
+    cursor: pointer;
+}
+
+.nav-menu .mobile-menu {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.nav-menu .mobile-login .wrapper-loginEnrol {
+    width: 165px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #d8d8d8;
+    padding-top: 9px;
+    text-align: center;
+    padding-left: 30px;
+    position: relative;
+    margin: auto;
+}
+
+.nav-menu .mobile-login .wrapper-loginEnrol span {
+    color: #4a4a4a;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.33px;
+    text-transform: uppercase;
+}
+
+.nav-menu .mobile-login .wrapper-loginEnrol a {
+    color: #4a4a4a;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.33px;
+    text-transform: uppercase;
+}
+
+.nav-menu .mobile-login .wrapper-loginEnrol img {
+    position: absolute;
+    left: 17px;
+}
+
+
+.nav-menu .mobile-account {
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 40px;
+}
+
+.nav-menu .mobile-menu .list-menu {
+    list-style-type: none;
+}
+
+.nav-menu .mobile-menu .list-menu .menu__item a {
+    color: #4a4a4a;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1.78px;
+    line-height: 60px;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-menu .mobile-menu .list-menu .menu__item a:hover {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav-menu .mobile-menu .list-menu .menu__item.active a::after {
+    border-top: 2px solid #4a4a4a;
+    left: 0px;
+    bottom: -1px;
+    position: absolute;
+    content: '';
+    right: 2px;
+}
+
+.nav-menu .wrapper-content-mobile .log-out {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.nav-menu .wrapper-content-mobile .log-out a {
+    color: #4a4a4a;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1.78px;
+    line-height: 65px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-menu .wrapper-content-mobile .log-out a:hover {
+    font-weight: 700;
+}
+
+.nav-menu .sub-menu  {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+    padding: 90px 0 50px;
+    transform: translateX(100%);
+}
+
+.nav-menu .sub-menu__icon {
+    position: fixed;
+    left: 0;
+    top: 50px;
+    display: block;
+    background-image: url('../../images/previous-month-desk.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 30px center;
+    height: 20px;
+    width: 100%;
+    z-index: 2;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-menu .fade_in {
+    transform: translateX(0);
+}
+
+.nav-menu .mobile-menu .list-menu .menu__item.active .sub-menu a::after {
+    content: none;
+}
+
+.nav-menu .mobile-menu .list-menu .menu__item.active .sub-menu .sub-menu-link.active a {
+    border-bottom: 2px solid #4a4a4a;
+}
+
+.hidden-body {
+    overflow: hidden;
+}
+
+.mobile-account .icon-info {
+    position: relative;
+}
+
+.notification__amount {
+    user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    background-image: url('../../images/information.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 60px;
+}
+
+.notification__amount::before {
+    content: attr(data-amount);
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #e93b19;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.notification {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 2;
+    color: #4a4a4a;
+    padding: 90px 10px 50px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.notification-close {
+    background-image: url('../../images/removeNav.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 100%;
+    height: 25px;
+    right: 30px;
+    top: 48px;
+    position: absolute;
+}
+
+.notification .notification-item__warpper {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: transparent;
+    padding: 0 10px 0 5px;
+}
+
+.notification .notification-item {
+    position: relative;
+    border-radius: 10px;
+    padding: 5px 5px 5px 23px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.notification .notification-item.notification-item-hide {
+    display: none;
+}
+
+.notification .notification-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.notification .notification-item .notification__action-text::first-letter {
+    text-transform: uppercase;
+}
+
+.notification .notification-item .notification__action-text {
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 22px;
+    letter-spacing: 1.78px;
+    font-weight: 400;
+}
+
+.notification .notification-item .notification__action-time {
+    color: #a6a6a6;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.33px;
+}
+
+.notification .notification-item .notification-item__link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.notification .notification-item .notification-item__link:hover {
+    text-decoration: none;
+}
+
+.notification .notification-item .notification__action-desc {
+    position: relative;
+}
+
+.notification .notification-item .notification__action-desc::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 12px;
+    width: 8px;
+    height: 8px;
+    background-color: #3a5cac;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.notification-item .notification__action-desc .notification__desc--content,
+.notification .notificaiton-item--default.notification-item .notification__action-desc {
+    font-weight: 700;
+    font-style: italic;;
+}
+
+.icon-info.icon-info-show .notification {
+    transform: translateX(0);
+}
+
+.notification .notification-item.notificaiton-item--default .notification__action-desc::before {
+    content: none;
+}
+
+.notification .notification-item.notificaiton-item--default {
+    cursor: initial;
+}
+
+.notification .notificaiton-item--default.notification-item:hover {
+    background-color: transparent;
+}
+
+.notification__amount:not([data-amount])::before {
+    content: none;
+}
+
+
+@media (min-width: 1024px) {
+
+    .app-header__academy {
+        background-color: #ffffff;
+        max-width: 1100px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .nav-menu {
+        width: 0;
+    }
+
+    .app-header__academy .wrapper-app-header .app-header__academylogo a img {
+        width: 86px;
+    }
+
+    .app-header__academymenu .login {
+        text-align: right;
+        display: block;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .app-header__academymenu .login .wrapper-loginEnrol {
+        width: 165px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #d8d8d8;
+        padding-top: 10px;
+        padding-right: 17px;
+        position: relative;
+    }
+
+    .app-header__academymenu .login .wrapper-loginEnrol span {
+        color: #4a4a4a;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1.33px;
+        text-transform: uppercase;
+    }
+
+    .app-header__academymenu .login .wrapper-loginEnrol a {
+        color: #4a4a4a;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1.33px;
+        text-transform: uppercase;
+    }
+
+    .app-header__academymenu .login .wrapper-loginEnrol img {
+        position: absolute;
+        left: 18px;
+    }
+    .app-header__academymenu .desk-account {
+        text-align: right;
+        display: block;
+        padding-right: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .app-header__academymenu .desk-account .icon-account {
+        padding: 0 2px;
+        position: relative;
+    }
+
+    .app-header__academymenu .desk-account .icon-account:hover .icon-logout {
+        display: block;
+    }
+
+    .app-header__academymenu .desk-account .icon-info {
+        padding: 0 2px;
+        position: relative;
+    }
+
+    .notification__amount {
+        background-image: url('../../images/information-desk.png');
+        background-position: center -1px;
+        height: 20px;
+        width: 15px;
+    }
+
+    .notification__amount::before {
+        width: 18px;
+        height: 18px;
+    }
+
+    .notification {
+        background-color: #fafafa;
+        z-index: 50;
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        height: auto;
+        width: auto;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
+        border-radius: 7px;
+        padding: 15px 10px 25px 15px;
+        display: none;
+    }
+
+    .notification::before {
+        content: '';
+        position: absolute;
+        left: 90%;
+        right: unset;
+        transform: translateX(-50%) rotate(45deg);
+        background-color: #fafafa;
+        height: 22px;
+        width: 22px;
+        top: -10px;
+        z-index: -1;
+        box-shadow: -1px -1px 2px -1px rgba(0, 0, 0, 0.75);
+    }
+
+    .notification::after {
+        content: '';
+        position: absolute;
+        width: calc(100% - 30px);
+        height: 20px;
+        left: 10px;
+        background-image: linear-gradient(180deg,
+        rgba(249, 249, 249, 0) 30%,
+        #f9f9f9 80%);
+        bottom: 0;
+    }
+
+    .notification .notification-item__warpper {
+        height: auto;
+        max-height: 320px;
+        width: 300px;
+        padding-right: 10px;
+    }
+
+    .notification .notification-item__warpper::-webkit-scrollbar {
+        width: 5px;
+        background-color: #fafafa;
+        border-radius: 5px;
+        display: none;
+    }
+
+
+    .notification .notification-item__warpper::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        background-color: #fafafa;
+    }
+
+    .notification .notification-item__warpper::-webkit-scrollbar-thumb {
+        background-color: #5e5e5e;
+        border-radius: 5px;
+    }
+
+    .notification:hover .notification-item__warpper::-webkit-scrollbar {
+        display: block;
+    }
+
+    .notification .notification-item {
+        padding-left: 15px;
+    }
+
+    .notification .notification-item .notification__action-text {
+        font-size: 12px;
+    }
+
+    .notification .notification-item .notification__action-time {
+        font-size: 10px;
+    }
+
+    .icon-info.icon-info-show .notification {
+        display: block;
+        transform: translateX(-90%);
+    }
+
+    .app-header__academymenu .desk-account .icon-account .icon-logout {
+        position: absolute;
+        z-index: 10;
+        padding: 10px;
+        right: 2px;
+        align-items: flex-end;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+        width: 135px;
+        display: none;
+    }
+
+    .app-header__academymenu .desk-account .icon-account .icon-logout .item-profile {
+        text-align: right;
+        padding: 3px 0;
+    }
+
+    .app-header__academymenu .desk-account .icon-logout .item-profile .link-dashboard img {
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
+    }
+
+    .app-header__academymenu .desk-account .icon-account .icon-logout .item-profile a {
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1.33px;
+        color: #4a4a4a;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .app-header__academymenu .desk-account .icon-account .icon-logout .item-profile a:hover {
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    .app-header__academymenu .desk-account .icon-account .icon-logout .wrapper-icon {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        cursor: pointer;
+        justify-content: flex-start;
+
+    }
+
+    .app-header__academymenu .desk-account .icon-account .icon-logout img {
+        width: 16px;
+        height: 16px;
+        margin-right: 7px;
+    }
+
+    .app-header__academymenu .desk-account .icon-account .icon-logout p {
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1.33px;
+        color: #4a4a4a;
+        text-transform: uppercase;
+    }
+
+    .app-header__academymenu .desk-account a {
+        padding: 0 4px;
+    }
+
+    .app-header__academymenu .desk-account .name__account {
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1.33px;
+        color: #4a4a4a;
+    }
+
+    .app-header__academymenu .menu {
+        display: block;
+    }
+
+    .app-header__academymenu .nav-icon {
+        display: none;
+    }
+
+    .app-header__academymenu .menu .description {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        /*overflow: hidden;*/
+    }
+
+    .app-header__academymenu .menu .description li {
+        float: left;
+    }
+
+    .app-header__academymenu .menu .description li .item-link {
+        margin: 16px;
+        position: relative;
+    }
+
+    .app-header__academymenu .menu .description li .item-link .sub-menu {
+        position: absolute;
+        top: 29px;
+        left: -16px;
+        z-index: 1000;
+        padding: 0 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+        width: 205px;
+        display: none;
+    }
+
+    .app-header__academymenu .menu .description li .item-link .sub-menu::before {
+        content: '';
+        position: absolute;
+        top: -7px;
+        left: 18px;
+        transform: rotate(45deg);
+        background-color: #fff;
+        height: 20px;
+        width: 20px;
+        box-shadow: -1px -1px 2px -2px rgba(0, 0, 0, 1);
+    }
+
+    .app-header__academymenu .menu .description li:last-child .item-link .sub-menu {
+        left: unset;
+        right: -16px;
+    }
+
+    .app-header__academymenu .menu .description li:last-child .item-link .sub-menu::before {
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+    }
+
+    .sub-menu-link {
+        padding: 20px 0;
+        border-bottom: 1px solid #f5f5f5;
+    }
+
+    .sub-menu-link:last-child {
+        border-bottom: none;
+    }
+
+    .app-header__academymenu .menu .description li.active .item-link::after {
+        border-top: 2px solid #4a4a4a;
+        left: 1px;
+        bottom: -1px;
+        position: absolute;
+        content: '';
+        right: 2px;
+    }
+
+    .app-header__academymenu .menu .description li:hover .sub-menu {
+        display: block;
+    }
+
+    .app-header__academymenu .menu .description li.active .item-link::after {
+        border-top: 2px solid #4a4a4a;
+        left: 1px;
+        bottom: -1px;
+        position: absolute;
+        content: '';
+        right: 2px;
+    }
+
+    .app-header__academymenu .menu .description li:hover .sub-menu {
+        display: block;
+    }
+
+    .app-header__academymenu .menu .description li a {
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1.33px;
+        text-transform: uppercase;
+        display: block;
+        text-decoration: none;
+        color: #4a4a4a;
+    }
+
+    .app-header__academymenu .menu .description li:hover .item-link > a,
+    .app-header__academymenu .menu .description li a:hover,
+    .app-header__academymenu .menu .description li.active a {
+        text-shadow: 0.25px 0px 0.1px, -0.25px 0px 0.1px;
+    }
+}
+
+@media (min-width: 1401px) {
+    .notification::before {
+        content: '';
+        left: 50%;
+    }
+
+    .icon-info.icon-info.icon-info-show .notification {
+        transform: translateX(-50%);
+    }
+
+    .app-header__academymenu .menu .description li:last-child .item-link .sub-menu {
+        left: -16px;
+        right: unset;
+    }
+
+    .app-header__academymenu .menu .description li:last-child .item-link .sub-menu::before {
+        left: 18px;
+        transform: rotate(45deg);
+    }
+}

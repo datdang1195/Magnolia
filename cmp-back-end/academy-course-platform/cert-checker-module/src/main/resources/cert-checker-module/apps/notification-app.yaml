@@ -1,0 +1,103 @@
+!content-type:notification
+name: Notification
+icon: icon-tasks-app
+
+subApps:
+  browser:
+    workbench:
+      editable: false
+      contentViews: !override
+        - name: list
+          class: info.magnolia.ui.workbench.list.ListPresenterDefinition
+          columns: !override
+            - name: path
+              enabled: false
+            - name: course
+              label: Course
+              expandRatio: 2
+              refItemPropertyName: course
+              referencedItemWorkspace: courses
+              referencedItemPropertyName: name
+              formatterClass: vn.ekino.certificate.workbench.ReferencedJcrItemColumnFormatter
+              class: vn.ekino.certificate.workbench.ReferencedJcrItemColumnDefinition
+              sortable: true
+            - name: sessionDate
+              width: 160
+              label: Session Date
+              class: info.magnolia.ui.workbench.column.definition.MetaDataColumnDefinition
+              propertyName: sessionDate
+              formatterClass: info.magnolia.ui.workbench.column.DateColumnFormatter
+              sortable: true
+            - name: name
+              label: Name
+              expandRatio: 2
+              propertyName: name
+              class: info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition
+              sortable: true
+  actions:
+    activate:
+      command: activate
+      icon: icon-publish
+      catalog: versioned
+      class: info.magnolia.ui.framework.action.ActivationActionDefinition
+      availability:
+        multiple: true
+        writePermissionRequired: true
+        rules:
+          - name: IsNotDeletedRule
+            implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+    deactivate:
+      command: deactivate
+      icon: icon-unpublish
+      catalog: versioned
+      class: info.magnolia.ui.framework.action.DeactivationActionDefinition
+      availability:
+        multiple: true
+        writePermissionRequired: true
+        rules:
+          - name: IsNotDeletedRule
+            implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+          - name: IsPublishedRule
+            implementationClass: info.magnolia.ui.framework.availability.IsPublishedRule
+    activateDeleted:
+      command: activate
+      icon: icon-publish
+      catalog: versioned
+      class: info.magnolia.ui.framework.action.ActivationActionDefinition
+      availability:
+        multiple: true
+        writePermissionRequired: true
+        rules:
+          - name: IsDeletedRule
+            implementationClass: info.magnolia.ui.framework.availability.IsDeletedRule
+
+  detail:
+    actions:
+      commit:
+        class: vn.ekino.certificate.action.SaveFormActionDefinition
+
+    editor:
+      form:
+        tabs:
+          default:
+            label: Notification details
+            name: notificationDetails
+            fields:
+              - name: name
+                fieldType: hidden
+                required: false
+              - name: course
+                fieldType: select
+                label: Course
+                repository: courses
+                path: /
+                labelProperty: name
+                valueProperty: 'jcr:uuid'
+              - name: sessionDate
+                fieldType: date
+                time: false
+                type: Date
+                label: Session Date
+                defaultValue: now
+                required: true
+

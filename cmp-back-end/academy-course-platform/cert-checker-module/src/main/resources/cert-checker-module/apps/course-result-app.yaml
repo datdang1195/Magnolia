@@ -1,0 +1,219 @@
+!content-type:courseResult
+name: Course-Result
+icon: icon-preview-app
+
+#
+subApps:
+  browser:
+    workbench:
+      editable: false
+      contentViews: !override
+        - name: list
+          class: info.magnolia.ui.workbench.list.ListPresenterDefinition
+          columns:
+            - name: path
+              enabled: false
+            - name: name
+              label: Name
+              expandRatio: 2
+              propertyName: name
+              class: info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition
+              sortable: true
+            - name: program
+              label: Enrolled Program
+              expandRatio: 2
+              refItemPropertyName: program
+              referencedItemWorkspace: enrolledProgram
+              referencedItemPropertyName: name
+              formatterClass: vn.ekino.certificate.workbench.ReferencedJcrItemColumnFormatter
+              class: vn.ekino.certificate.workbench.ReferencedJcrItemColumnDefinition
+              sortable: true
+            - name: course
+              label: Course
+              expandRatio: 2
+              refItemPropertyName: course
+              referencedItemWorkspace: courses
+              referencedItemPropertyName: name
+              formatterClass: vn.ekino.certificate.workbench.ReferencedJcrItemColumnFormatter
+              class: vn.ekino.certificate.workbench.ReferencedJcrItemColumnDefinition
+              sortable: true
+            - name: quiz
+              label: Quiz
+              expandRatio: 2
+              propertyName: quiz
+              class: info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition
+              sortable: true
+            - name: homework
+              label: Homework
+              expandRatio: 2
+              propertyName: homework
+              class: info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition
+              sortable: true
+            - name: conditionalRate
+              label: Conditional Rate
+              expandRatio: 2
+              propertyName: conditionalRate
+              class: info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition
+              sortable: true
+            - name: score
+              label: Score
+              expandRatio: 2
+              propertyName: score
+              class: info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition
+              sortable: true
+
+    actions:
+      activate:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+      deactivate:
+        command: deactivate
+        icon: icon-unpublish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.DeactivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsNotDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsNotDeletedRule
+            - name: IsPublishedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsPublishedRule
+      activateDeleted:
+        command: activate
+        icon: icon-publish
+        catalog: versioned
+        class: info.magnolia.ui.framework.action.ActivationActionDefinition
+        availability:
+          multiple: true
+          writePermissionRequired: true
+          rules:
+            - name: IsDeletedRule
+              implementationClass: info.magnolia.ui.framework.availability.IsDeletedRule
+      saveNotify:
+        class: 'vn.ekino.certificate.action.SaveFormActionDefinition'
+        availability:
+          root: 'true'
+          nodeTypes:
+            content: 'mgnl:courseResult'
+
+
+  detail:
+    actions:
+      saveNotify:
+        class: vn.ekino.certificate.action.SaveAndNotifyActionDefinition
+        label: Save & Notify
+      commit:
+        class: vn.ekino.certificate.action.SaveFormActionDefinition
+      cancel:
+        class: info.magnolia.ui.form.action.CancelFormActionDefinition
+
+    editor:
+      actions: !override
+        - name: saveNotify
+        - name: commit
+        - name: cancel
+      actionArea:
+        actionRenderers:
+          saveNotify:
+            rendererClass: vn.ekino.certificate.render.CertificateActionRender
+          commit:
+            rendererClass: vn.ekino.certificate.render.UniqueActionRender
+          cancel:
+            rendererClass: vn.ekino.certificate.render.CertificateActionRender
+      form:
+        tabs:
+          default:
+            name: courseResultsTab
+            fields:
+              - name: name
+                fieldType: hidden
+                type: String
+                required: false
+              - name: program
+                fieldType: combobox
+                label: Enrolled Program
+                repository: enrolledProgram
+                path: /
+                labelProperty: name
+                valueProperty: 'jcr:uuid'
+              - name: course
+                fieldType: combobox
+                label: Course
+                required: true
+                repository: courses
+                path: /
+                labelProperty: name
+                valueProperty: 'jcr:uuid'
+                targetFieldName: quizNum
+                targetFieldType: textfield
+                comboboxFieldName: program
+                implementationMethod: findNumberQuizzesByCourseId
+              - name: quizNum
+                required: true
+                fieldType: textfield
+                label: Number Of Quizzes
+                readOnly: true
+                defaultValue: 0
+              - name: quizzes
+                fieldType: multiValue
+                label: Quizzes
+                transformerClass: info.magnolia.ui.form.field.transformer.multi.MultiValueSubChildrenNodePropertiesTransformer
+                field:
+                  name: quiz
+                  fieldType: composite
+                  label: Quiz
+                  layout: horizontal
+                  transformerClass: info.magnolia.ui.form.field.transformer.composite.NoOpCompositeTransformer
+                  styleName: material
+                  fields:
+                    - name: quizNo
+                      fieldType: text
+                      label: Quiz No
+                      type: String
+                      required: true
+                      validators:
+                        - name: quizNameValidator
+                          class: vn.ekino.certificate.validator.quizName.QuizNameValidatorDefinition
+                          errorMessage: Quiz No must be an integer number which greater than 0
+                    - name: quizScore
+                      fieldType: text
+                      label: Score
+                      type: String
+                      required: true
+                      validators:
+                        - name: quizScoreValidator
+                          class: vn.ekino.certificate.validator.quizScore.QuizScoreValidatorDefinition
+                          errorMessage: Please input numerical values within range [0.0 - 100.0]
+                    - name: conditionalRate
+                      fieldType: text
+                      label: Conditional Rate
+                      type: String
+                      validators:
+                        - name: rateValidator
+                          class: vn.ekino.certificate.validator.rate.RateValidatorDefinition
+                          errorMessage: Please input a numerical value within range [0.0 - 1.0]
+              - name: homework
+                fieldType: text
+                label: Homework
+                type: Decimal
+                validators:
+                  - name: scoreValidator
+                    class: vn.ekino.certificate.validator.score.ScoreValidatorDefinition
+                    errorMessage: Please input a numerical value within range [0.0 - 100.0]
+              - name: score
+                fieldType: text
+                type: Decimal
+                label: Score
+                validators:
+                  - name: scoreValidator
+                    class: vn.ekino.certificate.validator.score.ScoreValidatorDefinition
+                    errorMessage: Please input a numerical value within range [0.0 - 100.0]

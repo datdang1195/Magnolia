@@ -1,0 +1,17 @@
+datasource:
+  workspace: phases
+  autoCreate: true
+
+model:
+  nodeType: mgnl:phase
+  properties:
+  - name: phase
+    type: String
+  - name: startDate
+    type: Date
+    required: true
+  - name: endDate
+    type: Date
+    required: true
+  - name: description
+    required: true
